@@ -73,7 +73,7 @@ public class SplashActivity extends AppCompatActivity {
         } else {
             mViewPager2.setCurrentItem(mViewPager2.getCurrentItem()+1);
         }
-        
+
     }
 
     private void Skip() {
