@@ -127,9 +127,9 @@
 
     <Button
         android:id="@+id/btnDN"
-        android:layout_width="319dp"
+        android:layout_width="376dp"
         android:layout_height="53dp"
-        android:background="@drawable/custom_button_register"
+        android:background="@drawable/custom_button_login"
         android:text="Đăng ký"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -36,7 +36,7 @@
         android:fontFamily="sans-serif-black"
         android:gravity="top"
         android:text="Welcome"
-        android:textSize="24sp"
+        android:textSize="27sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/google_button"
-        android:layout_width="290dp"
+        android:layout_width="376dp"
         android:layout_height="59dp"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
@@ -59,7 +59,7 @@
 
     <Button
         android:id="@+id/btnDN"
-        android:layout_width="290dp"
+        android:layout_width="376dp"
         android:layout_height="50dp"
         android:background="@drawable/custom_button_login"
         android:text="Đăng nhập"
@@ -82,9 +82,9 @@
 
     <Button
         android:id="@+id/btnDK"
-        android:layout_width="270dp"
+        android:layout_width="376dp"
         android:layout_height="50dp"
-        android:background="@drawable/custom_button_register"
+        android:background="@drawable/custom_button_login"
         android:text="Tạo tài khoản mới"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
