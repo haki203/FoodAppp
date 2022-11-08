@@ -1,5 +1,6 @@
 package com.example.foodapp.SplashActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -7,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.foodapp.MainActivity;
 import com.example.foodapp.R;
 
 import java.util.ArrayList;
@@ -71,6 +73,7 @@ public class SplashActivity extends AppCompatActivity {
         } else {
             mViewPager2.setCurrentItem(mViewPager2.getCurrentItem()+1);
         }
+        
     }
 
     private void Skip() {

@@ -1,90 +1,102 @@
 [
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.foodapp-merged_res-39:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.foodapp-pngs-34:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.foodapp-merged_res-39:/drawable-v24_bg_indicator_3.xml.flat",
+        "source": "com.example.foodapp-main-41:/drawable-v24/bg_indicator_3.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.foodapp-merged_res-39:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.foodapp-main-41:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\layout\\activity_main.xml"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\drawable_custom_button_register.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\drawable\\custom_button_register.xml"
+        "merged": "com.example.foodapp-merged_res-39:/drawable-v24_img_2.png.flat",
+        "source": "com.example.foodapp-main-41:/drawable-v24/img_2.png"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\xml\\backup_rules.xml"
+        "merged": "com.example.foodapp-merged_res-39:/layout_item_photo.xml.flat",
+        "source": "com.example.foodapp-main-41:/layout/item_photo.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\layout\\activity_register.xml"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.foodapp-merged_res-39:/drawable-v24_bg_btn_primary.xml.flat",
+        "source": "com.example.foodapp-main-41:/drawable-v24/bg_btn_primary.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.foodapp-merged_res-39:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.foodapp-main-41:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.foodapp-merged_res-39:/drawable-v24_img.png.flat",
+        "source": "com.example.foodapp-main-41:/drawable-v24/img.png"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.foodapp-merged_res-39:/layout_activity_main.xml.flat",
+        "source": "com.example.foodapp-main-41:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\drawable_welcome_da1.png.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\drawable\\welcome_da1.png"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.foodapp-merged_res-38:/layout_activity_register.xml.flat",
-        "source": "com.example.foodapp-main-40:/layout/activity_register.xml"
+        "merged": "com.example.foodapp-merged_res-39:/xml_backup_rules.xml.flat",
+        "source": "com.example.foodapp-main-41:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\drawable_custom_button_login.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\drawable\\custom_button_login.xml"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-pngs-33:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.foodapp-merged_res-39:/drawable-v24_img_1.png.flat",
+        "source": "com.example.foodapp-main-41:/drawable-v24/img_1.png"
+    },
+    {
+        "merged": "com.example.foodapp-merged_res-39:/layout_activity_splash.xml.flat",
+        "source": "com.example.foodapp-main-41:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.foodapp-merged_res-39:/drawable-v24_img_3.png.flat",
+        "source": "com.example.foodapp-main-41:/drawable-v24/img_3.png"
+    },
+    {
+        "merged": "com.example.foodapp-merged_res-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.foodapp-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
     }
 ]
