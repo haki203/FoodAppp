@@ -2790,6 +2790,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable welcome_da1
+drawable welcome_login
 drawable white_radius
 id ALT
 id BOTTOM_END
@@ -2900,7 +2901,6 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnDK
-id btnDN
 id btnLogin
 id btn_start_login
 id button
@@ -2994,7 +2994,6 @@ id east
 id edit_query
 id edtDate
 id edtDiachi
-id edtPassword
 id edtUsername
 id edt_confirm_password
 id edt_password
@@ -3070,6 +3069,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id login_facebook
