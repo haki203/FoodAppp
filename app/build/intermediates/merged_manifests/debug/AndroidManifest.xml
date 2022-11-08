@@ -37,6 +37,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.foodapp.LoginActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.RegisterActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.foodapp.MainActivity"
             android:exported="true" >
             <meta-data

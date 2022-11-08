@@ -2684,6 +2684,8 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable custom_button_login
+drawable custom_button_register
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2706,6 +2708,7 @@ drawable img
 drawable img_1
 drawable img_2
 drawable img_3
+drawable login_img
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2786,6 +2789,7 @@ drawable notify_panel_notification_icon_bg
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable welcome_da1
 drawable white_radius
 id ALT
 id BOTTOM_END
@@ -2895,6 +2899,9 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnDK
+id btnDN
+id btnLogin
 id btn_start_login
 id button
 id buttonPanel
@@ -2985,6 +2992,12 @@ id easeInOut
 id easeOut
 id east
 id edit_query
+id edtDate
+id edtDiachi
+id edtPassword
+id edtUsername
+id edt_confirm_password
+id edt_password
 id elastic
 id embed
 id end
@@ -3059,6 +3072,8 @@ id line3
 id linear
 id listMode
 id list_item
+id login_facebook
+id login_goggle
 id marquee
 id masked
 id match_constraint
@@ -3257,6 +3272,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
+id textView6
+id textView7
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3290,6 +3312,7 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id username
 id vertical
 id vertical_only
 id viewPager2
@@ -3434,7 +3457,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login
 layout activity_main
+layout activity_register
 layout activity_splash
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

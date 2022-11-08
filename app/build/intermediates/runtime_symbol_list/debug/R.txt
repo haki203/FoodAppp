@@ -2683,6 +2683,8 @@ int drawable common_google_signin_btn_text_light 0x7f0700a4
 int drawable common_google_signin_btn_text_light_focused 0x7f0700a5
 int drawable common_google_signin_btn_text_light_normal 0x7f0700a6
 int drawable common_google_signin_btn_text_light_normal_background 0x7f0700a7
+int drawable custom_button_login 0x7f07010f
+int drawable custom_button_register 0x7f070110
 int drawable design_fab_background 0x7f0700a8
 int drawable design_ic_visibility 0x7f0700a9
 int drawable design_ic_visibility_off 0x7f0700aa
@@ -2705,6 +2707,7 @@ int drawable img 0x7f0700ba
 int drawable img_1 0x7f0700bb
 int drawable img_2 0x7f0700bc
 int drawable img_3 0x7f0700bd
+int drawable login_img 0x7f070111
 int drawable m3_appbar_background 0x7f0700be
 int drawable m3_popupmenu_background_overlay 0x7f0700bf
 int drawable m3_radiobutton_ripple 0x7f0700c0
@@ -2785,6 +2788,7 @@ int drawable notify_panel_notification_icon_bg 0x7f07010a
 int drawable test_level_drawable 0x7f07010b
 int drawable tooltip_frame_dark 0x7f07010c
 int drawable tooltip_frame_light 0x7f07010d
+int drawable welcome_da1 0x7f070112
 int drawable white_radius 0x7f07010e
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
@@ -2894,6 +2898,9 @@ int id browser_actions_menu_item_icon 0x7f080068
 int id browser_actions_menu_item_text 0x7f080069
 int id browser_actions_menu_items 0x7f08006a
 int id browser_actions_menu_view 0x7f08006b
+int id btnDK 0x7f08020c
+int id btnDN 0x7f08020d
+int id btnLogin 0x7f08020e
 int id btn_start_login 0x7f08006c
 int id button 0x7f08006d
 int id buttonPanel 0x7f08006e
@@ -2984,6 +2991,12 @@ int id easeInOut 0x7f0800c2
 int id easeOut 0x7f0800c3
 int id east 0x7f0800c4
 int id edit_query 0x7f0800c5
+int id edtDate 0x7f08020f
+int id edtDiachi 0x7f080210
+int id edtPassword 0x7f080211
+int id edtUsername 0x7f080212
+int id edt_confirm_password 0x7f080213
+int id edt_password 0x7f080214
 int id elastic 0x7f0800c6
 int id embed 0x7f0800c7
 int id end 0x7f0800c8
@@ -3058,6 +3071,8 @@ int id line3 0x7f08010c
 int id linear 0x7f08010d
 int id listMode 0x7f08010e
 int id list_item 0x7f08010f
+int id login_facebook 0x7f080215
+int id login_goggle 0x7f080216
 int id marquee 0x7f080110
 int id masked 0x7f080111
 int id match_constraint 0x7f080112
@@ -3256,6 +3271,13 @@ int id textSpacerNoButtons 0x7f0801d2
 int id textSpacerNoTitle 0x7f0801d3
 int id textStart 0x7f0801d4
 int id textTop 0x7f0801d5
+int id textView 0x7f080217
+int id textView2 0x7f080218
+int id textView3 0x7f080219
+int id textView4 0x7f08021a
+int id textView5 0x7f08021b
+int id textView6 0x7f08021c
+int id textView7 0x7f08021d
 int id text_input_end_icon 0x7f0801d6
 int id text_input_error_icon 0x7f0801d7
 int id text_input_start_icon 0x7f0801d8
@@ -3289,6 +3311,7 @@ int id unknown 0x7f0801f3
 int id unlabeled 0x7f0801f4
 int id up 0x7f0801f5
 int id useLogo 0x7f0801f6
+int id username 0x7f08021e
 int id vertical 0x7f0801f7
 int id vertical_only 0x7f0801f8
 int id viewPager2 0x7f0801f9
@@ -3433,7 +3456,9 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_login 0x7f0b007f
 int layout activity_main 0x7f0b001c
+int layout activity_register 0x7f0b0080
 int layout activity_splash 0x7f0b001d
 int layout browser_actions_context_menu_page 0x7f0b001e
 int layout browser_actions_context_menu_row 0x7f0b001f

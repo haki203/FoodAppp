@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tho38\.gradle\caches\transforms-3\229612c218d9fe79705dc19c7f400585\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\tho38\.gradle\caches\transforms-3\21755dfb125ba8aca0d81387a0fbc842\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -68,27 +68,27 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\tho38\.gradle\caches\transforms-3\66860c319137074465b1f3af9d4ca7e4\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tho38\.gradle\caches\transforms-3\d1b81e9b9294b0bc78ebcbc0700bfe58\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\tho38\.gradle\caches\transforms-3\4b55aa23f0c5038d01d3b204f44ec593\transformed\installreferrer-1.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:5:5-33:19
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:5:5-46:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tho38\.gradle\caches\transforms-3\229612c218d9fe79705dc19c7f400585\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -167,18 +167,30 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:27-74
-activity#com.example.foodapp.MainActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:24:9-32:20
+activity#com.example.foodapp.LoginActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:23:9-29:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:24:13-42
 meta-data#android.app.lib_name
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:29:13-31:36
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:26:13-28:36
 	android:value
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:31:17-33
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:28:17-33
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:30:17-52
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:27:17-52
+activity#com.example.foodapp.RegisterActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:31:13-45
+activity#com.example.foodapp.MainActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:37:9-45:20
+	android:exported
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:38:13-41
 uses-sdk
 INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
