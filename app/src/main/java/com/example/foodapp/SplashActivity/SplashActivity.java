@@ -10,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.foodapp.MainActivity;
 import com.example.foodapp.R;
+import com.example.foodapp.WelcomeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +71,8 @@ public class SplashActivity extends AppCompatActivity {
 
     private void Next() {
         if (mViewPager2.getCurrentItem() == mListPhoto.size()-1) {
+            Intent intent = new Intent(SplashActivity.this, WelcomeActivity.class);
+            startActivity(intent);
         } else {
             mViewPager2.setCurrentItem(mViewPager2.getCurrentItem()+1);
         }
