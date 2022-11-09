@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity.AboutMeActivity"
+    tools:context=".AboutMe"
     android:paddingLeft="17dp"
-    android:paddingRight="17dp"
-    android:background="#F4F5F9">
+    android:paddingRight="17dp">
 <!--hehe-->
 
     <LinearLayout
@@ -54,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_person_aboutme"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
         android:hint="Nguyễn Văn A"
@@ -69,9 +68,9 @@
         android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/ic_phone"
+        android:drawableLeft="@drawable/ic_phone_aboutme"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
         android:hint="+84 942144444"
@@ -86,7 +85,7 @@
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_email_aboutme"
         android:drawablePadding="10dp"
@@ -117,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_password_aboutme"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
         android:hint="Mật khẩu hiện tại"
@@ -130,9 +129,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_password_aboutme"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
         android:hint="Nhập lại mật khẩu mới"
@@ -140,15 +139,15 @@
         android:paddingLeft="15dp"
         android:textColorHint="#868889"
         app:layout_constraintTop_toBottomOf="@+id/et_matKhauMoi"
-        tools:layout_editor_absoluteX="17dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/et_matKhauMoi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_password_aboutme"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
         android:hint="Mật khẩu mới"
@@ -156,7 +155,7 @@
         android:paddingLeft="15dp"
         android:textColorHint="#868889"
         app:layout_constraintTop_toBottomOf="@+id/et_matKhauHienTai"
-        tools:layout_editor_absoluteX="17dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:layout_width="match_parent"

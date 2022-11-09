@@ -10,4 +10,5 @@
     <color name="skip">#bdbdbd</color>
     <color name="primary">#6CC51D</color>
     <color name="start">#AEDC81</color>
+    <color name="text_gray">#a4a4a4</color>
 </resources>
