@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.foodapp-mergeDebugResources-36:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.foodapp-mergeDebugResources-3:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\43e7311ccc226ce59139d374fe37f339\\transformed\\play-services-auth-20.3.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\935da69e634c9f4b2b719471c2d77928\\transformed\\play-services-auth-20.3.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3237c50a3caa87d96377052b95ee4677\\transformed\\appcompat-1.5.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\034f511a629c0fda711794a09fef4382\\transformed\\appcompat-1.5.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

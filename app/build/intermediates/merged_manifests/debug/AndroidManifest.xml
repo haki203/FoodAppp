@@ -28,6 +28,33 @@
         android:testOnly="true"
         android:theme="@style/Theme.FoodApp" >
         <activity
+            android:name="com.example.foodapp.LoginActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.SplashActivity.SplashActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.example.foodapp.Category.CategoryActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodapp.WelcomeActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.foodapp.RegisterActivity"
             android:exported="false" >
             <meta-data
@@ -36,13 +63,7 @@
         </activity>
         <activity
             android:name="com.example.foodapp.MainActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
