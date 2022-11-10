@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.suppermarket.Home.Frm.FrmHome;
-import com.example.suppermarket.Home.Frm.FrmNotification;
-import com.example.suppermarket.Home.Frm.FrmUser;
-import com.example.suppermarket.Home.Frm.FrmWallet;
-import com.example.suppermarket.R;
+import com.example.foodapp.Home.Frm.FrmHome;
+import com.example.foodapp.Home.Frm.FrmNotification;
+import com.example.foodapp.Home.Frm.FrmUser;
+import com.example.foodapp.Home.Frm.FrmWallet;
+import com.example.foodapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
