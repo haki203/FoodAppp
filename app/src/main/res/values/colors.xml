@@ -11,4 +11,5 @@
     <color name="primary">#6CC51D</color>
     <color name="start">#AEDC81</color>
     <color name="text_gray">#a4a4a4</color>
+    <color name="bg_gray">#F4F5F9</color>
 </resources>
