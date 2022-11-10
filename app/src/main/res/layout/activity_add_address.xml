@@ -130,11 +130,12 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <EditText
+        android:id="@+id/editText9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:backgroundTint="@color/white"
 
+        android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_map"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
@@ -144,6 +145,62 @@
         android:textColorHint="#868889"
         app:layout_constraintTop_toBottomOf="@+id/editText8"
         tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_country"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down"
+        android:drawablePadding="10dp"
+        android:drawableTint="#868889"
+        android:hint="Quốc gia"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:backgroundTint="#6CC51D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:text="Lưu địa chỉ này"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Thêm địa chỉ"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+
+        android:background="@drawable/custom_button_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
