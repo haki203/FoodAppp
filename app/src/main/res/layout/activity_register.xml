@@ -131,6 +131,8 @@
         android:layout_height="53dp"
         android:background="@drawable/custom_button_login"
         android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
