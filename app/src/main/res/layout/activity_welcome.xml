@@ -10,13 +10,13 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="411dp"
-        android:layout_height="401dp"
+        android:layout_height="388dp"
         android:background="@drawable/welcome_login"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/google_button"
+        android:id="@+id/login_google_button"
         android:layout_width="376dp"
         android:layout_height="59dp"
         android:layout_alignParentTop="true"
@@ -42,10 +42,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.261" />
 
     <Button
         android:id="@+id/btnDN"
@@ -53,18 +53,20 @@
         android:layout_height="50dp"
         android:background="@drawable/custom_button_login"
         android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/google_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_google_button"
         app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="--------------------------------------------------- or -----------------------------------------------"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -77,12 +79,14 @@
         android:layout_height="50dp"
         android:background="@drawable/custom_button_login"
         android:text="Tạo tài khoản mới"
+        android:textAllCaps="false"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.411" />
     <!--    <TextView-->
 <!--        android:id="@+id/textView"-->
 <!--        android:layout_width="wrap_content"-->

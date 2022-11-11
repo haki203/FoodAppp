@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="17dp"
+    android:paddingLeft="17dp"
+    android:background="#F4F5F9"
+    tools:context=".SplashActivity.AddAddressActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:src="@drawable/ic_sangtrai" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="90dp"
+            android:text="Add Address"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:drawableTint="#868889"
+
+        android:hint="Họ và tên"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_email_aboutme"
+        android:drawablePadding="10dp"
+
+        android:drawableTint="#868889"
+        android:hint="Địa chỉ Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_phone"
+
+        android:drawablePadding="10dp"
+        android:drawableTint="#868889"
+        android:hint="Số điện thoại"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_location"
+
+        android:drawablePadding="10dp"
+        android:drawableTint="#868889"
+        android:hint="Địa chỉ"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+
+        android:drawableLeft="@drawable/ic_zipcode"
+        android:drawablePadding="10dp"
+        android:drawableTint="#868889"
+        android:hint="Mã bưu điện"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_map"
+        android:drawablePadding="10dp"
+        android:drawableTint="#868889"
+        android:hint="Thành phố"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintTop_toBottomOf="@+id/editText8"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_country"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down"
+        android:drawablePadding="10dp"
+        android:drawableTint="#868889"
+        android:hint="Quốc gia"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:backgroundTint="#6CC51D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:text="Lưu địa chỉ này"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Thêm địa chỉ"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+
+        android:background="@drawable/custom_button_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
