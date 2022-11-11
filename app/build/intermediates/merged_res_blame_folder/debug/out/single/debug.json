@@ -84,12 +84,12 @@
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable-v24_img.png.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\drawable-v24\\img.png"
-    },
-    {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable-v24_bg_transparent.xml.flat",
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\drawable-v24\\bg_transparent.xml"
+    },
+    {
+        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable-v24_img.png.flat",
+        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\drawable-v24\\img.png"
     },
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable-v24_icon_user.png.flat",
@@ -126,6 +126,10 @@
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable_register.png.flat",
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\drawable\\register.png"
+    },
+    {
+        "merged": "com.example.foodapp-merged_res-41:/layout_activity_register.xml.flat",
+        "source": "com.example.foodapp-main-43:/layout/activity_register.xml"
     },
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\xml_backup_rules.xml.flat",
@@ -168,12 +172,12 @@
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\drawable\\custom_button_login.xml"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable_ic_lock.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\drawable\\ic_lock.xml"
+        "merged": "com.example.foodapp-merged_res-41:/drawable_ic_eye.xml.flat",
+        "source": "com.example.foodapp-main-43:/drawable/ic_eye.xml"
     },
     {
-        "merged": "com.example.foodapp-merged_res-41:/layout_activity_welcome.xml.flat",
-        "source": "com.example.foodapp-main-43:/layout/activity_welcome.xml"
+        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\drawable\\ic_lock.xml"
     },
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable_custom_edittext.xml.flat",
@@ -206,6 +210,10 @@
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-43:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.foodapp-merged_res-41:/drawable_ic_baseline_password_24.xml.flat",
+        "source": "com.example.foodapp-main-43:/drawable/ic_baseline_password_24.xml"
     },
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-41:\\drawable-v24_img_1.png.flat",

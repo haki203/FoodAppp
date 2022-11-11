@@ -14,6 +14,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -37,6 +43,11 @@ public class UserDAO {
         Map<String, Object> item = new HashMap<>();
         item.put("username", username);
         item.put("password", password);
+
+        item.put("name","null" );
+        item.put("ngaysinh","null" );
+        item.put("diachi","null" );
+        item.put("id",username);
         if (user == null) {
             // Add a new document with a generated ID
             db.collection("users")
@@ -44,7 +55,7 @@ public class UserDAO {
                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
-
+                            Toast.makeText(c.getApplicationContext(), "Dang ky thanh cong", Toast.LENGTH_SHORT).show();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
@@ -55,14 +66,13 @@ public class UserDAO {
                     });
         }
 
-        return false;
+        return true;
     }
-
+    boolean check=false;
 
     public boolean checkLogin(String taikhoan){
-        ArrayList<User> list = new ArrayList<>();
         // getData from firebase
-        db.collection("user")
+        db.collection("users")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -71,24 +81,48 @@ public class UserDAO {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Map<String, Object> map = document.getData();
                                 String username = map.get("username").toString();
-                                list.add(new User(username));
+                                if(username.equalsIgnoreCase(taikhoan)){
+                                    check=true;
+                                }
+                                Log.d("Tag checklogin",""+ username);
                             }
                         } else {
 
                         }
                     }
                 });
-        for(int i=0;i<=list.size();i++){
-            if(list.get(i).getUsername().equalsIgnoreCase(taikhoan)){
-                return false;
-            }
+        if(check==true){
+            return  true;
         }
-        return true;
+        return false;
+    }
+    public String findNumber(String sample) {
+            char[] chars = sample.toCharArray();
+            StringBuilder sb = new StringBuilder();
+            for(char c : chars){
+                if(Character.isDigit(c)){
+                    sb.append(c);
+                }
+            }
+            return sb.toString();
+
     }
     public boolean loginGoogle(String taikhoan){
+        // check taikhoan nay da co chua
+        if(checkLogin(taikhoan)==true){
+            return false;
+        }
 // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
-        user.put("username", "Ada");
+
+        user.put("username",taikhoan );
+        user.put("password","null" );
+        user.put("name","null" );
+        user.put("ngaysinh","null" );
+        user.put("diachi","null" );
+        String s1=taikhoan.substring(0,4);
+        String s2=findNumber(taikhoan);
+        user.put("id",s1+s2);
 
 // Add a new document with a generated ID
         db.collection("users")
@@ -107,37 +141,5 @@ public class UserDAO {
                 });
         return true;
     }
-//    public User login(String email, String password){
-//        User appUser = null;
-//        SQLiteDatabase db = database.getReadableDatabase();
-//        String sql = "SELECT ID, EMAIL, PASSWORD, ROLE FROM USERS WHERE EMAIL = ? ";
-//        Cursor cursor = db.rawQuery(sql, new String[] {email});
-//
-//        try {
-//            //co van de
-//
-//            if (cursor.getCount() == 0){
-//                Log.d(">>>>>>TAG", "rong roi");
-//            }
-//
-//            if (cursor.moveToFirst()){
-//                while (!cursor.isAfterLast()){
-//                    Integer _id = cursor.getInt(0);
-//                    String _email = cursor.getString(1);
-//                    String _password =cursor.getString(2);
-//                    Integer _role = cursor.getInt(3);
-//                    if(!_password.equals(password)) break;
-//
-//                    appUser = new AppUser(_id,_role, _email,null);
-//                    cursor.moveToNext();
-//                }
-//            }
-//        } catch (Exception e){
-//            Log.d(">>>>>>>>>>>>TAG",e.getMessage());
-//        } finally {
-//            if (cursor != null && !cursor.isClosed()) cursor.close();
-//        }
-//
-//        return appUser;
-//    }
+
 }

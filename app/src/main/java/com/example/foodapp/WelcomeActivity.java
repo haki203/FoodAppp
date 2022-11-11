@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.foodapp.Home.HomeActivity;
 import com.example.foodapp.dao.UserDAO;
@@ -67,34 +68,50 @@ public class WelcomeActivity extends AppCompatActivity {
                     Intent data = result.getData();
 
                     Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-
-
+////////////
+                    GoogleSignInAccount account = null;
                     try {
-                        GoogleSignInAccount account = task.getResult(ApiException.class);
-                        String email = account.getEmail();
-                        Log.d("Tag","onAcResult "+email);
+                        account = task.getResult(ApiException.class);
+                    } catch (ApiException e) {
+                        e.printStackTrace();
+                    }
+                    String email = account.getEmail();
+                    // ktra email neu co r thi thoi , neu ch co thi tao moi email do
 
-//                        // ktra email neu co r thi thoi , neu ch co thi tao moi email do
-//
-//                        UserDAO userDAO = new UserDAO(WelcomeActivity.this);
-//                        if(userDAO.checkLogin(email)){
-//                            Log.d("Tag ", " Co roi");
-//                        }else{
-//                            userDAO.loginGoogle(email);
-//                        }
-
-
-
-
+                    UserDAO userDAO = new UserDAO(WelcomeActivity.this);
+                    if(userDAO.loginGoogle(email)==false){
+                        Toast.makeText(WelcomeActivity.this, "Email "+email+" dang ky thang cong", Toast.LENGTH_SHORT).show();
                         // chuyen qua man hinh home
-                        Intent i = new Intent(WelcomeActivity.this, LoginActivity.class);
-                        startActivity(i);
-                        finish();
-                    }catch (Exception e){
-                        Intent i = new Intent(WelcomeActivity.this,HomeActivity.class);
+                        Intent i = new Intent(WelcomeActivity.this, HomeActivity.class);
                         startActivity(i);
                         finish();
                     }
+                    else {
+                        Toast.makeText(WelcomeActivity.this, "Email "+email+" dang nhap thang cong", Toast.LENGTH_SHORT).show();
+                        // chuyen qua man hinh home
+                        Intent i = new Intent(WelcomeActivity.this, HomeActivity.class);
+                        startActivity(i);
+                        finish();
+                    }
+//                    if(userDAO.checkLogin(email)==false){
+//                        Log.d("Tag: ", "email "+email +" da co roi");
+//                    }else{
+//                        userDAO.loginGoogle(email);
+//                    }
+
+
+//                    /////////
+//                    try {
+//
+//                        Log.d("Tag","onAcResult "+email);
+//
+//                        // chuyen qua man hinh home
+//                        Intent i = new Intent(WelcomeActivity.this, HomeActivity.class);
+//                        startActivity(i);
+//                        finish();
+//                    }catch (Exception e){
+//
+//                    }
 
                 }
             }

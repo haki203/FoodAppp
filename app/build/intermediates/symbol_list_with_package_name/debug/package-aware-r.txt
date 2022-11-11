@@ -2697,9 +2697,11 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_baseline_password_24
 drawable ic_call
 drawable ic_clock_black_24dp
 drawable ic_email_aboutme
+drawable ic_eye
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2928,7 +2930,6 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnDK
 id btnDN
-id btn_start_login
 id button
 id buttonPanel
 id cache_measures
@@ -3256,6 +3257,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_pass_btn
 id sin
 id skipCollapsed
 id skipped

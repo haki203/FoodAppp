@@ -2696,9 +2696,11 @@ int drawable design_password_eye 0x7f0700b0
 int drawable design_snackbar_background 0x7f0700b1
 int drawable googleg_disabled_color_18 0x7f0700b2
 int drawable googleg_standard_color_18 0x7f0700b3
+int drawable ic_baseline_password_24 0x7f070127
 int drawable ic_call 0x7f0700b4
 int drawable ic_clock_black_24dp 0x7f0700b5
 int drawable ic_email_aboutme 0x7f0700b6
+int drawable ic_eye 0x7f070128
 int drawable ic_keyboard_black_24dp 0x7f0700b7
 int drawable ic_launcher_background 0x7f0700b8
 int drawable ic_launcher_foreground 0x7f0700b9
@@ -2927,7 +2929,6 @@ int id browser_actions_menu_items 0x7f080070
 int id browser_actions_menu_view 0x7f080071
 int id btnDK 0x7f080072
 int id btnDN 0x7f080073
-int id btn_start_login 0x7f080074
 int id button 0x7f080075
 int id buttonPanel 0x7f080076
 int id cache_measures 0x7f080077
@@ -3255,6 +3256,7 @@ int id shortcut 0x7f0801b9
 int id showCustom 0x7f0801ba
 int id showHome 0x7f0801bb
 int id showTitle 0x7f0801bc
+int id show_pass_btn 0x7f08022d
 int id sin 0x7f0801bd
 int id skipCollapsed 0x7f0801be
 int id skipped 0x7f0801bf
