@@ -6,292 +6,446 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
+8-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
+9-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 10
 11    <queries>
-11-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:17:5-19:15
+11-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:17:5-19:15
 12        <package android:name="com.facebook.katana" />
-12-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:18:9-55
-12-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:18:18-52
-13    </queries>
-14
-15    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-15-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:16:5-79
-15-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:16:22-76
-16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-16-->[com.android.installreferrer:installreferrer:1.0] C:\Users\chien\.gradle\caches\transforms-3\4b55aa23f0c5038d01d3b204f44ec593\transformed\installreferrer-1.0\AndroidManifest.xml:9:5-110
-16-->[com.android.installreferrer:installreferrer:1.0] C:\Users\chien\.gradle\caches\transforms-3\4b55aa23f0c5038d01d3b204f44ec593\transformed\installreferrer-1.0\AndroidManifest.xml:9:22-107
-17
-18    <application
-18-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:5:5-70:19
-19        android:allowBackup="true"
-19-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:6:9-35
-20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.8.0] C:\Users\chien\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-21        android:dataExtractionRules="@xml/data_extraction_rules"
-21-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:7:9-65
-22        android:debuggable="true"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.FoodApp" >
-29-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:13:9-45
-30        <activity
-30-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:15:9-21:20
-31            android:name="com.example.foodapp.SplashActivity.AddAddressActivity"
-31-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:16:13-62
-32            android:exported="false" >
-32-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:17:13-37
-33            <meta-data
-33-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:18:13-20:36
-34                android:name="android.app.lib_name"
-34-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:19:17-52
-35                android:value="" />
-35-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:20:17-33
-36        </activity>
-37        <activity
-37-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:22:9-28:20
-38            android:name="com.example.foodapp.OTPActivity"
-38-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:23:13-40
-39            android:exported="false" >
-39-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:24:13-37
-40            <meta-data
-40-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:18:13-20:36
-41                android:name="android.app.lib_name"
-41-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:19:17-52
-42                android:value="" />
-42-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:20:17-33
-43        </activity>
-44        <activity
-44-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:29:9-40:20
-45            android:name="com.example.foodapp.LoginActivity"
-45-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:30:13-42
-46            android:exported="true" >
-46-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:31:13-36
-47            <intent-filter>
-47-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:32:13-36:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:33:17-69
-48-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:33:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:35:17-77
-50-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:35:27-74
-51            </intent-filter>
-52
-53            <meta-data
-53-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:18:13-20:36
-54                android:name="android.app.lib_name"
-54-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:19:17-52
-55                android:value="" />
-55-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:20:17-33
+12-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:18:9-55
+12-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:18:18-52
+13    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:12:5-79
+15-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:12:22-76
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:13:5-67
+16-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:13:22-64
+17    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+17-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\a776ae051c2666692a8fe9ac1ae767d1\transformed\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
+17-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\a776ae051c2666692a8fe9ac1ae767d1\transformed\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+18-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+18-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+19-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+20    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+20-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:16:5-79
+20-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:16:22-76
+21
+22    <application
+22-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:5:5-84:19
+23        android:allowBackup="true"
+23-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:6:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.8.0] C:\Users\tho38\.gradle\caches\transforms-3\102215101d21fdb02f0f27bbfd4ebd5d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:7:9-65
+26        android:debuggable="true"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:8:9-54
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:9:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:10:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:11:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:12:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.FoodApp" >
+33-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:13:9-45
+34        <activity
+34-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:15:9-21:20
+35            android:name="com.example.foodapp.OTPActivity"
+35-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:16:13-40
+36            android:exported="false" >
+36-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:17:13-37
+37            <meta-data
+37-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:18:13-20:36
+38                android:name="android.app.lib_name"
+38-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:19:17-52
+39                android:value="" />
+39-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-33
+40        </activity>
+41        <activity
+41-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:22:9-28:20
+42            android:name="com.example.foodapp.LoginActivity"
+42-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:23:13-42
+43            android:exported="false" >
+43-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:24:13-37
+44            <meta-data
+44-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:18:13-20:36
+45                android:name="android.app.lib_name"
+45-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:19:17-52
+46                android:value="" />
+46-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-33
+47        </activity>
+48        <activity
+48-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:29:9-37:20
+49            android:name="com.example.foodapp.SplashActivity.SplashActivity"
+49-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:30:13-58
+50            android:exported="true" >
+50-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:31:13-36
+51            <intent-filter>
+51-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:32:13-36:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:17-69
+52-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:17-77
+54-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:27-74
+55            </intent-filter>
 56        </activity>
 57        <activity
-57-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:41:9-43:49
-58            android:name="com.example.foodapp.SplashActivity.SplashActivity"
-58-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:42:13-58
-59            android:exported="false" />
-59-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:43:13-37
-60        <activity
-60-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:44:9-48:20
-61            android:name="com.example.foodapp.Category.CategoryActivity"
-61-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:45:13-54
-62            android:exported="false" >
-62-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:46:13-37
-63        </activity>
-64        <activity
-64-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:49:9-55:20
-65            android:name="com.example.foodapp.WelcomeActivity"
-65-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:50:13-44
-66            android:exported="false" >
-66-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:51:13-37
-67            <meta-data
-67-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:18:13-20:36
-68                android:name="android.app.lib_name"
-68-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:19:17-52
-69                android:value="" />
-69-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:20:17-33
-70        </activity>
-71        <activity
-71-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:56:9-62:20
-72            android:name="com.example.foodapp.RegisterActivity"
-72-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:57:13-45
-73            android:exported="false" >
-73-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:58:13-37
-74            <meta-data
-74-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:18:13-20:36
-75                android:name="android.app.lib_name"
-75-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:19:17-52
-76                android:value="" />
-76-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:20:17-33
-77        </activity>
-78        <activity
-78-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:63:9-69:20
-79            android:name="com.example.foodapp.MainActivity"
-79-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:64:13-41
-80            android:exported="false" >
-80-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:65:13-37
-81            <meta-data
-81-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:18:13-20:36
-82                android:name="android.app.lib_name"
-82-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:19:17-52
-83                android:value="" />
-83-->C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:20:17-33
-84        </activity>
-85        <activity
-85-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:22:9-25:66
-86            android:name="com.facebook.FacebookActivity"
-86-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:23:13-57
-87            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-87-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:24:13-96
-88            android:theme="@style/com_facebook_activity_theme" />
-88-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:25:13-63
-89        <activity android:name="com.facebook.CustomTabMainActivity" />
-89-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:26:9-71
-89-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:26:19-68
-90        <activity
-90-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:27:9-41:20
-91            android:name="com.facebook.CustomTabActivity"
-91-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:28:13-58
-92            android:exported="true" >
-92-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:29:13-36
-93            <intent-filter>
-93-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:31:13-40:29
-94                <action android:name="android.intent.action.VIEW" />
-94-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:32:17-69
-94-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:32:25-66
-95
-96                <category android:name="android.intent.category.DEFAULT" />
-96-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:34:17-76
-96-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:34:27-73
-97                <category android:name="android.intent.category.BROWSABLE" />
-97-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:35:17-78
-97-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:35:27-75
-98
-99                <data
-99-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:37:17-39:50
-100                    android:host="cct.com.example.foodapp"
-100-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:38:21-56
-101                    android:scheme="fbconnect" />
-101-->[com.facebook.android:facebook-common:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\04630e7a8b035195891918a6367ef520\transformed\facebook-common-15.1.0\AndroidManifest.xml:39:21-47
-102            </intent-filter>
-103        </activity>
-104        <activity
-104-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
-105            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-105-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
-106            android:excludeFromRecents="true"
-106-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
-107            android:exported="false"
-107-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
-108            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-108-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
-109        <!--
-110            Service handling Google Sign-In user revocation. For apps that do not integrate with
-111            Google Sign-In, this service will never be started.
-112        -->
-113        <service
-113-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
-114            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-114-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
-115            android:exported="true"
-115-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
-116            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-116-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
-117            android:visibleToInstantApps="true" />
-117-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\chien\.gradle\caches\transforms-3\935da69e634c9f4b2b719471c2d77928\transformed\play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
-118
-119        <activity
-119-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\chien\.gradle\caches\transforms-3\9df4caf478e8a4a3e6e06e7b0287a07e\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-120            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-120-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\chien\.gradle\caches\transforms-3\9df4caf478e8a4a3e6e06e7b0287a07e\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-121            android:exported="false"
-121-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\chien\.gradle\caches\transforms-3\9df4caf478e8a4a3e6e06e7b0287a07e\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-122-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\chien\.gradle\caches\transforms-3\9df4caf478e8a4a3e6e06e7b0287a07e\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-123
-124        <meta-data
-124-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\chien\.gradle\caches\transforms-3\22101baaa08a513511d2fe6a33f29de4\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-125            android:name="com.google.android.gms.version"
-125-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\chien\.gradle\caches\transforms-3\22101baaa08a513511d2fe6a33f29de4\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-126            android:value="@integer/google_play_services_version" />
-126-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\chien\.gradle\caches\transforms-3\22101baaa08a513511d2fe6a33f29de4\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-127        <!--
-128         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-129         with the application context. This config is merged in with the host app's manifest,
-130         but there can only be one provider with the same authority activated at any given
-131         point; so if the end user has two or more different apps that use Facebook SDK, only the
-132         first one will be able to use the provider. To work around this problem, we use the
-133         following placeholder in the authority to identify each host application as if it was
-134         a completely different provider.
-135        -->
-136        <provider
-136-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:29:9-32:40
-137            android:name="com.facebook.internal.FacebookInitProvider"
-137-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:30:13-70
-138            android:authorities="com.example.foodapp.FacebookInitProvider"
-138-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:31:13-72
-139            android:exported="false" />
-139-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:32:13-37
-140
-141        <receiver
-141-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:34:9-40:20
-142            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-142-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:35:13-86
-143            android:exported="false" >
-143-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:36:13-37
-144            <intent-filter>
-144-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:37:13-39:29
-145                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-145-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:38:17-95
-145-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:38:25-92
-146            </intent-filter>
-147        </receiver>
-148        <receiver
-148-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:41:9-47:20
-149            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
-149-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:42:13-118
-150            android:exported="false" >
-150-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:43:13-37
-151            <intent-filter>
-151-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:44:13-46:29
-152                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
-152-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:45:17-103
-152-->[com.facebook.android:facebook-core:15.1.0] C:\Users\chien\.gradle\caches\transforms-3\e64269cd46a373c373bee449164ef0f0\transformed\facebook-core-15.1.0\AndroidManifest.xml:45:25-100
-153            </intent-filter>
-154        </receiver>
-155
-156        <provider
-156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\chien\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-157            android:name="androidx.startup.InitializationProvider"
-157-->[androidx.emoji2:emoji2:1.2.0] C:\Users\chien\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-158            android:authorities="com.example.foodapp.androidx-startup"
-158-->[androidx.emoji2:emoji2:1.2.0] C:\Users\chien\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-159            android:exported="false" >
-159-->[androidx.emoji2:emoji2:1.2.0] C:\Users\chien\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-160            <meta-data
-160-->[androidx.emoji2:emoji2:1.2.0] C:\Users\chien\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-161                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-161-->[androidx.emoji2:emoji2:1.2.0] C:\Users\chien\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-162                android:value="androidx.startup" />
-162-->[androidx.emoji2:emoji2:1.2.0] C:\Users\chien\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-163            <meta-data
-163-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chien\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-164                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-164-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chien\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-165                android:value="androidx.startup" />
-165-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chien\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-166        </provider>
-167    </application>
-168
-169</manifest>
+57-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:38:9-45:20
+58            android:name="com.example.foodapp.Category.CategoryActivity"
+58-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:38:19-60
+59            android:exported="true" >
+59-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:39:13-36
+60            <intent-filter>
+60-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:32:13-36:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:17-69
+61-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:17-77
+63-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:27-74
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:46:9-57:20
+67            android:name="com.example.foodapp.WelcomeActivity"
+67-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:47:13-44
+68            android:exported="true" >
+68-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:48:13-36
+69            <meta-data
+69-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:18:13-20:36
+70                android:name="android.app.lib_name"
+70-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:19:17-52
+71                android:value="" />
+71-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-33
+72
+73            <intent-filter>
+73-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:32:13-36:29
+74                <action android:name="android.intent.action.MAIN" />
+74-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:17-69
+74-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:25-66
+75
+76                <category android:name="android.intent.category.LAUNCHER" />
+76-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:17-77
+76-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:27-74
+77            </intent-filter>
+78        </activity>
+79        <activity
+79-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:58:9-69:20
+80            android:name="com.example.foodapp.RegisterActivity"
+80-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:59:13-45
+81            android:exported="true" >
+81-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:60:13-36
+82            <meta-data
+82-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:18:13-20:36
+83                android:name="android.app.lib_name"
+83-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:19:17-52
+84                android:value="" />
+84-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-33
+85
+86            <intent-filter>
+86-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:32:13-36:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:17-69
+87-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:17-77
+89-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:27-74
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:70:9-76:20
+93            android:name="com.example.foodapp.MainActivity"
+93-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:71:13-41
+94            android:exported="false" >
+94-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:72:13-37
+95            <meta-data
+95-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:18:13-20:36
+96                android:name="android.app.lib_name"
+96-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:19:17-52
+97                android:value="" />
+97-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-33
+98        </activity>
+99        <activity
+99-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:77:9-83:20
+100            android:name="com.example.foodapp.Home.HomeActivity"
+100-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:78:13-46
+101            android:exported="false" >
+101-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:79:13-37
+102            <meta-data
+102-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:18:13-20:36
+103                android:name="android.app.lib_name"
+103-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:19:17-52
+104                android:value="" />
+104-->C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-33
+105        </activity>
+106        <activity
+106-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:22:9-25:66
+107            android:name="com.facebook.FacebookActivity"
+107-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:23:13-57
+108            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+108-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:24:13-96
+109            android:theme="@style/com_facebook_activity_theme" />
+109-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:25:13-63
+110        <activity android:name="com.facebook.CustomTabMainActivity" />
+110-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:26:9-71
+110-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:26:19-68
+111        <activity
+111-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:27:9-41:20
+112            android:name="com.facebook.CustomTabActivity"
+112-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:28:13-58
+113            android:exported="true" >
+113-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:29:13-36
+114            <intent-filter>
+114-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:31:13-40:29
+115                <action android:name="android.intent.action.VIEW" />
+115-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:32:17-69
+115-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:32:25-66
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:34:17-76
+117-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:34:27-73
+118                <category android:name="android.intent.category.BROWSABLE" />
+118-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:35:17-78
+118-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:35:27-75
+119
+120                <data
+120-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:37:17-39:50
+121                    android:host="cct.com.example.foodapp"
+121-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:38:21-56
+122                    android:scheme="fbconnect" />
+122-->[com.facebook.android:facebook-common:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2b76e51d367e6224243924a52f47351e\transformed\facebook-common-15.1.0\AndroidManifest.xml:39:21-47
+123            </intent-filter>
+124        </activity>
+125
+126        <service
+126-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:16:9-22:19
+127            android:name="com.google.firebase.components.ComponentDiscoveryService"
+127-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:17:13-84
+128            android:directBootAware="true"
+128-->[com.google.firebase:firebase-common:20.2.0] C:\Users\tho38\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+129            android:exported="false" >
+129-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:18:13-37
+130            <meta-data
+130-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:19:13-21:85
+131                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+131-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:20:17-111
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:21:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-database:19.2.0] C:\Users\tho38\.gradle\caches\transforms-3\6e777c05e4f531ba9aa0069c9f4e4e8e\transformed\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+134                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+134-->[com.google.firebase:firebase-database:19.2.0] C:\Users\tho38\.gradle\caches\transforms-3\6e777c05e4f531ba9aa0069c9f4e4e8e\transformed\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-database:19.2.0] C:\Users\tho38\.gradle\caches\transforms-3\6e777c05e4f531ba9aa0069c9f4e4e8e\transformed\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+136            <meta-data
+136-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\a776ae051c2666692a8fe9ac1ae767d1\transformed\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+137                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+137-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\a776ae051c2666692a8fe9ac1ae767d1\transformed\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\a776ae051c2666692a8fe9ac1ae767d1\transformed\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+140                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+140-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+142        </service>
+143
+144        <activity
+144-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
+145            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+145-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
+146            android:excludeFromRecents="true"
+146-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
+147            android:exported="false"
+147-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+148-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
+149        <!--
+150            Service handling Google Sign-In user revocation. For apps that do not integrate with
+151            Google Sign-In, this service will never be started.
+152        -->
+153        <service
+153-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
+154            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+154-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
+155            android:exported="true"
+155-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
+156            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+156-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
+157            android:visibleToInstantApps="true" />
+157-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
+158
+159        <receiver
+159-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+160            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+160-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+161            android:exported="true"
+161-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+162            android:permission="com.google.android.c2dm.permission.SEND" >
+162-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+163            <intent-filter>
+163-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+164                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+164-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+164-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\tho38\.gradle\caches\transforms-3\a2cd9ed403c766e6ca81abe9abbbdab8\transformed\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+165            </intent-filter>
+166        </receiver>
+167
+168        <activity
+168-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tho38\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+169            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+169-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tho38\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tho38\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+171            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+171-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tho38\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+172
+173        <provider
+173-->[com.google.firebase:firebase-common:20.2.0] C:\Users\tho38\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+174            android:name="com.google.firebase.provider.FirebaseInitProvider"
+174-->[com.google.firebase:firebase-common:20.2.0] C:\Users\tho38\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+175            android:authorities="com.example.foodapp.firebaseinitprovider"
+175-->[com.google.firebase:firebase-common:20.2.0] C:\Users\tho38\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+176            android:directBootAware="true"
+176-->[com.google.firebase:firebase-common:20.2.0] C:\Users\tho38\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+177            android:exported="false"
+177-->[com.google.firebase:firebase-common:20.2.0] C:\Users\tho38\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+178            android:initOrder="100" />
+178-->[com.google.firebase:firebase-common:20.2.0] C:\Users\tho38\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+179
+180        <receiver
+180-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+181            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+181-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+182            android:enabled="true"
+182-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+183            android:exported="false" >
+183-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+184        </receiver>
+185        <receiver
+185-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+186            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+186-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+187            android:enabled="true"
+187-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+188            android:exported="true"
+188-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+189            android:permission="android.permission.INSTALL_PACKAGES" >
+189-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+190            <intent-filter>
+190-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+191                <action android:name="com.android.vending.INSTALL_REFERRER" />
+191-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+191-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+192            </intent-filter>
+193        </receiver>
+194
+195        <service
+195-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+196            android:name="com.google.android.gms.measurement.AppMeasurementService"
+196-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+197            android:enabled="true"
+197-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+198            android:exported="false" />
+198-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+199        <service
+199-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+200-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+201            android:enabled="true"
+201-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+203            android:permission="android.permission.BIND_JOB_SERVICE" />
+203-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\tho38\.gradle\caches\transforms-3\f0595a2993fc1d8d7504f0a22e179d2c\transformed\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+204
+205        <meta-data
+205-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\tho38\.gradle\caches\transforms-3\0ccd676f36a88f843cf47f86b0f66e38\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+206            android:name="com.google.android.gms.version"
+206-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\tho38\.gradle\caches\transforms-3\0ccd676f36a88f843cf47f86b0f66e38\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+207            android:value="@integer/google_play_services_version" />
+207-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\tho38\.gradle\caches\transforms-3\0ccd676f36a88f843cf47f86b0f66e38\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+208        <!--
+209         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+210         with the application context. This config is merged in with the host app's manifest,
+211         but there can only be one provider with the same authority activated at any given
+212         point; so if the end user has two or more different apps that use Facebook SDK, only the
+213         first one will be able to use the provider. To work around this problem, we use the
+214         following placeholder in the authority to identify each host application as if it was
+215         a completely different provider.
+216        -->
+217        <provider
+217-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:29:9-32:40
+218            android:name="com.facebook.internal.FacebookInitProvider"
+218-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:30:13-70
+219            android:authorities="com.example.foodapp.FacebookInitProvider"
+219-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:31:13-72
+220            android:exported="false" />
+220-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:32:13-37
+221
+222        <receiver
+222-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:34:9-40:20
+223            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+223-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:35:13-86
+224            android:exported="false" >
+224-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:36:13-37
+225            <intent-filter>
+225-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:37:13-39:29
+226                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+226-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:38:17-95
+226-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:38:25-92
+227            </intent-filter>
+228        </receiver>
+229        <receiver
+229-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:41:9-47:20
+230            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+230-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:42:13-118
+231            android:exported="false" >
+231-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:43:13-37
+232            <intent-filter>
+232-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:44:13-46:29
+233                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+233-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:45:17-103
+233-->[com.facebook.android:facebook-core:15.1.0] C:\Users\tho38\.gradle\caches\transforms-3\2330e93e5a4a2b448b30ee4b03516989\transformed\facebook-core-15.1.0\AndroidManifest.xml:45:25-100
+234            </intent-filter>
+235        </receiver>
+236
+237        <provider
+237-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tho38\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+238            android:name="androidx.startup.InitializationProvider"
+238-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tho38\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+239            android:authorities="com.example.foodapp.androidx-startup"
+239-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tho38\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+240            android:exported="false" >
+240-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tho38\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+241            <meta-data
+241-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tho38\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+242                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+242-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tho38\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+243                android:value="androidx.startup" />
+243-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tho38\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+244            <meta-data
+244-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\tho38\.gradle\caches\transforms-3\4f04b5d013d4e9a91b26580011dee398\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+245                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+245-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\tho38\.gradle\caches\transforms-3\4f04b5d013d4e9a91b26580011dee398\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+246                android:value="androidx.startup" />
+246-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\tho38\.gradle\caches\transforms-3\4f04b5d013d4e9a91b26580011dee398\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+247        </provider>
+248    </application>
+249
+250</manifest>
