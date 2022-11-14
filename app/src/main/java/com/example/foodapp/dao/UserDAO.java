@@ -2,6 +2,7 @@ package com.example.foodapp.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
@@ -9,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.example.foodapp.CartActivity;
+import com.example.foodapp.Home.HomeActivity;
 import com.example.foodapp.models.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -68,9 +71,8 @@ public class UserDAO {
 
         return true;
     }
-    boolean check=false;
 
-    public boolean checkLogin(String taikhoan){
+    public boolean login(String taikhoan){
         // getData from firebase
         db.collection("users")
                 .get()
@@ -81,20 +83,26 @@ public class UserDAO {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Map<String, Object> map = document.getData();
                                 String username = map.get("username").toString();
+                                Log.d("Tagggggggggggg"," Email userDAO"+username);
                                 if(username.equalsIgnoreCase(taikhoan)){
-                                    check=true;
+                                    Log.d("Tag"," Email da ton tai, dang nhap thanh cong");
+                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    c.startActivity(i);
                                 }
-                                Log.d("Tag checklogin",""+ username);
+                                else{
+                                    Log.d("Tag"," dang ky email thanh cong");
+                                    loginGoogle(taikhoan);
+                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    c.startActivity(i);
+                                }
                             }
                         } else {
 
                         }
                     }
                 });
-        if(check==true){
-            return  true;
-        }
-        return false;
+        return true;
+
     }
     public String findNumber(String sample) {
             char[] chars = sample.toCharArray();
@@ -107,11 +115,9 @@ public class UserDAO {
             return sb.toString();
 
     }
+
+
     public boolean loginGoogle(String taikhoan){
-        // check taikhoan nay da co chua
-        if(checkLogin(taikhoan)==true){
-            return false;
-        }
 // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
 
