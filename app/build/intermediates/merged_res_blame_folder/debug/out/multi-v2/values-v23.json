@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-v23/values-v23.xml",
+=======
+            "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-v23/values-v23.xml",
+>>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
             "map": [
                 {
                     "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\132f0038de43ddeabec8a216a692e5f1\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
