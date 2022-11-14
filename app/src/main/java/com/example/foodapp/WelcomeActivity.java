@@ -39,14 +39,15 @@ public class WelcomeActivity extends AppCompatActivity {
         gsc = GoogleSignIn.getClient(WelcomeActivity.this,gso);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         SignInButton sib = findViewById(R.id.login_google_button);
-//ktra co login hay chua
-        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(WelcomeActivity.this);
-        if(account!= null){
-            // go home
-            Intent i = new Intent(WelcomeActivity.this,HomeActivity.class);
-            startActivity(i);
-            finish();
-        }
+
+////ktra co login hay chua
+//        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(WelcomeActivity.this);
+//        if(account!= null){
+//            // go home
+//            Intent i = new Intent(WelcomeActivity.this,HomeActivity.class);
+//            startActivity(i);
+//            finish();
+//        }
 
         sib.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,42 +77,11 @@ public class WelcomeActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     String email = account.getEmail();
+                    Log.d("Tag"," Emaill: "+email);
+
                     // ktra email neu co r thi thoi , neu ch co thi tao moi email do
-
                     UserDAO userDAO = new UserDAO(WelcomeActivity.this);
-                    if(userDAO.loginGoogle(email)==false){
-                        Toast.makeText(WelcomeActivity.this, "Email "+email+" dang ky thang cong", Toast.LENGTH_SHORT).show();
-                        // chuyen qua man hinh home
-                        Intent i = new Intent(WelcomeActivity.this, HomeActivity.class);
-                        startActivity(i);
-                        finish();
-                    }
-                    else {
-                        Toast.makeText(WelcomeActivity.this, "Email "+email+" dang nhap thang cong", Toast.LENGTH_SHORT).show();
-                        // chuyen qua man hinh home
-                        Intent i = new Intent(WelcomeActivity.this, HomeActivity.class);
-                        startActivity(i);
-                        finish();
-                    }
-//                    if(userDAO.checkLogin(email)==false){
-//                        Log.d("Tag: ", "email "+email +" da co roi");
-//                    }else{
-//                        userDAO.loginGoogle(email);
-//                    }
-
-
-//                    /////////
-//                    try {
-//
-//                        Log.d("Tag","onAcResult "+email);
-//
-//                        // chuyen qua man hinh home
-//                        Intent i = new Intent(WelcomeActivity.this, HomeActivity.class);
-//                        startActivity(i);
-//                        finish();
-//                    }catch (Exception e){
-//
-//                    }
+                    userDAO.login(email);
 
                 }
             }
