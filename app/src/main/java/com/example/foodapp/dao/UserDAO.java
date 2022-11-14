@@ -134,7 +134,7 @@ public class UserDAO {
                                     break;
                                 }
                                 else{
-
+                                    Toast.makeText(c.getApplicationContext(),"Sai ten dang nhap hoac mat khau",Toast.LENGTH_LONG).show();
                                 }
                             }
                         }
