@@ -1,10 +1,14 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-night-v8/values-night-v8.xml",
+=======
             "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-night-v8/values-night-v8.xml",
+>>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
             "map": [
                 {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +25,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -40,7 +44,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
