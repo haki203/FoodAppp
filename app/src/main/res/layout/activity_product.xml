@@ -182,6 +182,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_btn_primary"
                     android:text="Thêm vào giỏ hàng"
+                    android:gravity="center"
                     android:textSize="24sp"
                     android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
             </LinearLayout>
