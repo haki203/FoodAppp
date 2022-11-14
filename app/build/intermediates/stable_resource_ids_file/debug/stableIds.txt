@@ -274,10 +274,6 @@ com.example.foodapp:style/ThemeOverlay.Material3.MaterialAlertDialog = 0x7f12028
 com.example.foodapp:style/ThemeOverlay.Material3.Light = 0x7f12028d
 com.example.foodapp:style/ThemeOverlay.Material3.HarmonizedColors.Empty = 0x7f12028c
 com.example.foodapp:style/ThemeOverlay.Material3.HarmonizedColors = 0x7f12028b
-<<<<<<< HEAD
-=======
-com.example.foodapp:style/ThemeOverlay.Material3.FloatingActionButton.Tertiary = 0x7f12028a
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/ThemeOverlay.Material3.FloatingActionButton.Surface = 0x7f120289
 com.example.foodapp:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Secondary = 0x7f120284
 com.example.foodapp:style/Widget.MaterialComponents.MaterialCalendar.Day.Today = 0x7f1203ea
@@ -1363,11 +1359,6 @@ com.example.foodapp:dimen/mtrl_textinput_box_stroke_width_default = 0x7f060259
 com.example.foodapp:id/clear_text = 0x7f080089
 com.example.foodapp:id/circle3 = 0x7f080087
 com.example.foodapp:id/checked = 0x7f080085
-<<<<<<< HEAD
-=======
-com.example.foodapp:color/m3_text_button_foreground_color_selector = 0x7f0501b4
-com.example.foodapp:id/checkbox = 0x7f080084
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:id/center_vertical = 0x7f080080
 com.example.foodapp:attr/buttonBarNeutralButtonStyle = 0x7f030079
 com.example.foodapp:id/centerInside = 0x7f08007e
@@ -1450,7 +1441,6 @@ com.example.foodapp:id/BOTTOM_START = 0x7f080002
 com.example.foodapp:style/Widget.Material3.DrawerLayout = 0x7f12035a
 com.example.foodapp:attr/layout_scrollEffect = 0x7f030298
 com.example.foodapp:drawable/icon_heart = 0x7f0700d6
-<<<<<<< HEAD
 com.example.foodapp:drawable/welcome_da1 = 0x7f070137
 com.example.foodapp:drawable/test_level_drawable = 0x7f070134
 com.example.foodapp:drawable/register = 0x7f070133
@@ -1484,66 +1474,21 @@ com.example.foodapp:drawable/mtrl_ic_arrow_drop_up = 0x7f07010f
 com.example.foodapp:drawable/mtrl_ic_arrow_drop_down = 0x7f07010e
 com.example.foodapp:layout/m3_alert_dialog = 0x7f0b0049
 com.example.foodapp:drawable/mtrl_dialog_background = 0x7f07010c
-=======
-com.example.foodapp:drawable/welcome_da1 = 0x7f070136
-com.example.foodapp:drawable/test_level_drawable = 0x7f070133
-com.example.foodapp:drawable/register = 0x7f070132
-com.example.foodapp:attr/alertDialogTheme = 0x7f03002a
-com.example.foodapp:drawable/notification_template_icon_low_bg = 0x7f07012f
-com.example.foodapp:attr/arcMode = 0x7f030034
-com.example.foodapp:attr/motionDurationExtraLong1 = 0x7f0302fd
-com.example.foodapp:attr/textureBlurFactor = 0x7f030441
-com.example.foodapp:drawable/notification_icon_background = 0x7f07012d
-com.example.foodapp:drawable/notification_bg_normal_pressed = 0x7f07012c
-com.example.foodapp:drawable/notification_bg_low_normal = 0x7f070129
-com.example.foodapp:string/material_hour_suffix = 0x7f11006e
-com.example.foodapp:dimen/mtrl_calendar_navigation_height = 0x7f0601e9
-com.example.foodapp:drawable/notification_bg_low = 0x7f070128
-com.example.foodapp:drawable/mtrl_switch_track_decoration = 0x7f070123
-com.example.foodapp:drawable/mtrl_switch_track = 0x7f070122
-com.example.foodapp:drawable/mtrl_switch_thumb_checked_pressed = 0x7f07011a
-com.example.foodapp:drawable/mtrl_switch_thumb_checked = 0x7f070119
-com.example.foodapp:attr/motionDurationExtraLong2 = 0x7f0302fe
-com.example.foodapp:drawable/mtrl_popupmenu_background = 0x7f070116
-com.example.foodapp:attr/moveWhenScrollAtTop = 0x7f030329
-com.example.foodapp:color/m3_ref_palette_secondary60 = 0x7f050135
-com.example.foodapp:id/grouping = 0x7f08010b
-com.example.foodapp:drawable/mtrl_switch_thumb_pressed_unchecked = 0x7f07011e
-com.example.foodapp:drawable/mtrl_ic_indeterminate = 0x7f070114
-com.example.foodapp:style/Base.Widget.MaterialComponents.Snackbar = 0x7f12010a
-com.example.foodapp:color/m3_ref_palette_neutral95 = 0x7f050112
-com.example.foodapp:drawable/mtrl_ic_checkbox_unchecked = 0x7f070112
-com.example.foodapp:drawable/mtrl_ic_checkbox_checked = 0x7f070111
-com.example.foodapp:drawable/mtrl_ic_arrow_drop_up = 0x7f07010e
-com.example.foodapp:drawable/mtrl_ic_arrow_drop_down = 0x7f07010d
-com.example.foodapp:layout/m3_alert_dialog = 0x7f0b0049
-com.example.foodapp:drawable/mtrl_dialog_background = 0x7f07010b
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:color/m3_ref_palette_dynamic_primary40 = 0x7f0500d8
 com.example.foodapp:id/accessibility_custom_action_30 = 0x7f080028
 com.example.foodapp:id/accessibility_custom_action_10 = 0x7f080012
 com.example.foodapp:color/design_error = 0x7f05006b
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button_icon_unchecked_indeterminate = 0x7f07010a
 com.example.foodapp:drawable/mtrl_checkbox_button_icon_indeterminate_checked = 0x7f070107
 com.example.foodapp:attr/clockNumberTextColor = 0x7f0300d9
 com.example.foodapp:id/add = 0x7f08004b
 com.example.foodapp:color/m3_ref_palette_neutral_variant50 = 0x7f05011a
 com.example.foodapp:drawable/mtrl_checkbox_button_icon_checked_unchecked = 0x7f070106
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button_icon_unchecked_indeterminate = 0x7f070109
-com.example.foodapp:drawable/mtrl_checkbox_button_icon_indeterminate_checked = 0x7f070106
-com.example.foodapp:attr/clockNumberTextColor = 0x7f0300d9
-com.example.foodapp:id/add = 0x7f08004b
-com.example.foodapp:color/m3_ref_palette_neutral_variant50 = 0x7f05011a
-com.example.foodapp:drawable/mtrl_checkbox_button_icon_checked_unchecked = 0x7f070105
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:integer/mtrl_chip_anim_duration = 0x7f09003e
 com.example.foodapp:id/tag_state_description = 0x7f080216
 com.example.foodapp:id/accelerate = 0x7f08000e
 com.example.foodapp:style/ShapeAppearanceOverlay.MaterialAlertDialog.Material3 = 0x7f120175
 com.example.foodapp:id/visible_removing_fragment_view_tag = 0x7f08025d
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button_icon = 0x7f070104
 com.example.foodapp:drawable/messenger_button_send_round_shadow = 0x7f0700fe
 com.example.foodapp:layout/material_textinput_timepicker = 0x7f0b0055
@@ -1574,34 +1519,6 @@ com.example.foodapp:color/m3_text_button_foreground_color_selector = 0x7f0501b4
 com.example.foodapp:id/checkbox = 0x7f080084
 com.example.foodapp:style/ThemeOverlay.Material3.FloatingActionButton.Tertiary = 0x7f12028a
 com.example.foodapp:drawable/img_5 = 0x7f0700e2
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button_icon = 0x7f070103
-com.example.foodapp:drawable/messenger_button_send_round_shadow = 0x7f0700fd
-com.example.foodapp:layout/material_textinput_timepicker = 0x7f0b0055
-com.example.foodapp:color/mtrl_card_view_foreground = 0x7f050238
-com.example.foodapp:drawable/messenger_bubble_large_white = 0x7f0700f8
-com.example.foodapp:color/m3_ref_palette_dynamic_neutral_variant30 = 0x7f0500ca
-com.example.foodapp:drawable/material_ic_menu_arrow_down_black_24dp = 0x7f0700f5
-com.example.foodapp:dimen/mtrl_calendar_header_text_padding = 0x7f0601e1
-com.example.foodapp:drawable/material_ic_keyboard_arrow_right_black_24dp = 0x7f0700f4
-com.example.foodapp:drawable/material_ic_keyboard_arrow_left_black_24dp = 0x7f0700f1
-com.example.foodapp:drawable/material_ic_edit_black_24dp = 0x7f0700f0
-com.example.foodapp:drawable/material_ic_calendar_black_24dp = 0x7f0700ee
-com.example.foodapp:id/editText6 = 0x7f0800d9
-com.example.foodapp:string/com_facebook_smart_login_confirmation_title = 0x7f11003d
-com.example.foodapp:dimen/mtrl_snackbar_margin = 0x7f06024e
-com.example.foodapp:drawable/material_cursor_drawable = 0x7f0700ed
-com.example.foodapp:attr/chipStartPadding = 0x7f0300ba
-com.example.foodapp:drawable/m3_tabs_transparent_background = 0x7f0700ec
-com.example.foodapp:drawable/m3_tabs_rounded_line_indicator = 0x7f0700eb
-com.example.foodapp:attr/actionBarItemBackground = 0x7f030003
-com.example.foodapp:drawable/m3_tabs_line_indicator = 0x7f0700ea
-com.example.foodapp:drawable/m3_selection_control_ripple = 0x7f0700e8
-com.example.foodapp:id/disjoint = 0x7f0800c4
-com.example.foodapp:styleable/MaterialToolbar = 0x7f130060
-com.example.foodapp:drawable/m3_appbar_background = 0x7f0700e5
-com.example.foodapp:drawable/login_img = 0x7f0700e4
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/Base.Widget.Material3.CompoundButton.RadioButton = 0x7f1200f3
 com.example.foodapp:macro/m3_comp_fab_surface_container_color = 0x7f0c0012
 com.example.foodapp:attr/windowFixedHeightMajor = 0x7f0304a4
@@ -1641,11 +1558,7 @@ com.example.foodapp:integer/mtrl_btn_anim_delay_ms = 0x7f090037
 com.example.foodapp:id/confirmation_code = 0x7f08009b
 com.example.foodapp:id/group_divider = 0x7f08010a
 com.example.foodapp:dimen/m3_comp_extended_fab_primary_pressed_state_layer_opacity = 0x7f060104
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_dropdown_arrow = 0x7f07010d
-=======
-com.example.foodapp:drawable/mtrl_dropdown_arrow = 0x7f07010c
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:drawable/design_ic_visibility_off = 0x7f0700b0
 com.example.foodapp:color/abc_primary_text_disable_only_material_dark = 0x7f050009
 com.example.foodapp:drawable/ic_country = 0x7f0700bb
@@ -1707,11 +1620,7 @@ com.example.foodapp:id/SHOW_ALL = 0x7f080008
 com.example.foodapp:style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large = 0x7f12003b
 com.example.foodapp:drawable/abc_textfield_search_material = 0x7f070070
 com.example.foodapp:dimen/m3_comp_switch_unselected_hover_state_layer_opacity = 0x7f06011f
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_popupmenu_background_overlay = 0x7f070118
-=======
-com.example.foodapp:drawable/mtrl_popupmenu_background_overlay = 0x7f070117
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:drawable/abc_textfield_search_default_mtrl_alpha = 0x7f07006f
 com.example.foodapp:style/Widget.Material3.Snackbar.TextView = 0x7f12039c
 com.example.foodapp:drawable/abc_textfield_search_activated_mtrl_alpha = 0x7f07006e
@@ -1785,22 +1694,14 @@ com.example.foodapp:drawable/abc_control_background_material = 0x7f070035
 com.example.foodapp:style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Small = 0x7f12003c
 com.example.foodapp:id/east = 0x7f0800d2
 com.example.foodapp:drawable/abc_cab_background_top_mtrl_alpha = 0x7f070034
-<<<<<<< HEAD
 com.example.foodapp:drawable/notification_tile_bg = 0x7f070131
-=======
-com.example.foodapp:drawable/notification_tile_bg = 0x7f070130
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:id/never_display = 0x7f08019e
 com.example.foodapp:drawable/abc_cab_background_internal_bg = 0x7f070032
 com.example.foodapp:style/ThemeOverlay.MaterialComponents.BottomSheetDialog = 0x7f1202aa
 com.example.foodapp:style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small = 0x7f120020
 com.example.foodapp:attr/com_facebook_is_cropped = 0x7f03011b
 com.example.foodapp:attr/textInputOutlinedDenseStyle = 0x7f030437
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button_icon_unchecked_checked = 0x7f070109
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button_icon_unchecked_checked = 0x7f070108
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/Widget.Material3.LinearProgressIndicator = 0x7f120370
 com.example.foodapp:attr/ifTagNotSet = 0x7f030217
 com.example.foodapp:attr/nestedScrollFlags = 0x7f030331
@@ -1834,11 +1735,7 @@ com.example.foodapp:attr/materialCalendarHeaderConfirmButton = 0x7f0302c6
 com.example.foodapp:drawable/$mtrl_checkbox_button_icon_checked_indeterminate__0 = 0x7f07000a
 com.example.foodapp:dimen/mtrl_low_ripple_hovered_alpha = 0x7f06021d
 com.example.foodapp:drawable/$mtrl_checkbox_button_checked_unchecked__0 = 0x7f070007
-<<<<<<< HEAD
 com.example.foodapp:drawable/white_radius = 0x7f070139
-=======
-com.example.foodapp:drawable/white_radius = 0x7f070138
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:styleable/MotionHelper = 0x7f130067
 com.example.foodapp:drawable/$ic_launcher_foreground__0 = 0x7f070006
 com.example.foodapp:drawable/$avd_show_password__2 = 0x7f070005
@@ -1853,11 +1750,7 @@ com.example.foodapp:dimen/tooltip_vertical_padding = 0x7f06027e
 com.example.foodapp:dimen/tooltip_precise_anchor_threshold = 0x7f06027d
 com.example.foodapp:styleable/Spinner = 0x7f130082
 com.example.foodapp:layout/notification_template_part_time = 0x7f0b008d
-<<<<<<< HEAD
 com.example.foodapp:drawable/material_ic_clear_black_24dp = 0x7f0700f0
-=======
-com.example.foodapp:drawable/material_ic_clear_black_24dp = 0x7f0700ef
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:id/groups = 0x7f08010c
 com.example.foodapp:dimen/tooltip_margin = 0x7f06027b
 com.example.foodapp:attr/showDelay = 0x7f03039e
@@ -1877,11 +1770,7 @@ com.example.foodapp:attr/colorSurfaceVariant = 0x7f030113
 com.example.foodapp:drawable/ic_m3_chip_checked_circle = 0x7f0700c6
 com.example.foodapp:style/Base.Theme.MaterialComponents.CompactMenu = 0x7f12005c
 com.example.foodapp:dimen/notification_content_margin_start = 0x7f060269
-<<<<<<< HEAD
 com.example.foodapp:drawable/messenger_button_blue_bg_selector = 0x7f0700fd
-=======
-com.example.foodapp:drawable/messenger_button_blue_bg_selector = 0x7f0700fc
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/Widget.AppCompat.EditText = 0x7f1202df
 com.example.foodapp:color/m3_sys_color_dynamic_light_on_surface_variant = 0x7f05018b
 com.example.foodapp:dimen/notification_action_text_size = 0x7f060267
@@ -1906,13 +1795,8 @@ com.example.foodapp:attr/dayTodayStyle = 0x7f030161
 com.example.foodapp:id/accessibility_custom_action_18 = 0x7f08001a
 com.example.foodapp:id/split_action_bar = 0x7f0801f7
 com.example.foodapp:attr/flow_lastVerticalBias = 0x7f0301dd
-<<<<<<< HEAD
 com.example.foodapp:drawable/login = 0x7f0700e4
 com.example.foodapp:drawable/mtrl_ic_cancel = 0x7f070110
-=======
-com.example.foodapp:drawable/login = 0x7f0700e3
-com.example.foodapp:drawable/mtrl_ic_cancel = 0x7f07010f
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/tabTextColor = 0x7f0303fe
 com.example.foodapp:color/m3_ref_palette_secondary70 = 0x7f050136
 com.example.foodapp:dimen/mtrl_snackbar_background_corner_radius = 0x7f06024c
@@ -1973,11 +1857,7 @@ com.example.foodapp:dimen/mtrl_extended_fab_min_height = 0x7f06020b
 com.example.foodapp:dimen/mtrl_navigation_rail_default_width = 0x7f06022a
 com.example.foodapp:dimen/mtrl_extended_fab_end_padding = 0x7f060207
 com.example.foodapp:dimen/mtrl_extended_fab_translation_z_base = 0x7f060210
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_tabs_default_indicator = 0x7f070125
-=======
-com.example.foodapp:drawable/mtrl_tabs_default_indicator = 0x7f070124
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/showAnimationBehavior = 0x7f03039c
 com.example.foodapp:dimen/mtrl_extended_fab_elevation = 0x7f060206
 com.example.foodapp:dimen/mtrl_extended_fab_disabled_translation_z = 0x7f060205
@@ -2035,11 +1915,7 @@ com.example.foodapp:color/m3_ref_palette_dynamic_secondary70 = 0x7f0500e8
 com.example.foodapp:dimen/mtrl_calendar_header_content_padding = 0x7f0601db
 com.example.foodapp:attr/colorOnSecondaryContainer = 0x7f030100
 com.example.foodapp:attr/statusBarBackground = 0x7f0303cc
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button_icon_checked_indeterminate = 0x7f070105
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button_icon_checked_indeterminate = 0x7f070104
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/mtrl_calendar_days_of_week_height = 0x7f0601d9
 com.example.foodapp:dimen/mtrl_calendar_day_width = 0x7f0601d8
 com.example.foodapp:id/src_in = 0x7f0801fd
@@ -2099,11 +1975,7 @@ com.example.foodapp:dimen/material_time_picker_minimum_screen_height = 0x7f0601a
 com.example.foodapp:dimen/material_font_2_0_box_collapsed_padding_top = 0x7f060197
 com.example.foodapp:dimen/material_filled_edittext_font_2_0_padding_bottom = 0x7f060194
 com.example.foodapp:dimen/material_filled_edittext_font_1_3_padding_top = 0x7f060193
-<<<<<<< HEAD
 com.example.foodapp:drawable/img_lemon = 0x7f0700e3
-=======
-com.example.foodapp:drawable/img_lemon = 0x7f0700e2
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/material_emphasis_medium = 0x7f060191
 com.example.foodapp:attr/titleMargins = 0x7f030464
 com.example.foodapp:dimen/material_emphasis_high_type = 0x7f060190
@@ -2117,11 +1989,7 @@ com.example.foodapp:dimen/material_clock_size = 0x7f060189
 com.example.foodapp:dimen/material_clock_period_toggle_margin_left = 0x7f060187
 com.example.foodapp:dimen/material_clock_hand_center_dot_radius = 0x7f060181
 com.example.foodapp:id/view_transition = 0x7f080257
-<<<<<<< HEAD
 com.example.foodapp:drawable/messenger_bubble_small_blue = 0x7f0700fa
-=======
-com.example.foodapp:drawable/messenger_bubble_small_blue = 0x7f0700f9
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/m3_timepicker_display_stroke_width = 0x7f06017c
 com.example.foodapp:dimen/m3_sys_state_hover_state_layer_opacity = 0x7f06017a
 com.example.foodapp:dimen/m3_sys_state_focus_state_layer_opacity = 0x7f060179
@@ -2137,11 +2005,7 @@ com.example.foodapp:dimen/m3_sys_motion_easing_standard_control_y2 = 0x7f060173
 com.example.foodapp:macro/m3_comp_switch_unselected_pressed_state_layer_color = 0x7f0c003a
 com.example.foodapp:color/m3_sys_color_dynamic_light_on_surface = 0x7f05018a
 com.example.foodapp:dimen/m3_sys_motion_easing_standard_control_y1 = 0x7f060172
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_navigation_bar_item_background = 0x7f070116
-=======
-com.example.foodapp:drawable/mtrl_navigation_bar_item_background = 0x7f070115
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/m3_sys_motion_easing_linear_control_y1 = 0x7f06016a
 com.example.foodapp:color/m3_chip_background_color = 0x7f05008f
 com.example.foodapp:dimen/m3_sys_motion_easing_legacy_decelerate_control_y1 = 0x7f060166
@@ -2155,11 +2019,7 @@ com.example.foodapp:style/TextAppearance.AppCompat.Widget.PopupMenu.Header = 0x7
 com.example.foodapp:dimen/m3_sys_motion_easing_emphasized_decelerate_control_y2 = 0x7f06015b
 com.example.foodapp:drawable/$mtrl_checkbox_button_icon_indeterminate_unchecked__0 = 0x7f07000f
 com.example.foodapp:dimen/m3_sys_motion_easing_emphasized_decelerate_control_x2 = 0x7f060159
-<<<<<<< HEAD
 com.example.foodapp:drawable/messenger_bubble_large_blue = 0x7f0700f8
-=======
-com.example.foodapp:drawable/messenger_bubble_large_blue = 0x7f0700f7
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/mtrl_calendar_header_toggle_margin_top = 0x7f0601e3
 com.example.foodapp:dimen/m3_sys_motion_easing_emphasized_accelerate_control_x2 = 0x7f060155
 com.example.foodapp:style/Widget.MaterialComponents.TimePicker = 0x7f12041e
@@ -2172,11 +2032,7 @@ com.example.foodapp:dimen/material_textinput_default_width = 0x7f06019c
 com.example.foodapp:dimen/m3_sys_elevation_level5 = 0x7f060153
 com.example.foodapp:attr/horizontalOffsetWithText = 0x7f03020c
 com.example.foodapp:dimen/m3_sys_elevation_level3 = 0x7f060151
-<<<<<<< HEAD
 com.example.foodapp:drawable/material_ic_keyboard_arrow_previous_black_24dp = 0x7f0700f4
-=======
-com.example.foodapp:drawable/material_ic_keyboard_arrow_previous_black_24dp = 0x7f0700f3
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/Base.V24.Theme.Material3.Light.Dialog = 0x7f1200a4
 com.example.foodapp:dimen/m3_sys_elevation_level2 = 0x7f060150
 com.example.foodapp:layout/com_facebook_smart_device_dialog_fragment = 0x7f0b0031
@@ -2301,11 +2157,7 @@ com.example.foodapp:style/TextAppearance.Material3.MaterialTimePicker.Title = 0x
 com.example.foodapp:dimen/m3_bottomappbar_horizontal_padding = 0x7f0600d2
 com.example.foodapp:style/Base.V21.Theme.MaterialComponents.Dialog = 0x7f120097
 com.example.foodapp:attr/round = 0x7f03037f
-<<<<<<< HEAD
 com.example.foodapp:drawable/notification_template_icon_bg = 0x7f07012f
-=======
-com.example.foodapp:drawable/notification_template_icon_bg = 0x7f07012e
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/mtrl_btn_pressed_z = 0x7f0601c6
 com.example.foodapp:dimen/m3_bottomappbar_height = 0x7f0600d1
 com.example.foodapp:id/notification_main_column_container = 0x7f0801a7
@@ -2323,11 +2175,7 @@ com.example.foodapp:attr/tabIconTintMode = 0x7f0303e8
 com.example.foodapp:dimen/m3_badge_with_text_horizontal_offset = 0x7f0600c1
 com.example.foodapp:string/mtrl_picker_date_header_title = 0x7f110095
 com.example.foodapp:attr/triggerId = 0x7f030489
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_switch_thumb_unchecked_pressed = 0x7f070122
-=======
-com.example.foodapp:drawable/mtrl_switch_thumb_unchecked_pressed = 0x7f070121
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/layout_constraintCircleAngle = 0x7f030266
 com.example.foodapp:dimen/m3_badge_vertical_offset = 0x7f0600c0
 com.example.foodapp:attr/preserveIconSpacing = 0x7f030363
@@ -2499,11 +2347,7 @@ com.example.foodapp:style/TextAppearance.M3.Sys.Typescale.HeadlineSmall = 0x7f12
 com.example.foodapp:style/Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse = 0x7f1200d1
 com.example.foodapp:attr/listPreferredItemHeightLarge = 0x7f0302ab
 com.example.foodapp:dimen/abc_text_size_body_1_material = 0x7f06003f
-<<<<<<< HEAD
 com.example.foodapp:drawable/tooltip_frame_dark = 0x7f070135
-=======
-com.example.foodapp:drawable/tooltip_frame_dark = 0x7f070134
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/expandedTitleMarginEnd = 0x7f0301a9
 com.example.foodapp:dimen/abc_switch_padding = 0x7f06003e
 com.example.foodapp:attr/thumbColor = 0x7f030447
@@ -2602,11 +2446,7 @@ com.example.foodapp:dimen/abc_action_bar_content_inset_material = 0x7f060000
 com.example.foodapp:color/white = 0x7f050287
 com.example.foodapp:color/tooltip_background_light = 0x7f050286
 com.example.foodapp:color/tooltip_background_dark = 0x7f050285
-<<<<<<< HEAD
 com.example.foodapp:drawable/navigation_empty_icon = 0x7f070126
-=======
-com.example.foodapp:drawable/navigation_empty_icon = 0x7f070125
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:color/teal_700 = 0x7f050283
 com.example.foodapp:attr/civ_border_color = 0x7f0300d0
 com.example.foodapp:color/teal_200 = 0x7f050282
@@ -2954,22 +2794,14 @@ com.example.foodapp:dimen/m3_btn_max_width = 0x7f0600e0
 com.example.foodapp:id/select_dialog_listview = 0x7f0801e0
 com.example.foodapp:color/m3_sys_color_dark_tertiary = 0x7f050169
 com.example.foodapp:id/message = 0x7f080171
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_ic_error = 0x7f070114
-=======
-com.example.foodapp:drawable/mtrl_ic_error = 0x7f070113
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/itemTextAppearanceInactive = 0x7f030247
 com.example.foodapp:color/m3_sys_color_dark_surface_variant = 0x7f050168
 com.example.foodapp:macro/m3_comp_extended_fab_tertiary_container_color = 0x7f0c0009
 com.example.foodapp:color/mtrl_popupmenu_overlay_color = 0x7f050254
 com.example.foodapp:color/m3_sys_color_dark_surface = 0x7f050167
 com.example.foodapp:dimen/mtrl_exposed_dropdown_menu_popup_elevation = 0x7f060200
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_switch_thumb_unchecked = 0x7f070120
-=======
-com.example.foodapp:drawable/mtrl_switch_thumb_unchecked = 0x7f07011f
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/panelMenuListWidth = 0x7f030349
 com.example.foodapp:color/m3_sys_color_dark_secondary_container = 0x7f050166
 com.example.foodapp:attr/collapseIcon = 0x7f0300e3
@@ -3058,11 +2890,7 @@ com.example.foodapp:dimen/design_fab_image_size = 0x7f060082
 com.example.foodapp:color/m3_ref_palette_primary99 = 0x7f05012d
 com.example.foodapp:drawable/abc_item_background_holo_light = 0x7f070046
 com.example.foodapp:color/m3_ref_palette_primary80 = 0x7f05012a
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_bottomsheet_drag_handle = 0x7f070101
-=======
-com.example.foodapp:drawable/mtrl_bottomsheet_drag_handle = 0x7f070100
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/collapsedTitleGravity = 0x7f0300e5
 com.example.foodapp:attr/contrast = 0x7f03013d
 com.example.foodapp:attr/motionDurationShort1 = 0x7f030309
@@ -3075,11 +2903,7 @@ com.example.foodapp:id/switch1 = 0x7f08020c
 com.example.foodapp:attr/commitIcon = 0x7f030125
 com.example.foodapp:color/m3_ref_palette_neutral_variant60 = 0x7f05011b
 com.example.foodapp:attr/colorSurfaceInverse = 0x7f030112
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_switch_thumb_checked_unchecked = 0x7f07011c
-=======
-com.example.foodapp:drawable/mtrl_switch_thumb_checked_unchecked = 0x7f07011b
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/titleTextColor = 0x7f030467
 com.example.foodapp:color/m3_filled_icon_button_container_color_selector = 0x7f0500a9
 com.example.foodapp:color/m3_ref_palette_neutral_variant100 = 0x7f050116
@@ -3102,11 +2926,7 @@ com.example.foodapp:attr/drawerLayoutCornerSize = 0x7f030182
 com.example.foodapp:attr/chipIconEnabled = 0x7f0300b0
 com.example.foodapp:color/m3_ref_palette_error20 = 0x7f0500fd
 com.example.foodapp:style/Widget.Material3.Slider = 0x7f120399
-<<<<<<< HEAD
 com.example.foodapp:drawable/notification_bg_normal = 0x7f07012c
-=======
-com.example.foodapp:drawable/notification_bg_normal = 0x7f07012b
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.OutlinedBox.Dense = 0x7f1202a7
 com.example.foodapp:drawable/ic_person = 0x7f0700cf
 com.example.foodapp:id/view_tree_view_model_store_owner = 0x7f08025b
@@ -3123,11 +2943,7 @@ com.example.foodapp:id/fill = 0x7f0800f3
 com.example.foodapp:style/Widget.AppCompat.RatingBar.Indicator = 0x7f120302
 com.example.foodapp:attr/checkedIconGravity = 0x7f0300a4
 com.example.foodapp:attr/textOutlineColor = 0x7f03043c
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_switch_thumb_pressed = 0x7f07011d
-=======
-com.example.foodapp:drawable/mtrl_switch_thumb_pressed = 0x7f07011c
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/m3_sys_motion_easing_linear_control_y2 = 0x7f06016b
 com.example.foodapp:color/m3_calendar_item_disabled_text = 0x7f050087
 com.example.foodapp:id/action_image = 0x7f080040
@@ -3565,11 +3381,7 @@ com.example.foodapp:attr/hideOnContentScroll = 0x7f030203
 com.example.foodapp:id/beginning = 0x7f080062
 com.example.foodapp:attr/textAppearancePopupMenuHeader = 0x7f030421
 com.example.foodapp:id/textinput_prefix_text = 0x7f080236
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button = 0x7f070102
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button = 0x7f070101
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:color/m3_sys_color_dynamic_dark_inverse_primary = 0x7f05016d
 com.example.foodapp:color/highlighted_text_material_light = 0x7f05007e
 com.example.foodapp:color/m3_sys_color_dark_on_secondary = 0x7f05015c
@@ -3687,11 +3499,7 @@ com.example.foodapp:style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox.
 com.example.foodapp:attr/layout_constraintRight_toLeftOf = 0x7f03027a
 com.example.foodapp:color/abc_background_cache_hint_selector_material_dark = 0x7f050000
 com.example.foodapp:dimen/tooltip_corner_radius = 0x7f060279
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button_icon_indeterminate_unchecked = 0x7f070108
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button_icon_indeterminate_unchecked = 0x7f070107
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:string/bottomsheet_action_expand = 0x7f110020
 com.example.foodapp:layout/notification_template_media = 0x7f0b008a
 com.example.foodapp:attr/startIconDrawable = 0x7f0303c0
@@ -3726,11 +3534,7 @@ com.example.foodapp:attr/layout_constraintLeft_toLeftOf = 0x7f030277
 com.example.foodapp:attr/spinBars = 0x7f0303b2
 com.example.foodapp:id/BOTTOM_END = 0x7f080001
 com.example.foodapp:string/mtrl_picker_invalid_format_use = 0x7f11009a
-<<<<<<< HEAD
 com.example.foodapp:drawable/tooltip_frame_light = 0x7f070136
-=======
-com.example.foodapp:drawable/tooltip_frame_light = 0x7f070135
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/roundPercent = 0x7f030380
 com.example.foodapp:dimen/m3_comp_fab_primary_small_container_height = 0x7f06010f
 com.example.foodapp:drawable/com_facebook_button_send_background = 0x7f070087
@@ -3779,11 +3583,7 @@ com.example.foodapp:attr/showText = 0x7f0303a2
 com.example.foodapp:attr/saturation = 0x7f030381
 com.example.foodapp:attr/showPaths = 0x7f0303a1
 com.example.foodapp:id/imageView3 = 0x7f080122
-<<<<<<< HEAD
 com.example.foodapp:drawable/notify_panel_notification_icon_bg = 0x7f070132
-=======
-com.example.foodapp:drawable/notify_panel_notification_icon_bg = 0x7f070131
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/TextAppearance.MaterialComponents.Headline3 = 0x7f1201ec
 com.example.foodapp:attr/showMotionSpec = 0x7f0303a0
 com.example.foodapp:dimen/m3_small_fab_max_image_size = 0x7f06014a
@@ -3937,11 +3737,7 @@ com.example.foodapp:attr/marginHorizontal = 0x7f0302b5
 com.example.foodapp:attr/perpendicularPath_percent = 0x7f030355
 com.example.foodapp:color/com_facebook_blue = 0x7f050033
 com.example.foodapp:attr/layout_constraintLeft_toRightOf = 0x7f030278
-<<<<<<< HEAD
 com.example.foodapp:drawable/m3_popupmenu_background_overlay = 0x7f0700e7
-=======
-com.example.foodapp:drawable/m3_popupmenu_background_overlay = 0x7f0700e6
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/percentWidth = 0x7f030352
 com.example.foodapp:attr/tickColor = 0x7f030452
 com.example.foodapp:attr/colorPrimaryDark = 0x7f030109
@@ -3974,11 +3770,7 @@ com.example.foodapp:attr/controlBackground = 0x7f03013e
 com.example.foodapp:attr/paddingLeftSystemWindowInsets = 0x7f030342
 com.example.foodapp:color/material_dynamic_primary80 = 0x7f0501f0
 com.example.foodapp:attr/paddingEnd = 0x7f030341
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button_unchecked_checked = 0x7f07010b
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button_unchecked_checked = 0x7f07010a
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/paddingBottomSystemWindowInsets = 0x7f030340
 com.example.foodapp:style/Widget.Material3.FloatingActionButton.Small.Tertiary = 0x7f12036c
 com.example.foodapp:attr/overlay = 0x7f03033e
@@ -4165,11 +3957,7 @@ com.example.foodapp:layout/abc_expanded_menu_layout = 0x7f0b000d
 com.example.foodapp:attr/materialCalendarHeaderToggleButton = 0x7f0302cb
 com.example.foodapp:layout/material_timepicker = 0x7f0b0058
 com.example.foodapp:color/m3_sys_color_dynamic_dark_inverse_surface = 0x7f05016e
-<<<<<<< HEAD
 com.example.foodapp:drawable/m3_tabs_background = 0x7f0700ea
-=======
-com.example.foodapp:drawable/m3_tabs_background = 0x7f0700e9
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/materialCalendarHeaderTitle = 0x7f0302ca
 com.example.foodapp:id/ghost_view = 0x7f080105
 com.example.foodapp:color/m3_slider_active_track_color = 0x7f05014b
@@ -4208,11 +3996,7 @@ com.example.foodapp:dimen/design_bottom_navigation_margin = 0x7f06007a
 com.example.foodapp:attr/behavior_peekHeight = 0x7f03005d
 com.example.foodapp:color/design_default_color_on_background = 0x7f050060
 com.example.foodapp:animator/scale_with_alpha = 0x7f02001f
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_switch_thumb = 0x7f070119
-=======
-com.example.foodapp:drawable/mtrl_switch_thumb = 0x7f070118
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/ThemeOverlay.MaterialComponents.TimePicker = 0x7f1202c1
 com.example.foodapp:drawable/btn_checkbox_unchecked_mtrl = 0x7f07007a
 com.example.foodapp:attr/logoAdjustViewBounds = 0x7f0302b2
@@ -4325,11 +4109,7 @@ com.example.foodapp:dimen/mtrl_switch_text_padding = 0x7f060251
 com.example.foodapp:styleable/SwitchCompat = 0x7f130087
 com.example.foodapp:attr/layout_constraintVertical_weight = 0x7f030284
 com.example.foodapp:attr/layout_constraintTop_toTopOf = 0x7f030281
-<<<<<<< HEAD
 com.example.foodapp:drawable/notification_action_background = 0x7f070127
-=======
-com.example.foodapp:drawable/notification_action_background = 0x7f070126
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:integer/m3_sys_motion_duration_1000 = 0x7f090010
 com.example.foodapp:attr/strokeWidth = 0x7f0303d0
 com.example.foodapp:style/Widget.Material3.TextInputEditText.FilledBox.Dense = 0x7f1203a1
@@ -4343,11 +4123,7 @@ com.example.foodapp:attr/floatingActionButtonPrimaryStyle = 0x7f0301c9
 com.example.foodapp:attr/layout_constraintHorizontal_chainStyle = 0x7f030274
 com.example.foodapp:string/common_google_play_services_notification_ticker = 0x7f110046
 com.example.foodapp:attr/labelVisibilityMode = 0x7f030250
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_checkbox_button_checked_unchecked = 0x7f070103
-=======
-com.example.foodapp:drawable/mtrl_checkbox_button_checked_unchecked = 0x7f070102
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/material_clock_period_toggle_width = 0x7f060188
 com.example.foodapp:layout/fragment_frm_wallet = 0x7f0b0047
 com.example.foodapp:color/abc_search_url_text = 0x7f05000d
@@ -4426,11 +4202,7 @@ com.example.foodapp:color/material_dynamic_secondary10 = 0x7f0501f5
 com.example.foodapp:style/TextAppearance.AppCompat.Large = 0x7f120189
 com.example.foodapp:attr/textAppearanceHeadline1 = 0x7f03040f
 com.example.foodapp:attr/itemPaddingBottom = 0x7f030238
-<<<<<<< HEAD
 com.example.foodapp:drawable/messenger_button_white_bg_round = 0x7f0700ff
-=======
-com.example.foodapp:drawable/messenger_button_white_bg_round = 0x7f0700fe
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/Widget.Material3.MaterialCalendar.HeaderSelection.Fullscreen = 0x7f12037d
 com.example.foodapp:layout/design_text_input_start_icon = 0x7f0b0042
 com.example.foodapp:layout/abc_list_menu_item_icon = 0x7f0b000f
@@ -4480,15 +4252,9 @@ com.example.foodapp:attr/iconTintMode = 0x7f030215
 com.example.foodapp:dimen/mtrl_btn_text_btn_padding_right = 0x7f0601cb
 com.example.foodapp:dimen/m3_ripple_default_alpha = 0x7f060142
 com.example.foodapp:attr/iconPadding = 0x7f030211
-<<<<<<< HEAD
 com.example.foodapp:drawable/notification_bg = 0x7f070128
 com.example.foodapp:id/notification_main_column = 0x7f0801a6
 com.example.foodapp:drawable/material_ic_menu_arrow_up_black_24dp = 0x7f0700f7
-=======
-com.example.foodapp:drawable/notification_bg = 0x7f070127
-com.example.foodapp:id/notification_main_column = 0x7f0801a6
-com.example.foodapp:drawable/material_ic_menu_arrow_up_black_24dp = 0x7f0700f6
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/ShapeAppearanceOverlay.Material3.NavigationView.Item = 0x7f120174
 com.example.foodapp:attr/yearTodayStyle = 0x7f0304ad
 com.example.foodapp:attr/itemVerticalPadding = 0x7f030249
@@ -4582,11 +4348,7 @@ com.example.foodapp:dimen/mtrl_navigation_rail_text_bottom_margin = 0x7f06022f
 com.example.foodapp:attr/layout_wrapBehaviorInParent = 0x7f03029b
 com.example.foodapp:string/mtrl_checkbox_state_description_checked = 0x7f110089
 com.example.foodapp:attr/contentInsetRight = 0x7f030132
-<<<<<<< HEAD
 com.example.foodapp:drawable/messenger_button_white_bg_selector = 0x7f070100
-=======
-com.example.foodapp:drawable/messenger_button_white_bg_selector = 0x7f0700ff
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:color/m3_sys_color_dynamic_dark_on_tertiary = 0x7f050176
 com.example.foodapp:id/accessibility_custom_action_0 = 0x7f080010
 com.example.foodapp:attr/hintTextAppearance = 0x7f030207
@@ -4690,11 +4452,7 @@ com.example.foodapp:dimen/mtrl_slider_label_padding = 0x7f060243
 com.example.foodapp:attr/endIconDrawable = 0x7f030193
 com.example.foodapp:id/collapseActionView = 0x7f08008e
 com.example.foodapp:animator/mtrl_btn_unelevated_state_list_anim = 0x7f020013
-<<<<<<< HEAD
 com.example.foodapp:drawable/messenger_button_blue_bg_round = 0x7f0700fc
-=======
-com.example.foodapp:drawable/messenger_button_blue_bg_round = 0x7f0700fb
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:drawable/ic_location = 0x7f0700c3
 com.example.foodapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderCancelButton = 0x7f1203ee
 com.example.foodapp:attr/endIconContentDescription = 0x7f030192
@@ -4713,11 +4471,7 @@ com.example.foodapp:color/design_dark_default_color_secondary_variant = 0x7f0500
 com.example.foodapp:attr/editTextStyle = 0x7f03018a
 com.example.foodapp:style/Base.V21.Theme.MaterialComponents.Light = 0x7f120098
 com.example.foodapp:id/wide = 0x7f08025f
-<<<<<<< HEAD
 com.example.foodapp:drawable/m3_radiobutton_ripple = 0x7f0700e8
-=======
-com.example.foodapp:drawable/m3_radiobutton_ripple = 0x7f0700e7
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:styleable/BaseProgressIndicator = 0x7f130015
 com.example.foodapp:attr/onStateTransition = 0x7f03033b
 com.example.foodapp:attr/closeIconVisible = 0x7f0300e0
@@ -4915,11 +4669,7 @@ com.example.foodapp:style/Theme.MaterialComponents.Light.Dialog.Alert.Bridge = 0
 com.example.foodapp:attr/com_facebook_foreground_color = 0x7f030119
 com.example.foodapp:attr/colorOnPrimary = 0x7f0300fc
 com.example.foodapp:style/Widget.MaterialComponents.AppBarLayout.PrimarySurface = 0x7f1203b6
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_switch_thumb_pressed_checked = 0x7f07011e
-=======
-com.example.foodapp:drawable/mtrl_switch_thumb_pressed_checked = 0x7f07011d
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:id/counterclockwise = 0x7f0800aa
 com.example.foodapp:attr/textAppearanceHeadline2 = 0x7f030410
 com.example.foodapp:style/TextAppearance.Design.Suffix = 0x7f1201c1
@@ -5141,11 +4891,7 @@ com.example.foodapp:animator/m3_btn_state_list_anim = 0x7f02000a
 com.example.foodapp:attr/motionEasingStandardInterpolator = 0x7f030318
 com.example.foodapp:color/material_dynamic_secondary80 = 0x7f0501fd
 com.example.foodapp:dimen/com_facebook_profilepictureview_preset_size_large = 0x7f060065
-<<<<<<< HEAD
 com.example.foodapp:drawable/material_ic_keyboard_arrow_next_black_24dp = 0x7f0700f3
-=======
-com.example.foodapp:drawable/material_ic_keyboard_arrow_next_black_24dp = 0x7f0700f2
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:attr/keyboardIcon = 0x7f03024b
 com.example.foodapp:attr/badgeWidePadding = 0x7f03004f
 com.example.foodapp:attr/chainUseRtl = 0x7f03009b
@@ -5179,11 +4925,7 @@ com.example.foodapp:anim/btn_radio_to_on_mtrl_dot_group_animation = 0x7f010015
 com.example.foodapp:attr/checkedButton = 0x7f0300a0
 com.example.foodapp:attr/layout_constraintHorizontal_bias = 0x7f030273
 com.example.foodapp:attr/itemBackground = 0x7f03022e
-<<<<<<< HEAD
 com.example.foodapp:drawable/messenger_bubble_small_white = 0x7f0700fb
-=======
-com.example.foodapp:drawable/messenger_bubble_small_white = 0x7f0700fa
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:color/material_dynamic_primary60 = 0x7f0501ee
 com.example.foodapp:attr/boxCornerRadiusTopStart = 0x7f030071
 com.example.foodapp:attr/title = 0x7f03045b
@@ -5251,11 +4993,7 @@ com.example.foodapp:attr/boxStrokeColor = 0x7f030072
 com.example.foodapp:attr/maxVelocity = 0x7f0302ea
 com.example.foodapp:attr/titleMarginStart = 0x7f030462
 com.example.foodapp:macro/m3_comp_fab_primary_large_container_shape = 0x7f0c000e
-<<<<<<< HEAD
 com.example.foodapp:drawable/welcome_login = 0x7f070138
-=======
-com.example.foodapp:drawable/welcome_login = 0x7f070137
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Tertiary = 0x7f120286
 com.example.foodapp:color/abc_decor_view_status_guard_light = 0x7f050006
 com.example.foodapp:attr/scopeUris = 0x7f030383
@@ -5320,11 +5058,7 @@ com.example.foodapp:string/abc_action_menu_overflow_description = 0x7f110002
 com.example.foodapp:attr/state_collapsed = 0x7f0303c4
 com.example.foodapp:macro/m3_comp_switch_unselected_focus_track_color = 0x7f0c002f
 com.example.foodapp:attr/allowStacking = 0x7f03002b
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_ic_check_mark = 0x7f070111
-=======
-com.example.foodapp:drawable/mtrl_ic_check_mark = 0x7f070110
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:dimen/mtrl_high_ripple_hovered_alpha = 0x7f060219
 com.example.foodapp:attr/backgroundInsetStart = 0x7f030044
 com.example.foodapp:id/staticLayout = 0x7f080204
@@ -5357,11 +5091,7 @@ com.example.foodapp:attr/applyMotionScene = 0x7f030033
 com.example.foodapp:style/ShapeAppearance.MaterialComponents.SmallComponent = 0x7f12016b
 com.example.foodapp:attr/animationMode = 0x7f030031
 com.example.foodapp:style/Widget.AppCompat.Light.ActionBar.TabText.Inverse = 0x7f1202e7
-<<<<<<< HEAD
 com.example.foodapp:drawable/mtrl_switch_thumb_unchecked_checked = 0x7f070121
-=======
-com.example.foodapp:drawable/mtrl_switch_thumb_unchecked_checked = 0x7f070120
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:color/foreground_material_light = 0x7f05007c
 com.example.foodapp:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Title = 0x7f120148
 com.example.foodapp:id/accessibility_custom_action_28 = 0x7f080025
@@ -5503,11 +5233,7 @@ com.example.foodapp:attr/contentInsetStartWithNavigation = 0x7f030134
 com.example.foodapp:attr/onHide = 0x7f030337
 com.example.foodapp:style/Widget.Material3.FloatingActionButton.Surface = 0x7f12036d
 com.example.foodapp:id/edtNumber1 = 0x7f0800df
-<<<<<<< HEAD
 com.example.foodapp:drawable/notification_bg_low_pressed = 0x7f07012b
-=======
-com.example.foodapp:drawable/notification_bg_low_pressed = 0x7f07012a
->>>>>>> dcf8d642e399859452e01d14a4665c234f5ea903
 com.example.foodapp:id/material_minute_tv = 0x7f080167
 com.example.foodapp:drawable/abc_ic_menu_selectall_mtrl_alpha = 0x7f070041
 com.example.foodapp:attr/flow_firstHorizontalBias = 0x7f0301d3
