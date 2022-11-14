@@ -152,38 +152,38 @@
                         android:layout_weight="1"
                         ></TextView>
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="60dp"
                         android:layout_height="40dp"
                         android:background="@drawable/bg_white"
                         android:textColor="@color/primary"
                         android:textSize="24sp"
-                        android:text="-"></Button>
-                    <Button
+                        android:text="-"></androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="60dp"
                         android:layout_height="40dp"
                         android:background="@drawable/bg_white"
                         android:text="3"
                         android:textSize="20sp"
-                        android:textColor="@color/black"></Button>
+                        android:textColor="@color/black"></androidx.appcompat.widget.AppCompatButton>
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="60dp"
                         android:layout_height="40dp"
                         android:background="@drawable/bg_white"
                         android:text="+"
                         android:textSize="24sp"
-                        android:textColor="@color/primary"></Button>
+                        android:textColor="@color/primary"></androidx.appcompat.widget.AppCompatButton>
                 </LinearLayout>
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_btn_primary"
                     android:text="Thêm vào giỏ hàng"
                     android:textSize="24sp"
-                    android:textColor="@color/white"></Button>
+                    android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
             </LinearLayout>
 
         </LinearLayout>
