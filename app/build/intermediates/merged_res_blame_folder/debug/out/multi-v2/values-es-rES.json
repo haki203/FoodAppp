@@ -1,10 +1,14 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-es-rES/values-es-rES.xml",
+=======
+            "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-es-rES/values-es-rES.xml",
+>>>>>>> 0e9c0ac2c891c8fac5df1e67a3e29b0b5fad4204
             "map": [
                 {
-                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\3a73c1948614d5689c6df9343f95553d\\transformed\\facebook-login-15.1.0\\res\\values-es-rES\\values-es-rES.xml",
+                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3a73c1948614d5689c6df9343f95553d\\transformed\\facebook-login-15.1.0\\res\\values-es-rES\\values-es-rES.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

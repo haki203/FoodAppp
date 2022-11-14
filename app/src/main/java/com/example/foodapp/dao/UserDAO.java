@@ -115,7 +115,32 @@ public class UserDAO {
             return sb.toString();
 
     }
+    public void loginEmail(String taikhoan,String matkhau){
+        // getData from firebase
+        db.collection("users")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Map<String, Object> map = document.getData();
+                                String username = map.get("username").toString();
+                                String password = map.get("password").toString();
 
+                                if(username.equalsIgnoreCase(taikhoan)&& password.equalsIgnoreCase(matkhau) ){
+                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    c.startActivity(i);
+                                    break;
+                                }
+                                else{
+                                    Toast.makeText(c.getApplicationContext(),"Sai ten dang nhap hoac mat khau",Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        }
+                    }
+                });
+    }
 
     public boolean loginGoogle(String taikhoan){
 // Create a new user with a first and last name

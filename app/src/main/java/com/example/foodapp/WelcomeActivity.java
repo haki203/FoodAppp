@@ -25,6 +25,7 @@ import com.google.android.gms.tasks.Task;
 
 public class WelcomeActivity extends AppCompatActivity {
     //login gg
+
     GoogleSignInClient gsc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,14 @@ public class WelcomeActivity extends AppCompatActivity {
 
 //end google
     }
+    public void onSignIn(View view){
+        Intent i = new Intent(WelcomeActivity.this,LoginActivity.class);
+        startActivity(i);
+    }
+    public void onSignUp(View view){
+        Intent i = new Intent(WelcomeActivity.this,RegisterActivity.class);
+        startActivity(i);
+    }
 
     // nhan kq tra ve tu gg signin
     ActivityResultLauncher<Intent> googleLauncher = registerForActivityResult(
@@ -76,6 +85,7 @@ public class WelcomeActivity extends AppCompatActivity {
                     } catch (ApiException e) {
                         e.printStackTrace();
                     }
+
                     String email = account.getEmail();
                     Log.d("Tag"," Emaill: "+email);
 
