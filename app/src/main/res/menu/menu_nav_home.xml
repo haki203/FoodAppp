@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/do_an_vat"
+
+        android:icon="@drawable/ic_baseline_food"
+        android:title="Đồ ăn vặt"></item>
+
+    <item
+        android:id="@+id/com"
+        android:icon="@drawable/ic_baseline_rice_bowl_24"
+        android:title="Cơm"></item>
+
+    <item
+        android:id="@+id/tra_sua"
+        android:icon="@drawable/ts_frm_home"
+        android:title="Trà sữa"></item>
+    <item
+        android:id="@+id/banh_mi"
+        android:icon="@drawable/ic_baseline_cake_24"
+        android:title="Bánh"></item>
+
 
 </menu>

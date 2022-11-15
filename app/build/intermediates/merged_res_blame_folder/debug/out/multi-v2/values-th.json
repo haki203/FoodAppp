@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-th/values-th.xml",
-=======
             "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-th/values-th.xml",
->>>>>>> 0e9c0ac2c891c8fac5df1e67a3e29b0b5fad4204
             "map": [
                 {
                     "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\0ccd676f36a88f843cf47f86b0f66e38\\transformed\\play-services-basement-18.1.0\\res\\values-th\\values.xml",

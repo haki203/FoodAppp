@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-watch-v20/values-watch-v20.xml",
-=======
             "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-watch-v20/values-watch-v20.xml",
->>>>>>> 0e9c0ac2c891c8fac5df1e67a3e29b0b5fad4204
             "map": [
                 {
                     "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\da8e84889b4ea778fd7875b4ebfbbd77\\transformed\\play-services-auth-20.3.0\\res\\values-watch-v20\\values.xml",

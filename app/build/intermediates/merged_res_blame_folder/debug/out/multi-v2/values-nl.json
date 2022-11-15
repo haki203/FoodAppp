@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-nl/values-nl.xml",
-=======
             "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-nl/values-nl.xml",
->>>>>>> 0e9c0ac2c891c8fac5df1e67a3e29b0b5fad4204
             "map": [
                 {
                     "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3a73c1948614d5689c6df9343f95553d\\transformed\\facebook-login-15.1.0\\res\\values-nl\\values-nl.xml",
