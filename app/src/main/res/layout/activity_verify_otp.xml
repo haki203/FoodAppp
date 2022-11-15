@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F5F9"
-    >
+    tools:context=".VerifyOtpActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -42,6 +42,8 @@
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
+        android:maxLength="1"
+
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginLeft="9dp"
         app:layout_constraintHorizontal_bias="0.0"
@@ -58,6 +60,8 @@
         android:gravity="center"
         android:layout_marginLeft="9dp"
         android:hint="*"
+        android:maxLength="1"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/edtNumber2"
@@ -72,6 +76,8 @@
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
+        android:maxLength="1"
+
         android:layout_marginLeft="9dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -88,6 +94,8 @@
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
+        android:maxLength="1"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/edtNumber3"
@@ -113,6 +121,8 @@
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
+        android:maxLength="1"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,13 +138,14 @@
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
+        android:maxLength="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/edtNumber1"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/btnDN"
+        android:id="@+id/btn_send_otp_code"
         android:layout_width="347dp"
         android:layout_height="52dp"
         android:background="@drawable/custom_button_login"
@@ -158,18 +169,30 @@
         android:text="Không nhận được mã?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDN" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_send_otp_code" />
+
     <TextView
+        android:id="@+id/tv_send_otp_again_verifyOtp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textSize="13sp"
-        android:text="Gửi lại OTP"
         android:clickable="true"
         android:fontFamily="sans-serif-black"
+        android:text="Gửi lại OTP"
         android:textColor="#F000"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/not" />
+
+    <EditText
+        android:id="@+id/edt_otp_verifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập otp ở đây, còn ở trên thì t chịu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.734"
+        tools:layout_editor_absoluteX="25dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
