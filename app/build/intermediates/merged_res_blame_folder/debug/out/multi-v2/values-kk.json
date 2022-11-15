@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-kk/values-kk.xml",
+=======
             "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-kk/values-kk.xml",
+>>>>>>> 0e9c0ac2c891c8fac5df1e67a3e29b0b5fad4204
             "map": [
                 {
                     "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-kk\\values-kk.xml",

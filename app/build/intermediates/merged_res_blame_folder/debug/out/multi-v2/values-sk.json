@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-sk/values-sk.xml",
+=======
             "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-sk/values-sk.xml",
+>>>>>>> 0e9c0ac2c891c8fac5df1e67a3e29b0b5fad4204
             "map": [
                 {
                     "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\26b3666345201c303a3333024bb53271\\transformed\\play-services-base-18.0.1\\res\\values-sk\\values.xml",
