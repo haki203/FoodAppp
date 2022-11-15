@@ -9,8 +9,8 @@
     <FrameLayout
         android:id="@+id/frLayout"
         android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"></FrameLayout>
+        android:layout_gravity="start|top"
+        android:layout_height="match_parent"></FrameLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/bottom_nav"
             android:layout_marginRight="16dp"
+            app:labelVisibilityMode="labeled"
             app:menu="@menu/menu_bottom_nav"
             android:background="@drawable/bg_transparent"></com.google.android.material.bottomnavigation.BottomNavigationView>
     </com.google.android.material.bottomappbar.BottomAppBar>

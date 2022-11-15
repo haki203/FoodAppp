@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         UserDAO dao = new UserDAO(RegisterActivity.this);
         if(dao.register(number,password)){
             // chuyen qua man hinh home
-            Intent i = new Intent(RegisterActivity.this, HomeActivity.class);
+            Intent i = new Intent(RegisterActivity.this, CartActivity.class);
             startActivity(i);
             finish();
         }

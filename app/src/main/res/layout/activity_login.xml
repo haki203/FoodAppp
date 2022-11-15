@@ -51,7 +51,7 @@
         android:background="@drawable/custom_radius"
         android:drawableLeft="@drawable/ic_call"
         android:drawablePadding="18dp"
-        android:id="@+id/edtNumber"
+        android:id="@+id/edtNumberLogin"
         android:hint="Phone number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.227" />
 
     <EditText
-        android:id="@+id/edtPassword"
+        android:id="@+id/edtPasswordLogin"
         android:layout_width="376dp"
         android:layout_height="61dp"
         android:background="@drawable/custom_radius"
@@ -72,19 +72,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edtNumber"
+        app:layout_constraintTop_toTopOf="@+id/edtNumberLogin"
         app:layout_constraintVertical_bias="0.393" />
 
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#E91E63"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordLogin" />
     <Button
         android:id="@+id/btnDN"
         android:layout_width="376dp"
         android:layout_height="53dp"
+        android:onClick="Login"
         android:background="@drawable/custom_button_login"
         android:text="Đăng Nhập"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordLogin"
         app:layout_constraintVertical_bias="0.724" />
 </androidx.constraintlayout.widget.ConstraintLayout>
