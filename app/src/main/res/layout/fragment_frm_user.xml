@@ -58,7 +58,7 @@
             app:layout_constraintVertical_bias="0.084">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/icon_user" />
@@ -92,7 +92,7 @@
             app:layout_constraintVertical_bias="0.173">
 
             <ImageView
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_baseline_airplay_24" />
@@ -126,7 +126,7 @@
             app:layout_constraintVertical_bias="0.26">
 
             <ImageView
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/icon_heart" />
@@ -160,7 +160,7 @@
             app:layout_constraintVertical_bias="0.34">
 
             <ImageView
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_location" />
@@ -194,7 +194,7 @@
             app:layout_constraintVertical_bias="0.423">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/icon_bell" />
@@ -229,7 +229,7 @@
 
             <ImageView
                 android:id="@+id/logout"
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:onClick="LoginoutClick"
