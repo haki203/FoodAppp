@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutMeActivity"
-    android:paddingLeft="17dp"
+    android:background="#F4F5F9"
+    android:paddingLeft="8dp"
     android:paddingRight="17dp">
-<!--hehe-->
+    <!--hehe-->
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -48,12 +49,24 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         tools:layout_editor_absoluteX="10dp" />
 
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/white"
+        android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_person"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
@@ -67,10 +80,10 @@
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
+        android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_phone"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
@@ -84,10 +97,10 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
+        android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_email_aboutme"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
@@ -113,25 +126,27 @@
 
     <EditText
         android:id="@+id/et_matKhauHienTai"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/white"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
         android:hint="Mật khẩu hiện tại"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
+
         android:textColorHint="#868889"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        tools:layout_editor_absoluteX="10dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/editText12"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
+        android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
@@ -144,10 +159,10 @@
 
     <EditText
         android:id="@+id/et_matKhauMoi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/white"
+        android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
@@ -161,17 +176,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:background="@drawable/custom_button_login"
         android:text="Lưu cài đặt"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="15dp"
-        android:textAllCaps="false"
-
-        android:background="@drawable/custom_button_login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852"
+        tools:layout_editor_absoluteX="24dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

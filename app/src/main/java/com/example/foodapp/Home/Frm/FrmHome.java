@@ -13,11 +13,7 @@ import com.example.foodapp.R;
 import com.google.android.material.navigation.NavigationBarView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FrmHome#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class FrmHome extends Fragment {
 
     // TODO: Rename and change types and number of parameters

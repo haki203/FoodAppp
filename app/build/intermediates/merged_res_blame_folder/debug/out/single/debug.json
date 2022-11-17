@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_location.xml"
     },
     {
-        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\layout_fragment_frm_cart.xml.flat",
-        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\layout\\fragment_frm_cart.xml"
-    },
-    {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_baseline_food.xml.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_baseline_food.xml"
+    },
+    {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\layout_fragment_frm_cart.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\layout\\fragment_frm_cart.xml"
     },
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -38,6 +38,10 @@
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_password.xml.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\layout_dialog.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\layout\\dialog.xml"
     },
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable-v24_icon_bell.png.flat",
@@ -80,6 +84,10 @@
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_phone.xml"
     },
     {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_edit.xml"
+    },
+    {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\menu_menu_bottom_nav.xml.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\menu\\menu_bottom_nav.xml"
     },
@@ -106,6 +114,14 @@
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_baseline_rice_bowl_24.xml.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_baseline_rice_bowl_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_cho9.jpg.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\cho9.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_baseline_airplay_24.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_baseline_airplay_24.xml"
     },
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_country.png.flat",
@@ -260,6 +276,10 @@
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\custom_button_login.xml"
     },
     {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_fb.png.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\fb.png"
+    },
+    {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_launcher_background.xml"
     },
@@ -280,6 +300,10 @@
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_baseline_replay_24.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_baseline_replay_24.xml"
+    },
+    {
         "merged": "com.example.foodapp-merged_res-6:/layout_fragment_frm_user.xml.flat",
         "source": "com.example.foodapp-main-8:/layout/fragment_frm_user.xml"
     },
@@ -294,6 +318,10 @@
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable-v24_img_3.png.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable-v24\\img_3.png"
+    },
+    {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_baseline_add_location_alt_24.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_baseline_add_location_alt_24.xml"
     },
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_baseline_cake_24.xml.flat",
@@ -324,6 +352,10 @@
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_custom_avatar.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\custom_avatar.xml"
+    },
+    {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable-v24_icon_user.png.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable-v24\\icon_user.png"
     },
@@ -338,6 +370,10 @@
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\layout_activity_category.xml.flat",
         "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\layout\\activity_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_baseline_arrow_forward_ios_24.xml.flat",
+        "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-main-8:\\drawable\\ic_baseline_arrow_forward_ios_24.xml"
     },
     {
         "merged": "C:\\Users\\Buiva\\gradle-7.2-bin\\daemon\\7.4\\com.example.foodapp-merged_res-6:\\drawable_ic_keyboard_arrow_down.xml.flat",
