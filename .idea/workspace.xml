@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fe21cc94-e81c-4e10-9566-9b83f01f8665" name="Changes" comment="m">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/AddSanPhamActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/adapter/DoAnAdapter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/dao/SanPhamDAO.java" afterDir="false" />
@@ -27,17 +29,17 @@
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_lv_doan_frm.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_com.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_food.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/VerifyOtpActivity.java" afterDir="false" />
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex" afterDir="false" />
@@ -329,13 +331,35 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_frm_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_frm_home.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/OTPActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/OTPActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_otpactivity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_otpactivity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_otp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_otp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+=======
+    <list default="true" id="fe21cc94-e81c-4e10-9566-9b83f01f8665" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/Home/cart/CartAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/Home/cart/cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml" afterDir="false" />
+>>>>>>> 6c3649cc064b4e9839303347bfe611571ae72a61
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\tho38\.android\avd\Pixel_2_API_31_1.avd]" />
+=======
+<<<<<<< HEAD
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Acer nitro\.android\avd\Pixel_2_API_30_1.avd]" />
+>>>>>>> 6c3649cc064b4e9839303347bfe611571ae72a61
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -364,8 +388,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+=======
+        <option value="resourceFile" />
+<<<<<<< HEAD
+=======
+        <option value="layoutResourceFile" />
+>>>>>>> 6c3649cc064b4e9839303347bfe611571ae72a61
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
         <option value="Class" />
       </list>
     </option>
@@ -390,7 +422,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -398,11 +430,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\res\drawable" />
       <recent name="C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\res\drawable" />
       <recent name="D:\DuAn1\FoodAppp\app\src\main\res\drawable-v24" />
       <recent name="D:\DuAn1\FoodAppp\app\src\main\res\layout" />
       <recent name="D:\DuAn1\FoodAppp\app\src\main\java\com\example\foodapp" />
+      <recent name="C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\res\drawable" />
     </key>
     <key name="android.template.1614662123">
       <recent name="com.example.foodapp" />
@@ -422,7 +454,11 @@
     <key name="android.template.582677452">
       <recent name="com.example.foodapp.SplashActivity" />
     </key>
+<<<<<<< HEAD
     <key name="android.template.-529971561">
+=======
+    <key name="android.template.-1267258414">
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
       <recent name="com.example.foodapp" />
     </key>
     <key name="android.template.1371377353">
@@ -435,6 +471,7 @@
       <command value="gradle signingReport" />
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Android App.HomeActivity">
     <configuration name="AddSanPhamActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
       <module name="FoodApp.app.main" />
@@ -613,6 +650,9 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager" selected="Gradle.FoodAppp [signingReport]">
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="FoodApp.app.main" />
       <option name="DEPLOY" value="true" />
@@ -712,11 +752,58 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="FoodAppp [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="FoodAppp [signinreport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signinreport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Android App.HomeActivity" />
         <item itemvalue="Android App.RegisterActivity" />
         <item itemvalue="Android App.AddSanPhamActivity" />
+=======
+        <item itemvalue="Gradle.FoodAppp [signinreport]" />
+        <item itemvalue="Gradle.FoodAppp [signingReport]" />
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
         <item itemvalue="Gradle.FoodApp [signingReport]" />
         <item itemvalue="Gradle.FoodApp [signinreport]" />
       </list>
@@ -725,7 +812,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fe21cc94-e81c-4e10-9566-9b83f01f8665" name="Changes" comment="m" />
+      <changelist id="fe21cc94-e81c-4e10-9566-9b83f01f8665" name="Changes" comment="" />
       <created>1667353459569</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -759,7 +846,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667959433023</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="m">
+      <created>1668392709819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668392709819</updated>
+    </task>
+    <task id="LOCAL-00006" summary="m">
+      <created>1668514959386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668514959386</updated>
+    </task>
+    <task id="LOCAL-00007" summary="m">
+      <created>1668520453805</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668520453805</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

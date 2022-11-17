@@ -5,11 +5,80 @@
     android:layout_height="match_parent"
     tools:context=".Home.Frm.FrmCart">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="cart" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="top">
+
+        <Button
+            android:id="@+id/icon_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_left"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Giỏ hàng"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng giá:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250.000 VND"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_primary"
+            android:text="Thanh toán"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
 
 </FrameLayout>
