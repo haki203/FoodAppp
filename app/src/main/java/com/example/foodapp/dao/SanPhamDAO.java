@@ -1,0 +1,93 @@
+package com.example.foodapp.dao;
+
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+
+import com.example.foodapp.CartActivity;
+import com.example.foodapp.models.SanPham;
+import com.example.foodapp.models.User;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+public class SanPhamDAO {
+    Context c;
+    public SanPhamDAO(Context c){
+        this.c=c;
+    }
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    User user = null;
+
+    public ArrayList<SanPham> getData() throws InterruptedException {
+        ArrayList<SanPham> list = new ArrayList<SanPham>();
+        // getData from firebase
+        db.collection("products")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Map<String, Object> map = document.getData();
+                                String id = map.get("id").toString();
+                                Log.d("id product:",""+id);
+                                String name = map.get("name").toString();
+                                String loai = map.get("loai").toString();
+                                String mota = map.get("mota").toString();
+                                String tinhtrang = map.get("tinhtrang").toString();
+                                String hinh = map.get("hinh").toString();
+                                String gia = map.get("gia").toString();
+                                list.add(new SanPham(name,loai,mota,tinhtrang,hinh,id,gia));
+                            }
+                        }
+                    }
+                });
+        Log.d("list size dao:",""+list.size());
+        return list;
+    }
+    public void addData(SanPham sp){
+        // Create a new user with a first and last name
+        Map<String, Object> product = new HashMap<>();
+
+        product.put("name",sp.getName() );
+        product.put("gia",sp.getGia() );
+        product.put("loai",sp.getLoai() );
+        product.put("id",sp.getId() );
+        product.put("hinh",sp.getHinh() );
+        product.put("tinhtrang",sp.getTinhTrang() );
+        product.put("mota",sp.getMoTa() );
+
+
+// Add a new document with a generated ID
+        db.collection("products")
+                .add(product)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Log.d("TAG", "DocumentSnapshot added with ID: " + documentReference.getId());
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w("TAG", "Error adding document", e);
+                    }
+                });
+    }
+
+}
+

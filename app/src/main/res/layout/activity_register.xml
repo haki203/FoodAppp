@@ -102,6 +102,7 @@
         android:drawableLeft="@drawable/ic_call"
         android:drawablePadding="18dp"
         android:id="@+id/edtNumber"
+        android:inputType="number"
         android:hint="Số điện thoại"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -144,6 +145,7 @@
         app:layout_constraintVertical_bias="0.008" />
 
     <Button
+
         android:id="@+id/btnDN"
         android:layout_width="376dp"
         android:layout_height="53dp"

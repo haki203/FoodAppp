@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-34:/values-ur/values-ur.xml",
+=======
             "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-ur/values-ur.xml",
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
             "map": [
                 {
                     "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\26b3666345201c303a3333024bb53271\\transformed\\play-services-base-18.0.1\\res\\values-ur\\values.xml",

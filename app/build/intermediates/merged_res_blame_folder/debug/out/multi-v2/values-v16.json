@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-34:/values-v16/values-v16.xml",
+=======
             "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-v16/values-v16.xml",
+>>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
             "map": [
                 {
                     "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\102215101d21fdb02f0f27bbfd4ebd5d\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
