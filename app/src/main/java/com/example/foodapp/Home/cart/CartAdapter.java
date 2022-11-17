@@ -17,14 +17,14 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder> {
-    private List<cart> list;
+    private List<Cart> list;
     private Context context;
 
     public CartAdapter (Context context) {
         this.context = context;
     }
 
-    public void setData(List<cart> list) {
+    public void setData(List<Cart> list) {
         this.list = list;
         notifyDataSetChanged();
     }
@@ -38,7 +38,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
 
     @Override
     public void onBindViewHolder(@NonNull CartViewholder holder, int position) {
-        cart cart = list.get(position);
+        Cart cart = list.get(position);
         if (cart != null) {
             holder.tvName.setText(cart.getNameProduct());
             holder.tvPrice.setText(cart.getPrice().toString());

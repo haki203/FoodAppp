@@ -1,13 +1,13 @@
 package com.example.foodapp.Home.cart;
 
-public class cart {
+public class Cart {
     private int photo;
     private int id;
     private String nameProduct;
     private Double price;
     private int amount;
 
-    public cart(int photo, int id, String nameProduct, Double price, int amount) {
+    public Cart(int photo, int id, String nameProduct, Double price, int amount) {
         this.photo = photo;
         this.id = id;
         this.nameProduct = nameProduct;

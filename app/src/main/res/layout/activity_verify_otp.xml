@@ -7,15 +7,30 @@
     android:background="#F4F5F9"
     tools:context=".VerifyOtpActivity">
 
+
+    <Button
+        android:id="@+id/icon_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icon_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"></Button>
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
         android:text="Verify Number"
-
-        android:textSize="18sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
         android:fontFamily="sans-serif-black"
-        android:textColor="#F000"
         android:text="Verify your Number"
+        android:textColor="#F000"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -37,15 +52,15 @@
         android:id="@+id/edtNumber6"
         android:layout_width="50dp"
         android:layout_height="61dp"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/custom_radius"
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
-        android:maxLength="1"
 
+        android:maxLength="1"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginLeft="9dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/edtNumber5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -54,11 +69,11 @@
         android:id="@+id/edtNumber3"
         android:layout_width="50dp"
         android:layout_height="61dp"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/custom_radius"
         android:drawablePadding="18dp"
         android:gravity="center"
-        android:layout_marginLeft="9dp"
         android:hint="*"
         android:maxLength="1"
 
@@ -71,14 +86,14 @@
         android:id="@+id/edtNumber5"
         android:layout_width="50dp"
         android:layout_height="61dp"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/custom_radius"
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
-        android:maxLength="1"
 
-        android:layout_marginLeft="9dp"
+        android:maxLength="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/edtNumber4"
@@ -88,8 +103,8 @@
         android:id="@+id/edtNumber4"
         android:layout_width="50dp"
         android:layout_height="61dp"
-        android:layout_marginTop="32dp"
         android:layout_marginLeft="9dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/custom_radius"
         android:drawablePadding="18dp"
         android:gravity="center"
@@ -115,8 +130,8 @@
         android:id="@+id/edtNumber1"
         android:layout_width="50dp"
         android:layout_height="61dp"
-        android:layout_marginTop="32dp"
         android:layout_marginLeft="7dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/custom_radius"
         android:drawablePadding="18dp"
         android:gravity="center"
@@ -132,9 +147,9 @@
         android:id="@+id/edtNumber2"
         android:layout_width="50dp"
         android:layout_height="61dp"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/custom_radius"
-        android:layout_marginLeft="9dp"
         android:drawablePadding="18dp"
         android:gravity="center"
         android:hint="*"
@@ -161,12 +176,12 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <TextView
+        android:id="@+id/not"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textSize="15sp"
-        android:id="@+id/not"
         android:text="Không nhận được mã?"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_send_otp_code" />
