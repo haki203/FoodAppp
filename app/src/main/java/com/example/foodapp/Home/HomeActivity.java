@@ -2,6 +2,8 @@ package com.example.foodapp.Home;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,11 +21,13 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class HomeActivity extends AppCompatActivity {
     private BottomNavigationView botNav;
+
+
+    public static final int SCROLL_DELTA = 15; // Pixel.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
         botNav = findViewById(R.id.bottom_nav);
         ReplaceFrm(new FrmHome());
         botNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

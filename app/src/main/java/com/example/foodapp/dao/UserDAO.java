@@ -41,7 +41,38 @@ public class UserDAO {
     }
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     User user = null;
+    public void checkRegister(String username,String password){
+        // getData from firebase
+        db.collection("users")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Map<String, Object> map = document.getData();
+                                String username = map.get("username").toString();
+                                if(username.equalsIgnoreCase(username)){
+                                    Toast.makeText(c.getApplicationContext(), "Tai khoan nay da ton tai, dang nhap thanh cong",Toast.LENGTH_SHORT).show();
+                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    c.startActivity(i);
+                                }
+                                else{
+                                    Log.d("Tag"," dang ky thanh cong");
+                                    register(username,password);
+                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    c.startActivity(i);
+                                }
+                            }
+                        } else {
+
+                        }
+                    }
+                });
+
+    }
     public Boolean register(String username, String password) {
+
         // Create a new user with a first and last name
         Map<String, Object> item = new HashMap<>();
         item.put("username", username);
