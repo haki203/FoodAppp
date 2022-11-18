@@ -2,17 +2,8 @@ package com.example.foodapp.views;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-<<<<<<< HEAD:app/src/main/java/com/example/foodapp/views/HomeActivity.java
 import android.view.View;
 import android.widget.Toast;
-=======
-<<<<<<< HEAD
-=======
-import android.widget.Button;
-import android.widget.ScrollView;
-import android.widget.TextView;
->>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/HomeActivity.java
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,18 +27,13 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     private BottomNavigationView botNav;
+
+
+    public static final int SCROLL_DELTA = 15; // Pixel.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-<<<<<<< HEAD:app/src/main/java/com/example/foodapp/views/HomeActivity.java
-=======
-
-<<<<<<< HEAD
-=======
-        getDataIntent();
->>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/HomeActivity.java
         botNav = findViewById(R.id.bottom_nav);
         ReplaceFrm(new FrmHome());
         FloatingActionButton fl = findViewById(R.id.fl_btn);

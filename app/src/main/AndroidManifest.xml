@@ -14,9 +14,6 @@
         tools:targetApi="31">
 
         <activity
-<<<<<<< HEAD
-            android:name=".VerifyOtpActivity"
-=======
 
             android:name=".views.AddSanPhamActivity"
             android:exported="true">
@@ -30,61 +27,23 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
             android:name=".views.VerifyOtpActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-=======
-            android:name=".EnterVerifyOtpActivity"
->>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".CartActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".RecoveryPassword"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".OTPActivity"
-            android:exported="true">
-<<<<<<< HEAD
-=======
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-<<<<<<< HEAD
         </activity>
         <activity
             android:name=".views.CartActivity"
             android:exported="false">
-=======
->>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".views.RecoveryPassword"
@@ -114,22 +73,16 @@
         </activity>
         <activity
             android:name=".SplashActivity.SplashActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Category.CategoryActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".views.WelcomeActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-
         </activity>
         <activity
             android:name=".views.RegisterActivity"
@@ -141,15 +94,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79
 
->>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
         </activity>
         <activity
             android:name=".views.MainActivity"
@@ -164,14 +111,9 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-<<<<<<< HEAD
-
-
-=======
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
->>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
         </activity>
     </application>
 

@@ -1,12 +1,12 @@
 package com.example.foodapp.views;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,13 +27,27 @@ public class RegisterActivity extends AppCompatActivity {
     public void onRegister(View view){
         String number =sdt.getText().toString();
         String password = pass.getText().toString();
-        UserDAO dao = new UserDAO(RegisterActivity.this);
-        if(dao.register(number,password)){
-            // chuyen qua man hinh home
-            Intent i = new Intent(RegisterActivity.this, CartActivity.class);
-            startActivity(i);
-            finish();
+        if(number.equals("")){
+            Toast.makeText(this,"Sdt ko dc trong",Toast.LENGTH_SHORT).show();
+            sdt.requestFocus();
         }
+        else if(number.length()<10 || number.length()>11){
+            Toast.makeText(this,"Sdt ko dung dinh dang",Toast.LENGTH_SHORT).show();
+            sdt.requestFocus();
+        }
+        else if(password.length()<6){
+            Toast.makeText(this,"Password nhieu hon 6 ky tu",Toast.LENGTH_SHORT).show();
+            sdt.requestFocus();
+        }
+        else if(password.equals("")){
+            Toast.makeText(this,"Password ko dc trong",Toast.LENGTH_SHORT).show();
+            pass.requestFocus();
+        }
+        else {
+            UserDAO dao = new UserDAO(RegisterActivity.this);
+            dao.checkRegister(number,password);
+        }
+
     }
     public void ShowHidePass(View view){
 

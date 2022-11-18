@@ -1,22 +1,16 @@
 package com.example.foodapp.fragment;
 
-<<<<<<< HEAD:app/src/main/java/com/example/foodapp/fragment/FrmCart.java
 import android.annotation.SuppressLint;
 import android.content.Intent;
-=======
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/Frm/FrmHome.java
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD:app/src/main/java/com/example/foodapp/fragment/FrmCart.java
 import android.widget.Button;
-=======
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/Frm/FrmHome.java
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-<<<<<<< HEAD:app/src/main/java/com/example/foodapp/fragment/FrmCart.java
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -28,23 +22,14 @@ import com.example.foodapp.dao.SanPhamDAO;
 import com.example.foodapp.models.SanPham;
 import com.example.foodapp.views.HomeActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-=======
 
-import com.example.foodapp.R;
-import com.google.android.material.navigation.NavigationBarView;
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/Frm/FrmHome.java
+import java.util.ArrayList;
 
 
-<<<<<<< HEAD:app/src/main/java/com/example/foodapp/fragment/FrmCart.java
 public class FrmCart extends Fragment {
     RecyclerView recyclerView;
     ArrayList<SanPham> list;
     BottomNavigationView navigationView ;
-=======
-
-public class FrmHome extends Fragment {
-
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/Frm/FrmHome.java
     // TODO: Rename and change types and number of parameters
     public static FrmHome newInstance(String param1, String param2) {
         FrmHome fragment = new FrmHome();
@@ -57,8 +42,8 @@ public class FrmHome extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+
         }
-<<<<<<< HEAD:app/src/main/java/com/example/foodapp/fragment/FrmCart.java
         SanPhamDAO dao = new SanPhamDAO(getContext());
         list = new ArrayList<SanPham>();
         try {
@@ -117,15 +102,4 @@ public class FrmHome extends Fragment {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(gridLayoutManager);
     }
-=======
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_frm_home, container, false);
-        return view;
-    }
->>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/Frm/FrmHome.java
 }
