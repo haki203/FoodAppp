@@ -1,105 +1,88 @@
 package com.example.foodapp.fragment;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
+import static java.lang.String.format;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import com.example.foodapp.R;
-import com.example.foodapp.adapter.CartAdapter;
-import com.example.foodapp.dao.SanPhamDAO;
-import com.example.foodapp.models.SanPham;
-import com.example.foodapp.views.HomeActivity;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.example.foodapp.models.Cart;
+import com.example.suppermarket.Home.cart.CartAdapter;
+
 
 import java.util.ArrayList;
 
-
 public class FrmCart extends Fragment {
-    RecyclerView recyclerView;
-    ArrayList<SanPham> list;
-    BottomNavigationView navigationView ;
-    // TODO: Rename and change types and number of parameters
-    public static FrmHome newInstance(String param1, String param2) {
-        FrmHome fragment = new FrmHome();
+    private RecyclerView rcvCart;
+    private CartAdapter cartAdapter;
+    private ArrayList<Cart> listCart;
+    private TextView tvTongGia;
+
+    public FrmCart() {
+
+    }
+
+    public static FrmCart newInstance(ArrayList<Cart> listCart) {
+
+        FrmCart fragment = new FrmCart();
         Bundle args = new Bundle();
+        args.putSerializable("list_cart", listCart);
         fragment.setArguments(args);
+        Log.d(">>>>>>>>>>>>>..TAG", "newInstance: "+listCart+"");
         return fragment;
     }
+
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
+            listCart = (ArrayList<Cart>) getArguments().getSerializable("list_cart");
+            Log.d("TAG", "onCreate: "+ listCart);
         }
-        SanPhamDAO dao = new SanPhamDAO(getContext());
-        list = new ArrayList<SanPham>();
-        try {
-            list=dao.getGioHang();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Log.d("TAG", "onCreate: "+getArguments());
+    }
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_frm_cart, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        recyclerView=view.findViewById(R.id.rcvGioHang);
-        setAdapter();
+        tvTongGia = view.findViewById(R.id.tvTongGia);
+        rcvCart = view.findViewById(R.id.rcv_cart);
+        cartAdapter = new CartAdapter(getContext());
 
-        Button btnBack = view.findViewById(R.id.icon_left);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getContext(), HomeActivity.class);
-                getActivity().startActivity(i);
-                getActivity().finish();
-            }
-        });
-        Button btn = view.findViewById(R.id.btn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                recyclerView=view.findViewById(R.id.rcvGioHang);
-                setAdapter();
+        Log.e("TAG", "onViewCreated: "+listCart );
 
-            }
-        });
+        LinearLayoutManager linearLayoutManager =new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
+        rcvCart.setLayoutManager(linearLayoutManager);
 
-    }
+        cartAdapter.setData(listCart);
+        rcvCart.setAdapter(cartAdapter);
 
-    @SuppressLint("MissingInflatedId")
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        Integer tongGia = 0;
+        for (Cart cart : listCart) {
+            tongGia = tongGia + Integer.valueOf((int) (cart.getPrice()*cart.getAmount()));
+        }
 
-        View view=inflater.inflate(R.layout.fragment_frm_cart, container, false);
-        return view;
-    }
-    private void ReplaceFrm(Fragment fragment) {
-        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_container_home, fragment);
-        fragmentTransaction.commit();
-    }
-    private void setAdapter(){
-        CartAdapter adapter = new CartAdapter(list,getActivity().getApplicationContext());
-        LinearLayoutManager gridLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(gridLayoutManager);
+
+        tvTongGia.setText(tongGia.toString() + "VND");
     }
 }
