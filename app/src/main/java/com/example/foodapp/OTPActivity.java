@@ -29,45 +29,41 @@ public class OTPActivity extends AppCompatActivity {
 
     private static final String TAG = OTPActivity.class.getName();
 
-    private EditText edtPhoneNumber_OTPActivity;
-    private Button btnVerifyPhoneNumber_OTPActivity;
-    private FirebaseAuth mAuth_OTPActivity;
+    private EditText edtPhoneNumber;
+    private Button btnVerifyPhoneNumber;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otpactivity);
 
-        setTitleToolBar();
+
         unitui();
 
-        mAuth_OTPActivity = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
-        btnVerifyPhoneNumber_OTPActivity.setOnClickListener(new View.OnClickListener() {
+        btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strPhoneNumber_OTPActivity = edtPhoneNumber_OTPActivity.getText().toString().trim();
-                onClickVerifyPhoneNumber(strPhoneNumber_OTPActivity);
+                String strPhoneNumber = edtPhoneNumber.getText().toString().trim();
+                onClickVerifyPhoneNumber(strPhoneNumber);
                 
             }
         });
     }
 
 
-    private void setTitleToolBar(){
-        if (getSupportActionBar() != null){
-            getSupportActionBar().setTitle("OTP Activity");
-        }
-    }
+
 
     private void unitui(){
-        edtPhoneNumber_OTPActivity = findViewById(R.id.edt_phone_number_OTPActivity);
-        btnVerifyPhoneNumber_OTPActivity = findViewById(R.id.btn_verify_phone_number_OTPActivity);
+        edtPhoneNumber = findViewById(R.id.edt_phone_number_OTPActivity);
+        btnVerifyPhoneNumber = findViewById(R.id.btn_verify_phone_number_OTPActivity);
 
     }
-    private void onClickVerifyPhoneNumber(String strPhoneNumber_otpActivity) {
+    private void onClickVerifyPhoneNumber(String strPhoneNumber) {
         PhoneAuthOptions options =
-                PhoneAuthOptions.newBuilder(mAuth_OTPActivity)
-                        .setPhoneNumber(strPhoneNumber_otpActivity)       // Phone number to verify
+                PhoneAuthOptions.newBuilder(mAuth)
+                        .setPhoneNumber(strPhoneNumber)       // Phone number to verify
                         .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
                         .setActivity(this)                 // Activity (for callback binding)
                         .setCallbacks(new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -78,13 +74,16 @@ public class OTPActivity extends AppCompatActivity {
 
                             @Override
                             public void onVerificationFailed(@NonNull FirebaseException e) {
-                                Toast.makeText(OTPActivity.this,"Verification Failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(OTPActivity.this,
+                                        "Verification Failed", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onCodeSent(@NonNull String verifycationId, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                                 super.onCodeSent(verifycationId, forceResendingToken);
-                                goToVerifyOtpActivity(strPhoneNumber_otpActivity, verifycationId);
+
+                                goToEnterVerifyOtpActivity(strPhoneNumber, verifycationId);
+
                             }
                         })          // OnVerificationStateChangedCallbacks
                         .build();
@@ -95,7 +94,7 @@ public class OTPActivity extends AppCompatActivity {
 
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
-        mAuth_OTPActivity.signInWithCredential(credential)
+        mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -112,7 +111,8 @@ public class OTPActivity extends AppCompatActivity {
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 // The verification code entered was invalid
-                                Toast.makeText(OTPActivity.this, "The verification code entered was invalid", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(OTPActivity.this,
+                                        "The verification code entered was invalid", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
@@ -120,14 +120,14 @@ public class OTPActivity extends AppCompatActivity {
     }
 
     private void goToHomeActivity(String phoneNumber) {
-        Intent intent_OTPActivity=new Intent(this, HomeActivity.class);
-        intent_OTPActivity.putExtra("phone_number", phoneNumber);
-        startActivity(intent_OTPActivity);
+        Intent intent=new Intent(this, HomeActivity.class);
+        intent.putExtra("phone_number", phoneNumber);
+        startActivity(intent);
     }
-    private void goToVerifyOtpActivity(String strPhoneNumber_otpActivity, String verifycationId) {
-        Intent intent_OTPActivity=new Intent(this, HomeActivity.class);
-        intent_OTPActivity.putExtra("phone_number", strPhoneNumber_otpActivity);
-        intent_OTPActivity.putExtra("verifycation_id", verifycationId);
-        startActivity(intent_OTPActivity);
+    private void goToEnterVerifyOtpActivity(String strPhoneNumber, String verifycationId) {
+        Intent intent=new Intent(this, EnterVerifyOtpActivity.class);
+        intent.putExtra("phone_number", strPhoneNumber);
+        intent.putExtra("verifycation_id", verifycationId);
+        startActivity(intent);
     }
 }

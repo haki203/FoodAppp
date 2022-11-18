@@ -10,7 +10,21 @@
         android:id="@+id/frLayout"
         android:layout_width="match_parent"
         android:layout_gravity="start|top"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_user_inforHome"
+            android:layout_width="50dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/custom_radius"
+            android:drawablePadding="18dp"
+            android:gravity="center"
+            android:hint=""
+            android:maxLength="1"
+            android:textColor="#ffffff" />
+    </FrameLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"

@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp"
         tools:targetApi="31">
+
         <activity
-<<<<<<< HEAD
+
             android:name=".AddSanPhamActivity"
             android:exported="true">
             <meta-data
@@ -24,13 +25,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-=======
-            android:name=".VerifyOtpActivity"
+        </activity>
+        <activity
+            android:name=".EnterVerifyOtpActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
         </activity>
         <activity
             android:name=".CartActivity"
@@ -48,7 +49,12 @@
         </activity>
         <activity
             android:name=".OTPActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -79,15 +85,9 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-<<<<<<< HEAD
-=======
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
+
         </activity>
         <activity
             android:name=".MainActivity"
@@ -102,16 +102,9 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-=======
->>>>>>> 6c3649cc064b4e9839303347bfe611571ae72a61
-
+            </intent-filter>
         </activity>
     </application>
 

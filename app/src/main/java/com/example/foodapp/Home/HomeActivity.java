@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +29,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        getDataIntent();
         botNav = findViewById(R.id.bottom_nav);
         ReplaceFrm(new FrmHome());
         botNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -58,4 +61,12 @@ public class HomeActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frLayout, fragment);
         fragmentTransaction.commit();
     }
+
+    private void getDataIntent(){
+        String strPhoneNumber = getIntent().getStringExtra("phone_number");
+        TextView tvUserInfor = findViewById(R.id.tv_user_inforHome);
+        tvUserInfor.setText(strPhoneNumber);
+
+    }
+
 }

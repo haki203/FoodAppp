@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F5F9"
-    tools:context=".VerifyOtpActivity">
+    tools:context=".EnterVerifyOtpActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -189,7 +189,7 @@
         android:id="@+id/edt_otp_verifyOtp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập otp ở đây, còn ở trên thì t chịu"
+        android:hint="Nhập otp ở đây, còn ở trên thì chịu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.734"
