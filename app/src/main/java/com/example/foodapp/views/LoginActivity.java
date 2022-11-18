@@ -1,14 +1,14 @@
-package com.example.foodapp;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.foodapp.views;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.foodapp.R;
 import com.example.foodapp.dao.UserDAO;
 
 public class LoginActivity extends AppCompatActivity {

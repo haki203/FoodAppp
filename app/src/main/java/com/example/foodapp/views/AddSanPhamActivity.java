@@ -1,23 +1,16 @@
-package com.example.foodapp;
+package com.example.foodapp.views;
+
+import android.annotation.SuppressLint;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import android.os.Bundle;
-import android.util.Base64;
-import android.widget.ImageView;
-
+import com.example.foodapp.R;
 import com.example.foodapp.dao.SanPhamDAO;
 import com.example.foodapp.dao.changeIMG;
 import com.example.foodapp.models.SanPham;
-
-import java.io.ByteArrayOutputStream;
 
 public class AddSanPhamActivity extends AppCompatActivity {
     ImageView ivHinh;

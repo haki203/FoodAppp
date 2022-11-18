@@ -1,4 +1,10 @@
-package com.example.foodapp;
+package com.example.foodapp.views;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -6,14 +12,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Toast;
-
-import com.example.foodapp.Home.HomeActivity;
+import com.example.foodapp.R;
 import com.example.foodapp.dao.UserDAO;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -61,11 +60,11 @@ public class WelcomeActivity extends AppCompatActivity {
 //end google
     }
     public void onSignIn(View view){
-        Intent i = new Intent(WelcomeActivity.this,LoginActivity.class);
+        Intent i = new Intent(WelcomeActivity.this, LoginActivity.class);
         startActivity(i);
     }
     public void onSignUp(View view){
-        Intent i = new Intent(WelcomeActivity.this,RegisterActivity.class);
+        Intent i = new Intent(WelcomeActivity.this, RegisterActivity.class);
         startActivity(i);
     }
 

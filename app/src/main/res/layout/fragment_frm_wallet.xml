@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".Home.Frm.FrmWallet"
+    tools:context=".fragment.FrmWallet"
     android:orientation="vertical">
 
     <LinearLayout

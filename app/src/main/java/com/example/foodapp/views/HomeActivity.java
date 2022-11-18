@@ -1,10 +1,9 @@
-package com.example.foodapp.Home;
+package com.example.foodapp.views;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ScrollView;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,13 +11,19 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.foodapp.Home.Frm.FrmHome;
-import com.example.foodapp.Home.Frm.FrmNotification;
-import com.example.foodapp.Home.Frm.FrmUser;
-import com.example.foodapp.Home.Frm.FrmWallet;
 import com.example.foodapp.R;
+import com.example.foodapp.dao.SanPhamDAO;
+import com.example.foodapp.fragment.FrmCart;
+import com.example.foodapp.fragment.FrmHome;
+import com.example.foodapp.fragment.FrmNotification;
+import com.example.foodapp.fragment.FrmUser;
+import com.example.foodapp.fragment.FrmWallet;
+import com.example.foodapp.models.SanPham;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     private BottomNavigationView botNav;
@@ -29,10 +34,23 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        getDataIntent();
         botNav = findViewById(R.id.bottom_nav);
         ReplaceFrm(new FrmHome());
+        FloatingActionButton fl = findViewById(R.id.fl_btn);
+        fl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SanPhamDAO dao = new SanPhamDAO(HomeActivity.this);
+                try {
+                    ArrayList<SanPham> listGioHang = dao.getGioHang();
+                    ReplaceFrm(new FrmCart());
+                } catch (InterruptedException e) {
+                    Toast.makeText(HomeActivity.this,"Lỗi khi lấy thông tin giỏ hàng",Toast.LENGTH_SHORT).show();
+
+                }
+
+            }
+        });
         botNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -61,12 +79,4 @@ public class HomeActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frLayout, fragment);
         fragmentTransaction.commit();
     }
-
-    private void getDataIntent(){
-        String strPhoneNumber = getIntent().getStringExtra("phone_number");
-        TextView tvUserInfor = findViewById(R.id.tv_user_inforHome);
-        tvUserInfor.setText(strPhoneNumber);
-
-    }
-
 }

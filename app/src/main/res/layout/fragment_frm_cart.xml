@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.Frm.FrmCart">
+    tools:context=".fragment.FrmCart">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,12 +29,25 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="30dp"
+        android:background="@drawable/custom_button_add_cart"
+        android:layout_height="30dp"
+        android:drawableRight="@drawable/ic_baseline_360_24"
+        android:layout_gravity="right" />
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvGioHang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="60dp"
         ></androidx.recyclerview.widget.RecyclerView>
-
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/listFood"/>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,9 +73,17 @@
                 ></TextView>
 
             <TextView
+                android:id="@+id/txtPay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="250.000 VND"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" VND"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 ></TextView>
@@ -70,15 +91,17 @@
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_btn_primary"
+            android:background="@drawable/custom_button_login"
+            android:textAllCaps="false"
             android:text="Thanh toán"
+            android:layout_marginBottom="55dp"
             android:gravity="center"
-            android:textSize="24sp"
-            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+            android:textSize="26sp"
+            android:textColor="@color/white"></Button>
     </LinearLayout>
 
 </FrameLayout>

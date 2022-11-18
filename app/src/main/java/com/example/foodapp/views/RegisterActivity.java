@@ -1,8 +1,5 @@
-package com.example.foodapp;
+package com.example.foodapp.views;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
@@ -11,7 +8,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.foodapp.Home.HomeActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.foodapp.R;
 import com.example.foodapp.dao.UserDAO;
 
 public class RegisterActivity extends AppCompatActivity {

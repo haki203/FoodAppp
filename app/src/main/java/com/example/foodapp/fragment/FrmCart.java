@@ -1,38 +1,33 @@
-package com.example.foodapp.Home.Frm;
+package com.example.foodapp.fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodapp.R;
+import com.example.foodapp.adapter.CartAdapter;
 import com.example.foodapp.dao.SanPhamDAO;
-import com.example.foodapp.fragment.ComFragment;
-import com.example.foodapp.fragment.DoAnFragment;
 import com.example.foodapp.models.SanPham;
+import com.example.foodapp.views.HomeActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
 
 
-
-public class FrmHome extends Fragment {
-    private ScrollView scrollView;
-
-    private Button buttonScrollUp;
-    private Button buttonScrollDown;
+public class FrmCart extends Fragment {
+    RecyclerView recyclerView;
     ArrayList<SanPham> list;
     BottomNavigationView navigationView ;
     // TODO: Rename and change types and number of parameters
@@ -52,41 +47,38 @@ public class FrmHome extends Fragment {
         SanPhamDAO dao = new SanPhamDAO(getContext());
         list = new ArrayList<SanPham>();
         try {
-            list=dao.getData();
+            list=dao.getGioHang();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Log.d("list sp:",""+list.size());
 
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        recyclerView=view.findViewById(R.id.rcvGioHang);
+        setAdapter();
 
-
-        ReplaceFrm(DoAnFragment.newInstance(list));
-        navigationView.setSelectedItemId(R.id.do_an_vat);
-        navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        Button btnBack = view.findViewById(R.id.icon_left);
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.do_an_vat:
-                        ReplaceFrm(DoAnFragment.newInstance(list));
-                        break;
-                    case R.id.com:
-                        ReplaceFrm(new ComFragment());
-                        break;
-//                    case R.id.action_bell:
-//                        ReplaceFrm(new FrmNotification());
-//                        break;
-//                    case R.id.action_user:
-//                        ReplaceFrm(new FrmUser());
-//                        break;
-                }
-                return true;
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), HomeActivity.class);
+                getActivity().startActivity(i);
+                getActivity().finish();
             }
         });
+        Button btn = view.findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recyclerView=view.findViewById(R.id.rcvGioHang);
+                setAdapter();
+
+            }
+        });
+
     }
 
     @SuppressLint("MissingInflatedId")
@@ -95,8 +87,7 @@ public class FrmHome extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View view=inflater.inflate(R.layout.fragment_frm_home, container, false);
-        navigationView=view.findViewById(R.id.bottom_navigation_home);
+        View view=inflater.inflate(R.layout.fragment_frm_cart, container, false);
         return view;
     }
     private void ReplaceFrm(Fragment fragment) {
@@ -104,5 +95,11 @@ public class FrmHome extends Fragment {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_container_home, fragment);
         fragmentTransaction.commit();
+    }
+    private void setAdapter(){
+        CartAdapter adapter = new CartAdapter(list,getActivity().getApplicationContext());
+        LinearLayoutManager gridLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(gridLayoutManager);
     }
 }
