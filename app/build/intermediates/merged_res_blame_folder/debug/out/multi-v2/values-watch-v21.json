@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Acer nitro\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
+=======
             "outputFile": "com.example.foodapp-mergeDebugResources-35:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\chien\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

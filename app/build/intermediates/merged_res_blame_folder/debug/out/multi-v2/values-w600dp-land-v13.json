@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-40:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Acer nitro\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+=======
             "outputFile": "com.example.foodapp-mergeDebugResources-35:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\chien\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

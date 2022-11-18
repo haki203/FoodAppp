@@ -38,7 +38,11 @@
         android:layout_gravity="right" />
 
     <androidx.recyclerview.widget.RecyclerView
+<<<<<<< HEAD
         android:id="@+id/rcvGioHang"
+=======
+        android:id="@+id/rcv_cart"
+>>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|top"

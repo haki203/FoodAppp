@@ -19,6 +19,7 @@ import com.example.foodapp.models.SanPham;
 import java.util.ArrayList;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder> {
+<<<<<<< HEAD:app/src/main/java/com/example/foodapp/adapter/CartAdapter.java
     private ArrayList<SanPham> list;
     // Lưu Context để dễ dàng truy cập
     private Context mContext;
@@ -27,6 +28,16 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
         this.mContext = mContext;
     }
     public void setData(ArrayList<SanPham> list ) {
+=======
+    private List<Cart> list;
+    private Context context;
+
+    public CartAdapter (Context context) {
+        this.context = context;
+    }
+
+    public void setData(List<Cart> list) {
+>>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/cart/CartAdapter.java
         this.list = list;
         notifyDataSetChanged();
     }
@@ -40,6 +51,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
     }
     
     @Override
+<<<<<<< HEAD:app/src/main/java/com/example/foodapp/adapter/CartAdapter.java
     public void onBindViewHolder(@NonNull CartViewholder holder, @SuppressLint("RecyclerView") int position) {
         SanPham sp ;
         sp = list.get(position);
@@ -49,6 +61,15 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
             holder.tvAmout.setText(sp.getSoLuong());
             changeIMG change = new changeIMG();
             holder.imgProduct.setImageBitmap(change.convertStringToBitmap(sp.getHinh()));
+=======
+    public void onBindViewHolder(@NonNull CartViewholder holder, int position) {
+        Cart cart = list.get(position);
+        if (cart != null) {
+            holder.tvName.setText(cart.getNameProduct());
+            holder.tvPrice.setText(cart.getPrice().toString());
+            holder.tvAmout.setText(cart.getAmount());
+            holder.imgProduct.setImageResource(cart.getPhoto());
+>>>>>>> 4f74e166789148f70cb0973bc680fa633b23da79:app/src/main/java/com/example/foodapp/Home/cart/CartAdapter.java
 
             holder.btnTang.setOnClickListener(new View.OnClickListener() {
                 int i =Integer.parseInt(sp.getSoLuong().toString());
