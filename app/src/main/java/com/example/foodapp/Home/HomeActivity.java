@@ -2,6 +2,12 @@ package com.example.foodapp.Home;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+<<<<<<< HEAD
+=======
+import android.widget.Button;
+import android.widget.ScrollView;
+import android.widget.TextView;
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +30,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+<<<<<<< HEAD
+=======
+        getDataIntent();
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
         botNav = findViewById(R.id.bottom_nav);
         ReplaceFrm(new FrmHome());
         botNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -54,4 +64,12 @@ public class HomeActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frLayout, fragment);
         fragmentTransaction.commit();
     }
+
+    private void getDataIntent(){
+        String strPhoneNumber = getIntent().getStringExtra("phone_number");
+        TextView tvUserInfor = findViewById(R.id.tv_user_inforHome);
+        tvUserInfor.setText(strPhoneNumber);
+
+    }
+
 }

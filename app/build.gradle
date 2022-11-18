@@ -47,9 +47,21 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.1'
     implementation 'com.google.firebase:firebase-database:19.2.0'
 
+<<<<<<< HEAD
     implementation 'com.google.firebase:firebase-auth:21.1.0'
+=======
+
+
+
+
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation "androidx.cardview:cardview:1.0.0"
 
+<<<<<<< HEAD
+=======
+    implementation platform('com.google.firebase:firebase-bom:31.0.3')
+    implementation 'com.google.firebase:firebase-auth'
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
 }

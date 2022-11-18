@@ -26,18 +26,18 @@ import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
 
-public class VerifyOtpActivity extends AppCompatActivity {
+public class EnterVerifyOtpActivity extends AppCompatActivity {
 
-    static final String TAG = VerifyOtpActivity.class.getName();
+    private static final String TAG = EnterVerifyOtpActivity.class.getName();
 
-    private EditText edtOtp_VerifyOtpActivity;
-    private Button btnSendOtpCode_VerifyOtpActivity;
-    private TextView tvSendOtpAgain_VerifyOtpActivity;
+    private EditText edtOtp;
+    private Button btnSendOtpCode;
+    private TextView tvSendOtpAgain;
 
-    private FirebaseAuth mAuth_VerifyOtpActivity;
+    private FirebaseAuth mAuth;
 
-    private String mPhoneNumber_VerifyOtpActivity;
-    private String mVerifycationId_VerifyOtpActivity;
+    private String mPhoneNumber;
+    private String mVerifycationId;
 
     private PhoneAuthProvider.ForceResendingToken mForceResendingToken;
 
@@ -47,19 +47,19 @@ public class VerifyOtpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_verify_otp);
 
         getDataIntent();
-        setTitleToolBar();
+
         unitui();
 
-        mAuth_VerifyOtpActivity = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
-        btnSendOtpCode_VerifyOtpActivity.setOnClickListener(new View.OnClickListener() {
+        btnSendOtpCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strOtp_VerifyOtpActivity = edtOtp_VerifyOtpActivity.getText().toString().trim();
-                onClickSendOtpCode(strOtp_VerifyOtpActivity);
+                String strOtp = edtOtp.getText().toString().trim();
+                onClickSendOtpCode(strOtp);
             }
         });
-        tvSendOtpAgain_VerifyOtpActivity.setOnClickListener(new View.OnClickListener() {
+        tvSendOtpAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onClickSendOtpAgain();
@@ -68,24 +68,19 @@ public class VerifyOtpActivity extends AppCompatActivity {
     }
 
     private void getDataIntent(){
-        mPhoneNumber_VerifyOtpActivity = getIntent().getStringExtra("phone_number");
-        mVerifycationId_VerifyOtpActivity = getIntent().getStringExtra("verifycation_id");
+        mPhoneNumber = getIntent().getStringExtra("phone_number");
+        mVerifycationId = getIntent().getStringExtra("verifycation_id");
     }
 
-    private void setTitleToolBar(){
-        if (getSupportActionBar() != null){
-            getSupportActionBar().setTitle("Verify Otp Activity");
-        }
-    }
 
-    private void onClickSendOtpCode(String strOtp_verifyOtpActivity) {
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerifycationId_VerifyOtpActivity, strOtp_verifyOtpActivity);
+    private void onClickSendOtpCode(String strOtp) {
+        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerifycationId, strOtp);
         signInWithPhoneAuthCredential(credential);
     }
     private void onClickSendOtpAgain() {
         PhoneAuthOptions options =
-                PhoneAuthOptions.newBuilder(mAuth_VerifyOtpActivity)
-                        .setPhoneNumber(mPhoneNumber_VerifyOtpActivity)       // Phone number to verify
+                PhoneAuthOptions.newBuilder(mAuth)
+                        .setPhoneNumber(mPhoneNumber)       // Phone number to verify
                         .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
                         .setActivity(this)                 // Activity (for callback binding)
                         .setForceResendingToken(mForceResendingToken)
@@ -97,13 +92,14 @@ public class VerifyOtpActivity extends AppCompatActivity {
 
                             @Override
                             public void onVerificationFailed(@NonNull FirebaseException e) {
-                                Toast.makeText(VerifyOtpActivity.this,"Verification Failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(EnterVerifyOtpActivity.this,
+                                        "Verification Failed", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onCodeSent(@NonNull String verifycationId, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                                 super.onCodeSent(verifycationId, forceResendingToken);
-                                mVerifycationId_VerifyOtpActivity = verifycationId;
+                                mVerifycationId = verifycationId;
                                 mForceResendingToken = forceResendingToken;
                             }
                         })          // OnVerificationStateChangedCallbacks
@@ -112,7 +108,7 @@ public class VerifyOtpActivity extends AppCompatActivity {
     }
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
-        mAuth_VerifyOtpActivity.signInWithCredential(credential)
+        mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -129,22 +125,23 @@ public class VerifyOtpActivity extends AppCompatActivity {
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 // The verification code entered was invalid
-                                Toast.makeText(VerifyOtpActivity.this, "The verification code entered was invalid", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(EnterVerifyOtpActivity.this,
+                                        "The verification code entered was invalid", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
                 });
     }
     private void goToHomeActivity(String phoneNumber) {
-        Intent intent_OTPActivity=new Intent(this, HomeActivity.class);
-        intent_OTPActivity.putExtra("phone_number", phoneNumber);
-        startActivity(intent_OTPActivity);
+        Intent intent=new Intent(this, HomeActivity.class);
+        intent.putExtra("phone_number", phoneNumber);
+        startActivity(intent);
     }
 
     private void unitui(){
-        edtOtp_VerifyOtpActivity = findViewById(R.id.edt_phone_number_OTPActivity);
-        btnSendOtpCode_VerifyOtpActivity = findViewById(R.id.btn_verify_phone_number_OTPActivity);
-        tvSendOtpAgain_VerifyOtpActivity = findViewById(R.id.tv_send_otp_again_verifyOtp);
+        edtOtp = findViewById(R.id.edt_otp_verifyOtp);
+        btnSendOtpCode = findViewById(R.id.btn_send_otp_code);
+        tvSendOtpAgain = findViewById(R.id.tv_send_otp_again_verifyOtp);
 
     }
 }

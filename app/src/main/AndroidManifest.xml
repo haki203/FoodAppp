@@ -12,8 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp"
         tools:targetApi="31">
+
         <activity
+<<<<<<< HEAD
             android:name=".VerifyOtpActivity"
+=======
+
+            android:name=".AddSanPhamActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EnterVerifyOtpActivity"
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -36,6 +54,14 @@
         <activity
             android:name=".OTPActivity"
             android:exported="true">
+<<<<<<< HEAD
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -79,6 +105,10 @@
                 android:value="" />
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
         </activity>
         <activity
             android:name=".MainActivity"
@@ -93,8 +123,14 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+<<<<<<< HEAD
 
 
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
         </activity>
     </application>
 
