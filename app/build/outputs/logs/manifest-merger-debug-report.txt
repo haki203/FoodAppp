@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
+ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
+INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
+INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
+INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\chien\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\chien\.gradle\caches\transforms-3\44c24a0ba9562c7bda90cd6278db8032\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\chien\.gradle\caches\transforms-3\f50893122efcee79e80072a2d630c9f0\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -76,27 +76,27 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\chien\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\chien\.gradle\caches\transforms-3\ebc5cdc968831466331bfc76f957101c\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\chien\.gradle\caches\transforms-3\7b8f64ad99e6fd8a0144fbb3475e1dd6\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\chien\.gradle\caches\transforms-3\76208013712f6b8c8279458429d4f3ba\transformed\grpc-android-1.48.1\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
+INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
+INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
 	package
 		INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
 		INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
 		INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-111:12
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:1-123:12
 		INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:5:5-109:19
+ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:5:5-121:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\chien\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\chien\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\chien\.gradle\caches\transforms-3\44c24a0ba9562c7bda90cd6278db8032\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -246,25 +246,31 @@ ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest
 	android:name
 		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:76:13-44
 activity#com.example.foodapp.RegisterActivity
-ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:82:9-91:20
+ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:82:9-90:20
 	android:exported
 		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:84:13-36
 	android:name
 		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:83:13-45
 activity#com.example.foodapp.MainActivity
-ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:92:9-98:20
+ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:91:9-97:20
 	android:exported
-		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:94:13-37
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:93:13-37
 	android:name
-		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:93:13-41
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:92:13-41
 activity#com.example.foodapp.Home.HomeActivity
-ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:99:9-108:20
+ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:98:9-107:20
 	android:exported
-		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:101:13-36
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:100:13-36
 	android:name
-		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:100:13-46
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:99:13-46
 intent-filter#action:name:android.intent.action.MAIN
-ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:105:13-107:29
+ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:104:13-106:29
+activity#com.example.foodapp.SplashActivity.AddAddressActivity
+ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:110:9-120:16
+	android:exported
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:111:13-36
+	android:name
+		ADDED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml:110:19-68
 uses-sdk
 INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\chien\Documents\GitHub\FoodAppp\app\src\main\AndroidManifest.xml

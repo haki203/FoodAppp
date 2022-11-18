@@ -173,10 +173,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:text=""
-        android:backgroundTint="#6CC51D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText10" />
-
+    <!--        android:backgroundTint="#6CC51D"-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
