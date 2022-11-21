@@ -3,7 +3,7 @@ package com.example.foodapp.models;
 public class SanPham {
     private  String name,loai,moTa,tinhTrang,hinh,id;
     private String gia;
-
+    private String soLuong;
     public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String id, String gia) {
         this.name = name;
         this.loai = loai;
@@ -13,8 +13,28 @@ public class SanPham {
         this.id = id;
         this.gia = gia;
     }
+
+    public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String id, String gia, String soLuong) {
+        this.name = name;
+        this.loai = loai;
+        this.moTa = moTa;
+        this.tinhTrang = tinhTrang;
+        this.hinh = hinh;
+        this.id = id;
+        this.gia = gia;
+        this.soLuong = soLuong;
+    }
+
     public  SanPham(){
 
+    }
+
+    public String getSoLuong() {
+        return soLuong;
+    }
+
+    public void setSoLuong(String soLuong) {
+        this.soLuong = soLuong;
     }
 
     public String getName() {

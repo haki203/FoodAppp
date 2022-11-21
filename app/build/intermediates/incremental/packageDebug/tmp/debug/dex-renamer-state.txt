@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Thu Nov 17 21:09:48 ICT 2022
+=======
+#Fri Nov 18 21:30:09 ICT 2022
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
 path.4=15/classes.dex
 path.3=14/classes.dex
 path.2=11/classes.dex
@@ -11,24 +15,36 @@ path.6=5/classes.dex
 path.5=2/classes.dex
 renamed.10=classes11.dex
 path.0=classes.dex
-base.4=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.3=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.2=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.1=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.4=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.3=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.2=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.1=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 path.10=classes3.dex
 renamed.0=classes.dex
+<<<<<<< HEAD
 base.9=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.9=classes2.dex
 renamed.7=classes8.dex
 base.8=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+=======
+base.9=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+path.9=classes2.dex
+renamed.7=classes8.dex
+base.8=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
 renamed.6=classes7.dex
-base.7=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.7=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 renamed.5=classes6.dex
-base.6=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.6=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
 renamed.4=classes5.dex
+<<<<<<< HEAD
 base.5=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
 base.10=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+=======
+base.5=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.10=D\:\\DuAn1\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9

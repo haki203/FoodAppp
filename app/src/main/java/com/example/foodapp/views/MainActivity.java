@@ -1,10 +1,12 @@
-package com.example.foodapp;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.foodapp.views;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.foodapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setTitleToolBar();
     }
     public void register(View view){
-        Intent i = new Intent(this,RegisterActivity.class);
+        Intent i = new Intent(this, RegisterActivity.class);
         startActivity(i);
     }
 

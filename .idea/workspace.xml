@@ -10,6 +10,9 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+    <list default="true" id="e7240f0b-3774-4d3b-9864-6195d11162c6" name="Changes" comment="" />
+=======
+<<<<<<< HEAD
     <list default="true" id="d6398ae6-e751-4d38-8657-d59b89a7c64a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/Home/Frm/FrmUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/foodapp/Home/Frm/FrmUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_frm_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_frm_user.xml" afterDir="false" />
@@ -353,19 +356,13 @@
 >>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
 >>>>>>> bb4c3db57714366c18cfbd0e9874ea76156b7aaf
     </list>
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\tho38\.android\avd\Pixel_2_API_31_1.avd]" />
-=======
-<<<<<<< HEAD
-=======
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Acer nitro\.android\avd\Pixel_2_API_30_1.avd]" />
->>>>>>> 6c3649cc064b4e9839303347bfe611571ae72a61
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -394,9 +391,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-<<<<<<< HEAD
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
         <option value="layoutResourceFile" />
@@ -405,9 +402,8 @@
         <option value="resourceFile" />
 <<<<<<< HEAD
 =======
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
         <option value="layoutResourceFile" />
->>>>>>> 6c3649cc064b4e9839303347bfe611571ae72a61
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
         <option value="Class" />
 >>>>>>> bb4c3db57714366c18cfbd0e9874ea76156b7aaf
       </list>
@@ -434,10 +430,14 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
 <<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Android_NangCao/Courses" />
+=======
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="E:/android-nc/lab/ps24584_TranThienChien_lab7/ASM_GD12" />
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 >>>>>>> bb4c3db57714366c18cfbd0e9874ea76156b7aaf
+>>>>>>> 5e7d9be45f47b375344a4c7f927226a882fcbb3a
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -468,21 +468,11 @@
     <key name="android.template.-2054308701">
       <recent name="com.example.foodapp" />
     </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="com.example.foodapp.adapter" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.foodapp" />
     </key>
     <key name="android.template.582677452">
       <recent name="com.example.foodapp.SplashActivity" />
-    </key>
-<<<<<<< HEAD
-    <key name="android.template.-529971561">
-=======
-    <key name="android.template.-1267258414">
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
-      <recent name="com.example.foodapp" />
     </key>
     <key name="android.template.1371377353">
       <recent name="com.example.foodapp" />
@@ -494,67 +484,7 @@
       <command value="gradle signingReport" />
     </option>
   </component>
-<<<<<<< HEAD
   <component name="RunManager" selected="Android App.HomeActivity">
-    <configuration name="AddSanPhamActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
-      <module name="FoodApp.app.main" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
-      <option name="CLEAR_APP_STORAGE" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="specific_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-        <option name="PROFILING_MODE" value="NOT_SET" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.example.foodapp.AddSanPhamActivity" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HomeActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
       <module name="FoodApp.app.main" />
       <option name="DEPLOY" value="true" />
@@ -614,68 +544,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
-      <module name="FoodApp.app.main" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
-      <option name="CLEAR_APP_STORAGE" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="specific_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-        <option name="PROFILING_MODE" value="NOT_SET" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.example.foodapp.RegisterActivity" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-=======
-  <component name="RunManager" selected="Gradle.FoodAppp [signingReport]">
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="FoodApp.app.main" />
       <option name="DEPLOY" value="true" />
@@ -775,58 +643,9 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FoodAppp [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="signingReport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FoodAppp [signinreport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="signinreport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
         <item itemvalue="Android App.HomeActivity" />
-        <item itemvalue="Android App.RegisterActivity" />
-        <item itemvalue="Android App.AddSanPhamActivity" />
-=======
-        <item itemvalue="Gradle.FoodAppp [signinreport]" />
-        <item itemvalue="Gradle.FoodAppp [signingReport]" />
->>>>>>> d4d4c1c2dc79b7ea8f77bc1f698bf021f1c96369
         <item itemvalue="Gradle.FoodApp [signingReport]" />
         <item itemvalue="Gradle.FoodApp [signinreport]" />
       </list>

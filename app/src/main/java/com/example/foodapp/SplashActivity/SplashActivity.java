@@ -8,9 +8,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.foodapp.MainActivity;
 import com.example.foodapp.R;
-import com.example.foodapp.WelcomeActivity;
+import com.example.foodapp.views.WelcomeActivity;
 
 import java.util.ArrayList;
 import java.util.List;

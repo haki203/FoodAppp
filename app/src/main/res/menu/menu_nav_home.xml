@@ -16,7 +16,7 @@
         android:icon="@drawable/ts_frm_home"
         android:title="Trà sữa"></item>
     <item
-        android:id="@+id/banh_mi"
+        android:id="@+id/banh"
         android:icon="@drawable/ic_baseline_cake_24"
         android:title="Bánh"></item>
 

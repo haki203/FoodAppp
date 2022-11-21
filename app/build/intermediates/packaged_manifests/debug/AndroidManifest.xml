@@ -29,7 +29,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.FoodApp" >
         <activity
-            android:name="com.example.foodapp.AddSanPhamActivity"
+            android:name="com.example.foodapp.views.AddSanPhamActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -42,6 +42,7 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name="com.example.foodapp.VerifyOtpActivity"
             android:exported="false" >
             <meta-data
@@ -50,27 +51,49 @@
         </activity>
         <activity
             android:name="com.example.foodapp.CartActivity"
+=======
+            android:name="com.example.foodapp.views.VerifyOtpActivity"
+            android:exported="true" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.CartActivity"
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.foodapp.RecoveryPassword"
+            android:name="com.example.foodapp.views.RecoveryPassword"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.foodapp.OTPActivity"
-            android:exported="false" >
+            android:name="com.example.foodapp.views.OTPActivity"
+            android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name="com.example.foodapp.LoginActivity"
+            android:name="com.example.foodapp.views.LoginActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -83,13 +106,14 @@
             android:name="com.example.foodapp.Category.CategoryActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.foodapp.WelcomeActivity"
+            android:name="com.example.foodapp.views.WelcomeActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+<<<<<<< HEAD
             android:name="com.example.foodapp.RegisterActivity"
             android:exported="true" >
             <meta-data
@@ -111,6 +135,9 @@
         </activity>
         <activity
             android:name="com.example.foodapp.Home.HomeActivity"
+=======
+            android:name="com.example.foodapp.views.RegisterActivity"
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -120,6 +147,24 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.MainActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.HomeActivity"
+            android:exported="true" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
 

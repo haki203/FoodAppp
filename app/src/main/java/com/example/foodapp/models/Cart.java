@@ -1,33 +1,32 @@
-package com.example.foodapp.Home.cart;
+package com.example.foodapp.models;
 
-public class cart {
-    private int photo;
-    private int id;
+public class Cart {
+    private String photo;
+    private String id;
     private String nameProduct;
     private Double price;
-    private int amount;
+    private Integer amount;
 
-    public cart(int photo, int id, String nameProduct, Double price, int amount) {
+    public Cart(String photo, String nameProduct, Double price, int amount) {
         this.photo = photo;
-        this.id = id;
         this.nameProduct = nameProduct;
         this.price = price;
         this.amount = amount;
     }
 
-    public int getPhoto() {
+    public String getPhoto() {
         return photo;
     }
 
-    public void setPhoto(int photo) {
+    public void setPhoto(String photo) {
         this.photo = photo;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -47,11 +46,11 @@ public class cart {
         this.price = price;
     }
 
-    public int getAmount() {
+    public Integer getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(Integer amount) {
         this.amount = amount;
     }
 }

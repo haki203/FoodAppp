@@ -12,9 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp"
         tools:targetApi="31">
+
         <activity
 
+<<<<<<< HEAD
             android:name=".AddSanPhamActivity"
+=======
+            android:name=".views.AddSanPhamActivity"
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -26,36 +31,54 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".VerifyOtpActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
 
+=======
+            android:name=".views.VerifyOtpActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
         </activity>
         <activity
-            android:name=".CartActivity"
+            android:name=".views.CartActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".RecoveryPassword"
+            android:name=".views.RecoveryPassword"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".OTPActivity"
-            android:exported="false">
+            android:name=".views.OTPActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".views.LoginActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -68,14 +91,14 @@
             android:name=".Category.CategoryActivity"
             android:exported="true"></activity>
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".views.WelcomeActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".views.RegisterActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -89,18 +112,19 @@
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Home.HomeActivity"
+            android:name=".views.HomeActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+<<<<<<< HEAD
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -108,6 +132,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
         </activity>
     </application>
 

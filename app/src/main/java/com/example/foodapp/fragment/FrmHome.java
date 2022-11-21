@@ -1,4 +1,4 @@
-package com.example.foodapp.Home.Frm;
+package com.example.foodapp.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,8 +16,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.foodapp.R;
 import com.example.foodapp.dao.SanPhamDAO;
-import com.example.foodapp.fragment.ComFragment;
-import com.example.foodapp.fragment.DoAnFragment;
 import com.example.foodapp.models.SanPham;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -27,12 +23,8 @@ import com.google.android.material.navigation.NavigationBarView;
 import java.util.ArrayList;
 
 
-
 public class FrmHome extends Fragment {
-    private ScrollView scrollView;
 
-    private Button buttonScrollUp;
-    private Button buttonScrollDown;
     ArrayList<SanPham> list;
     BottomNavigationView navigationView ;
     // TODO: Rename and change types and number of parameters
@@ -56,14 +48,13 @@ public class FrmHome extends Fragment {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Log.d("list sp:",""+list.size());
+        Log.d("list sp oncr home:",""+list.size());
 
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
         ReplaceFrm(DoAnFragment.newInstance(list));
         navigationView.setSelectedItemId(R.id.do_an_vat);
@@ -72,17 +63,42 @@ public class FrmHome extends Fragment {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.do_an_vat:
-                        ReplaceFrm(DoAnFragment.newInstance(list));
+                        Log.d("list size home:",""+list.size());
+                        ArrayList<SanPham> listSPA = new ArrayList<>();
+                        for(int i=0;i<=list.size()-1;i++){
+                            if(list.get(i).getLoai().equalsIgnoreCase("Ăn vặt")){
+                                listSPA.add(list.get(i));
+                                Log.d("listSPA size home:",""+listSPA.size());
+                            }
+                        }
+                        ReplaceFrm(DoAnFragment.newInstance(listSPA));
                         break;
                     case R.id.com:
-                        ReplaceFrm(new ComFragment());
+                        ArrayList<SanPham> listSPC = new ArrayList<>();
+                        for(int i=0;i<=list.size()-1;i++){
+                            if(list.get(i).getLoai().equalsIgnoreCase("Cơm")){
+                                listSPC.add(list.get(i));
+                            }
+                        }
+                        ReplaceFrm(DoAnFragment.newInstance(listSPC));
                         break;
-//                    case R.id.action_bell:
-//                        ReplaceFrm(new FrmNotification());
-//                        break;
-//                    case R.id.action_user:
-//                        ReplaceFrm(new FrmUser());
-//                        break;
+                    case R.id.tra_sua:
+                        ArrayList<SanPham> listSPT = new ArrayList<>();
+                        for(int i=0;i<=list.size()-1;i++){
+                            if(list.get(i).getLoai().equalsIgnoreCase("Trà Sữa")){
+                                listSPT.add(list.get(i));
+                            }
+                        }
+                        ReplaceFrm(DoAnFragment.newInstance(listSPT));                        break;
+                    case R.id.banh:
+                        ArrayList<SanPham> listSPB = new ArrayList<>();
+                        for(int i=0;i<=list.size()-1;i++){
+                            if(list.get(i).getLoai().equalsIgnoreCase("Bánh")){
+                                listSPB.add(list.get(i));
+                            }
+                        }
+                        ReplaceFrm(DoAnFragment.newInstance(listSPB));
+                        break;
                 }
                 return true;
             }
@@ -97,6 +113,13 @@ public class FrmHome extends Fragment {
 
         View view=inflater.inflate(R.layout.fragment_frm_home, container, false);
         navigationView=view.findViewById(R.id.bottom_navigation_home);
+        ArrayList<SanPham> listSPA = new ArrayList<>();
+        for(int i=0;i<=list.size()-1;i++){
+            if(list.get(i).getLoai().equalsIgnoreCase("Ăn vặt")){
+                listSPA.add(list.get(i));
+            }
+        }
+        ReplaceFrm(DoAnFragment.newInstance(listSPA));
         return view;
     }
     private void ReplaceFrm(Fragment fragment) {
