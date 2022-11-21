@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.Frm.FrmCart">
+    tools:context=".fragment.FrmCart">
 
     <LinearLayout
-        android:id="@+id/lnTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:layout_alignParentTop="true">
+        android:layout_gravity="top">
 
         <Button
             android:id="@+id/icon_left"
@@ -30,27 +29,30 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="30dp"
+        android:background="@drawable/custom_button_add_cart"
+        android:layout_height="30dp"
+        android:drawableRight="@drawable/ic_baseline_360_24"
+        android:layout_gravity="right" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcv_cart"
+        android:id="@+id/rcvGioHang"
         android:layout_width="match_parent"
-<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:layout_gravity="center|top"
         android:layout_marginTop="60dp"
         android:paddingBottom="40dp"
-=======
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_above="@+id/lnbottom"
-        android:layout_below="@+id/lnTop"
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
         ></androidx.recyclerview.widget.RecyclerView>
-
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/listFood"/>-->
     <LinearLayout
-        android:id="@+id/lnbottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
         android:padding="10dp"
         android:background="@drawable/bg_white"
         android:orientation="vertical">
@@ -72,10 +74,17 @@
                 ></TextView>
 
             <TextView
-                android:id="@+id/tvTongGia"
+                android:id="@+id/txtPay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="250.000 VND"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" VND"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 ></TextView>
@@ -83,15 +92,17 @@
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_btn_primary"
+            android:background="@drawable/custom_button_login"
+            android:textAllCaps="false"
             android:text="Thanh toán"
+            android:layout_marginBottom="55dp"
             android:gravity="center"
-            android:textSize="24sp"
-            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+            android:textSize="26sp"
+            android:textColor="@color/white"></Button>
     </LinearLayout>
 
-</RelativeLayout>
+</FrameLayout>

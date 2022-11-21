@@ -1,31 +1,21 @@
 package com.example.foodapp.fragment;
 
-<<<<<<< HEAD
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-=======
-import static java.lang.String.format;
-
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.Toast;
-=======
-import android.widget.TextView;
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-<<<<<<< HEAD
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.ItemTouchHelper;
@@ -48,21 +38,10 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-=======
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-
-import com.example.foodapp.R;
-import com.example.foodapp.models.Cart;
-import com.example.suppermarket.Home.cart.CartAdapter;
-
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
 
 import java.util.ArrayList;
 import java.util.Map;
 
-<<<<<<< HEAD
 
 public class FrmCart extends Fragment implements CartInterface {
     RecyclerView recyclerView;
@@ -72,35 +51,14 @@ public class FrmCart extends Fragment implements CartInterface {
     // TODO: Rename and change types and number of parameters
     public static FrmHome newInstance(String param1, String param2) {
         FrmHome fragment = new FrmHome();
-=======
-public class FrmCart extends Fragment {
-    private RecyclerView rcvCart;
-    private CartAdapter cartAdapter;
-    private ArrayList<Cart> listCart;
-    private TextView tvTongGia;
-
-    public FrmCart() {
-
-    }
-
-    public static FrmCart newInstance(ArrayList<Cart> listCart) {
-
-        FrmCart fragment = new FrmCart();
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
         Bundle args = new Bundle();
-        args.putSerializable("list_cart", listCart);
         fragment.setArguments(args);
-        Log.d(">>>>>>>>>>>>>..TAG", "newInstance: "+listCart+"");
         return fragment;
     }
-
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
             SanPhamDAO dao = new SanPhamDAO(getContext());
             list = new ArrayList<SanPham>();
             try {
@@ -108,26 +66,12 @@ public class FrmCart extends Fragment {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-=======
-        if (getArguments() != null) {
-            listCart = (ArrayList<Cart>) getArguments().getSerializable("list_cart");
-            Log.d("TAG", "onCreate: "+ listCart);
-        }
-        Log.d("TAG", "onCreate: "+getArguments());
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_frm_cart, container, false);
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
     }
 
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-<<<<<<< HEAD
         recyclerView=view.findViewById(R.id.rcvGioHang);
         Button btnBack = view.findViewById(R.id.icon_left);
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -149,26 +93,13 @@ public class FrmCart extends Fragment {
         setAdapter();
         enableSwipeToDeleteAndUndo();
     }
-=======
-        tvTongGia = view.findViewById(R.id.tvTongGia);
-        rcvCart = view.findViewById(R.id.rcv_cart);
-        cartAdapter = new CartAdapter(getContext());
 
-        Log.e("TAG", "onViewCreated: "+listCart );
+    @SuppressLint("MissingInflatedId")
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
 
-        LinearLayoutManager linearLayoutManager =new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
-        rcvCart.setLayoutManager(linearLayoutManager);
-
-        cartAdapter.setData(listCart);
-        rcvCart.setAdapter(cartAdapter);
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
-
-        Integer tongGia = 0;
-        for (Cart cart : listCart) {
-            tongGia = tongGia + Integer.valueOf((int) (cart.getPrice()*cart.getAmount()));
-        }
-
-<<<<<<< HEAD
         View view=inflater.inflate(R.layout.fragment_frm_cart, container, false);
         return view;
     }
@@ -177,10 +108,6 @@ public class FrmCart extends Fragment {
         LinearLayoutManager gridLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(gridLayoutManager);
-=======
-
-        tvTongGia.setText(tongGia.toString() + "VND");
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
     }
 
     private void enableSwipeToDeleteAndUndo() {
@@ -199,7 +126,6 @@ public class FrmCart extends Fragment {
 
                 SanPhamDAO dao = new SanPhamDAO(getContext());
                 onDeleteCart(sp);
-                delCart(viewHolder.getPosition());
 //                mAdapter.removeItem(position);
                 readData();
 
@@ -210,12 +136,6 @@ public class FrmCart extends Fragment {
         ItemTouchHelper itemTouchhelper = new ItemTouchHelper(swipeToDeleteCallback);
         itemTouchhelper.attachToRecyclerView(recyclerView);
     }
-    public void delCart(int i){
-        list.remove(i);
-        Log.d("TAg list","list="+list.size());
-        Log.d("TAg del","i="+i);
-        setAdapter();
-    }
     public void onDeleteCart(SanPham sp) {
         new AlertDialog.Builder(getContext())
                 .setTitle("Xác nhận")
@@ -225,7 +145,7 @@ public class FrmCart extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         db.collection("giohang")
-                                .document(sp.getIdDB())
+                                .document(sp.getId())
                                 .delete()
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -265,7 +185,7 @@ public class FrmCart extends Fragment {
                                 String hinh = map.get("hinh").toString();
                                 String gia = map.get("gia").toString();
                                 String sl = map.get("soluong").toString();
-                                String idDB= document.getId();
+                                String idDB=document.getId();
                                 list.add(new SanPham(name,loai,mota,tinhtrang,hinh,id,gia,sl,idDB));
                             }
                             setAdapter();

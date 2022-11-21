@@ -1,4 +1,4 @@
-package com.example.suppermarket.Home.cart;
+package com.example.foodapp.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;

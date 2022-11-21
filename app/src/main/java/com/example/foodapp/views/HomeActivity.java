@@ -14,11 +14,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-<<<<<<< HEAD
+
 import com.example.foodapp.Inferface.CartInterface;
 =======
 import com.bumptech.glide.Glide;
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
 import com.example.foodapp.R;
 import com.example.foodapp.dao.SanPhamDAO;
 import com.example.foodapp.fragment.FrmCart;
@@ -28,25 +27,18 @@ import com.example.foodapp.fragment.FrmUser;
 import com.example.foodapp.fragment.FrmWallet;
 import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
-<<<<<<< HEAD
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-=======
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.firestore.FirebaseFirestore;
-<<<<<<< HEAD
-=======
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
-
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -122,9 +114,6 @@ public class HomeActivity extends AppCompatActivity  {
         fragmentTransaction.commit();
     }
 
-<<<<<<< HEAD
-
-=======
     public void loadDataCart() {
 
         db.collection("cart")
@@ -201,5 +190,4 @@ public class HomeActivity extends AppCompatActivity  {
     public void loadImageURL(String url, CircleImageView circleImageView) {
         Glide.with(this).load(url).into(circleImageView);
     }
->>>>>>> 376da4fbab864aa673499e34803aeeabd871e953
 }
