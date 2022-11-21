@@ -27,14 +27,14 @@ public class AddSanPhamActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_san_pham);
 
-        String name="Trà sữa olong";
-        String gia="20.000";
-        Drawable img = getResources().getDrawable( R.drawable.tsolong );
+        String name="Bánh trung thu";
+        String gia="15.000";
+        Drawable img = getResources().getDrawable( R.drawable.banhtrungthu );
         changeIMG change= new changeIMG();
         String hinh =change.convertBitmapToString(change.drawableToBitmap(img));
-        String id="012";
-        String loai="Trà Sữa";
-        String mota="trà sữa oolong thanh khiết giải nhiệt";
+        String id="016";
+        String loai="Bánh";
+        String mota="bánh trung thu cho trẻ em";
         String tinhtrang ="Còn hàng";
 
         SanPham sp = new SanPham(name,loai,mota,tinhtrang,hinh,id,gia);
