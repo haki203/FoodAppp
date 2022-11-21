@@ -38,17 +38,14 @@ public class FrmHome extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
+            SanPhamDAO dao = new SanPhamDAO(getContext());
+            list = new ArrayList<SanPham>();
+            try {
+                list=dao.getData();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
-        }
-        SanPhamDAO dao = new SanPhamDAO(getContext());
-        list = new ArrayList<SanPham>();
-        try {
-            list=dao.getData();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        Log.d("list sp oncr home:",""+list.size());
 
     }
 
@@ -56,7 +53,6 @@ public class FrmHome extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ReplaceFrm(DoAnFragment.newInstance(list));
         navigationView.setSelectedItemId(R.id.do_an_vat);
         navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -113,13 +109,7 @@ public class FrmHome extends Fragment {
 
         View view=inflater.inflate(R.layout.fragment_frm_home, container, false);
         navigationView=view.findViewById(R.id.bottom_navigation_home);
-        ArrayList<SanPham> listSPA = new ArrayList<>();
-        for(int i=0;i<=list.size()-1;i++){
-            if(list.get(i).getLoai().equalsIgnoreCase("Ăn vặt")){
-                listSPA.add(list.get(i));
-            }
-        }
-        ReplaceFrm(DoAnFragment.newInstance(listSPA));
+
         return view;
     }
     private void ReplaceFrm(Fragment fragment) {

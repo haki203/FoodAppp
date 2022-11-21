@@ -1,6 +1,8 @@
 package com.example.foodapp.dao;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -8,6 +10,7 @@ import androidx.annotation.NonNull;
 
 import com.example.foodapp.models.SanPham;
 import com.example.foodapp.models.User;
+import com.example.foodapp.views.HomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -75,13 +78,16 @@ public class SanPhamDAO {
                                 String hinh = map.get("hinh").toString();
                                 String gia = map.get("gia").toString();
                                 String sl = map.get("soluong").toString();
-                                list.add(new SanPham(name,loai,mota,tinhtrang,hinh,id,gia,sl));
+                                String idDB= document.getId();
+                                list.add(new SanPham(name,loai,mota,tinhtrang,hinh,id,gia,sl,idDB));
                             }
                         }
                     }
                 });
         return list;
     }
+
+
     public void addData(SanPham sp){
         // Create a new user with a first and last name
         Map<String, Object> product = new HashMap<>();

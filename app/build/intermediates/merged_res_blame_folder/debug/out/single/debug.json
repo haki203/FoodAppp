@@ -88,10 +88,6 @@
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.foodapp-merged_res-37:/menu_menu_nav_home.xml.flat",
-        "source": "com.example.foodapp-main-39:/menu/menu_nav_home.xml"
-    },
-    {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable-v24_banhngotlim.jpg.flat",
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\drawable-v24\\banhngotlim.jpg"
     },
@@ -164,12 +160,16 @@
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\drawable-v24\\img_2.png"
     },
     {
+        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable-v24_custom_radius.xml.flat",
+        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\drawable-v24\\custom_radius.xml"
+    },
+    {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable-v24_login_img.jpg.flat",
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\drawable-v24\\login_img.jpg"
     },
     {
-        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable-v24_custom_radius.xml.flat",
-        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\drawable-v24\\custom_radius.xml"
+        "merged": "com.example.foodapp-merged_res-37:/layout_fragment_frm_cart.xml.flat",
+        "source": "com.example.foodapp-main-39:/layout/fragment_frm_cart.xml"
     },
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable-v24_login.png.flat",
@@ -290,6 +290,10 @@
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable-v24_trasua_frm_home.png.flat",
         "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\drawable-v24\\trasua_frm_home.png"
+    },
+    {
+        "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable_ic_baseline_delete_24.xml.flat",
+        "source": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-main-39:\\drawable\\ic_baseline_delete_24.xml"
     },
     {
         "merged": "C:\\Users\\tho38\\.gradle\\daemon\\7.4\\com.example.foodapp-merged_res-37:\\drawable-v24_ic_baseline_360_24.xml.flat",

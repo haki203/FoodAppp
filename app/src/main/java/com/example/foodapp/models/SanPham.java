@@ -1,9 +1,10 @@
 package com.example.foodapp.models;
 
 public class SanPham {
-    private  String name,loai,moTa,tinhTrang,hinh,id;
+    private  String name,loai,moTa,tinhTrang,hinh,id,idDB;
     private String gia;
     private String soLuong;
+
     public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String id, String gia) {
         this.name = name;
         this.loai = loai;
@@ -14,7 +15,7 @@ public class SanPham {
         this.gia = gia;
     }
 
-    public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String id, String gia, String soLuong) {
+    public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String id, String gia, String soLuong,String idDB) {
         this.name = name;
         this.loai = loai;
         this.moTa = moTa;
@@ -23,10 +24,19 @@ public class SanPham {
         this.id = id;
         this.gia = gia;
         this.soLuong = soLuong;
+        this.idDB=idDB;
     }
 
     public  SanPham(){
 
+    }
+
+    public String getIdDB() {
+        return idDB;
+    }
+
+    public void setIdDB(String idDB) {
+        this.idDB = idDB;
     }
 
     public String getSoLuong() {

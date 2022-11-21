@@ -1,5 +1,7 @@
 package com.example.foodapp.views;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.foodapp.Inferface.CartInterface;
 import com.example.foodapp.R;
 import com.example.foodapp.dao.SanPhamDAO;
 import com.example.foodapp.fragment.FrmCart;
@@ -19,13 +22,16 @@ import com.example.foodapp.fragment.FrmNotification;
 import com.example.foodapp.fragment.FrmUser;
 import com.example.foodapp.fragment.FrmWallet;
 import com.example.foodapp.models.SanPham;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity  {
     private BottomNavigationView botNav;
 
 
@@ -79,4 +85,6 @@ public class HomeActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frLayout, fragment);
         fragmentTransaction.commit();
     }
+
+
 }
