@@ -1,10 +1,11 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.foodapp-mergeDebugResources-35:/values-night-v8/values-night-v8.xml",
+<<<<<<< HEAD
+            "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +22,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -40,7 +41,13 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
+=======
+            "outputFile": "com.example.foodapp-mergeDebugResources-36:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Acer nitro\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -54,6 +61,45 @@
                         "startOffsets": "1256,1331,1442,1531,1632,1739,1846,1945,2048,2136,2260,2362,2464,2580,2682,2796,2924,3040,3162,3298,3418,3552,3672,3784,3999,4116,4240,4370,4492,4630,4764,4880",
                         "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "1326,1437,1526,1627,1734,1841,1940,2043,2131,2255,2357,2459,2575,2677,2791,2919,3035,3157,3293,3413,3547,3667,3779,3905,4111,4235,4365,4487,4625,4759,4875,4995"
+<<<<<<< HEAD
+=======
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Acer nitro\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,46",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,3910",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,3994"
+                    }
+                },
+                {
+                    "source": "D:\\DuAn1\\FoodAppp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "799"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "687",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1251"
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
                     }
                 }
             ]

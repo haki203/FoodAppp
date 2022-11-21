@@ -16,7 +16,11 @@
 
         <activity
 
+<<<<<<< HEAD
+            android:name=".AddSanPhamActivity"
+=======
             android:name=".views.AddSanPhamActivity"
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -28,6 +32,14 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
+            android:name=".VerifyOtpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+=======
             android:name=".views.VerifyOtpActivity"
             android:exported="true">
             <meta-data
@@ -38,6 +50,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
         </activity>
         <activity
             android:name=".views.CartActivity"
@@ -112,9 +125,19 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+<<<<<<< HEAD
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+=======
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
         </activity>
     </application>
 
