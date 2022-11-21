@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 
 import com.example.foodapp.Inferface.CartInterface;
-=======
+
 import com.bumptech.glide.Glide;
 import com.example.foodapp.R;
 import com.example.foodapp.dao.SanPhamDAO;
@@ -71,20 +71,7 @@ public class HomeActivity extends AppCompatActivity  {
                         .commit();
             }
         });
-        fl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SanPhamDAO dao = new SanPhamDAO(HomeActivity.this);
-                try {
-                    ArrayList<SanPham> listGioHang = dao.getGioHang();
-                    ReplaceFrm(new FrmCart());
-                } catch (InterruptedException e) {
-                    Toast.makeText(HomeActivity.this,"Lỗi khi lấy thông tin giỏ hàng",Toast.LENGTH_SHORT).show();
 
-                }
-
-            }
-        });
         botNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
