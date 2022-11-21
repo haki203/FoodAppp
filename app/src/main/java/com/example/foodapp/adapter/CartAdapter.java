@@ -76,7 +76,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
                     item.put("photo", String.valueOf(cart.getPhoto()));
 
 
-                    db.collection("cart").document(cart.getId())
+                    db.collection("giohang").document(cart.getId())
                             .set(item)
                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
@@ -104,7 +104,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
                     item.put("photo", String.valueOf(cart.getPhoto()));
 
 
-                    db.collection("cart").document(cart.getId())
+                    db.collection("giohang").document(cart.getId())
                             .set(item)
                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override

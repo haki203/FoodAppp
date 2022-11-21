@@ -103,7 +103,7 @@ public class HomeActivity extends AppCompatActivity  {
 
     public void loadDataCart() {
 
-        db.collection("cart")
+        db.collection("giohang")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
