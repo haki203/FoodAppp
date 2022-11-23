@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 
 import com.example.foodapp.models.User;
 import com.example.foodapp.views.CartActivity;
+import com.example.foodapp.views.HomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -147,7 +148,7 @@ public class UserDAO {
                                 String password = map.get("password").toString();
 
                                 if(username.equalsIgnoreCase(taikhoan)&& password.equalsIgnoreCase(matkhau) ){
-                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    Intent i = new Intent(c.getApplicationContext(), HomeActivity.class);
                                     c.startActivity(i);
                                     break;
                                 }

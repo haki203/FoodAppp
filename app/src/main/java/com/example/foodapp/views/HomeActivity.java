@@ -20,6 +20,7 @@ import com.example.foodapp.R;
 import com.example.foodapp.fragment.FrmCart;
 import com.example.foodapp.fragment.FrmHome;
 import com.example.foodapp.fragment.FrmNotification;
+import com.example.foodapp.fragment.FrmUser;
 import com.example.foodapp.fragment.FrmWallet;
 import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
