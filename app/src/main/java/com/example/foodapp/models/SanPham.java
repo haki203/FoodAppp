@@ -3,27 +3,16 @@ package com.example.foodapp.models;
 public class SanPham {
     private  String name,loai,moTa,tinhTrang,hinh,id,idDB;
     private String gia;
-    private String soLuong;
 
-    public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String id, String gia) {
+
+
+    public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String gia,String idDB) {
         this.name = name;
         this.loai = loai;
         this.moTa = moTa;
         this.tinhTrang = tinhTrang;
         this.hinh = hinh;
-        this.id = id;
         this.gia = gia;
-    }
-
-    public SanPham(String name, String loai, String moTa, String tinhTrang, String hinh, String id, String gia, String soLuong,String idDB) {
-        this.name = name;
-        this.loai = loai;
-        this.moTa = moTa;
-        this.tinhTrang = tinhTrang;
-        this.hinh = hinh;
-        this.id = id;
-        this.gia = gia;
-        this.soLuong = soLuong;
         this.idDB=idDB;
     }
 
@@ -37,14 +26,6 @@ public class SanPham {
 
     public void setIdDB(String idDB) {
         this.idDB = idDB;
-    }
-
-    public String getSoLuong() {
-        return soLuong;
-    }
-
-    public void setSoLuong(String soLuong) {
-        this.soLuong = soLuong;
     }
 
     public String getName() {
@@ -87,13 +68,7 @@ public class SanPham {
         this.hinh = hinh;
     }
 
-    public String getId() {
-        return id;
-    }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getGia() {
         return gia;

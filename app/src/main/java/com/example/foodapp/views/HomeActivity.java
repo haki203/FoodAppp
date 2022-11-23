@@ -15,23 +15,17 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
-import com.example.foodapp.Inferface.CartInterface;
-
 import com.bumptech.glide.Glide;
 import com.example.foodapp.R;
-import com.example.foodapp.dao.SanPhamDAO;
 import com.example.foodapp.fragment.FrmCart;
 import com.example.foodapp.fragment.FrmHome;
 import com.example.foodapp.fragment.FrmNotification;
-import com.example.foodapp.fragment.FrmUser;
 import com.example.foodapp.fragment.FrmWallet;
 import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -57,18 +51,14 @@ public class HomeActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         botNav = findViewById(R.id.bottom_nav);
-        ReplaceFrm(new FrmHome());
+        loadData();
         FloatingActionButton fl = findViewById(R.id.fl_btn);
 
         btnCart = findViewById(R.id.fl_btn);
         btnCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .setReorderingAllowed(true)
-                        .replace(R.id.frLayout, FrmCart.newInstance(listCart))
-                        .commit();
+                loadDataCart();
             }
         });
 
@@ -100,7 +90,38 @@ public class HomeActivity extends AppCompatActivity  {
         fragmentTransaction.replace(R.id.frLayout, fragment);
         fragmentTransaction.commit();
     }
+    public void loadData() {
 
+        ArrayList<SanPham> list = new ArrayList<SanPham>();
+        // getData from firebase
+        db.collection("products")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Map<String, Object> map = document.getData();
+                                String id = document.getId();
+                                Log.d("id product:",""+id);
+                                String name = map.get("name").toString();
+                                String loai = map.get("loai").toString();
+                                String mota = map.get("mota").toString();
+                                String tinhtrang = map.get("tinhtrang").toString();
+                                String hinh = map.get("hinh").toString();
+                                String gia = map.get("gia").toString();
+                                list.add(new SanPham(name,loai,mota,tinhtrang,hinh,gia,id));
+                            }
+                        }
+                        Log.d("Size",""+list.size());
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .setReorderingAllowed(true)
+                                .replace(R.id.frLayout, FrmHome.newInstance(list))
+                                .commit();
+                    }
+                });
+    }
     public void loadDataCart() {
 
         db.collection("giohang")
@@ -134,8 +155,8 @@ public class HomeActivity extends AppCompatActivity  {
     public void onClickDelete(Cart cart) {
         AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
 
-        builder.setTitle("DELETE !");
-        builder.setMessage("How do you want to delete book?");
+        builder.setTitle("Xác nhận xóa !");
+        builder.setMessage("Bạn chắc chắn muốn xóa?");
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -146,13 +167,13 @@ public class HomeActivity extends AppCompatActivity  {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Log.d(">>>>>>>>>TAG", "onClick: "+cart.getId());
-                db.collection("cart")
+                db.collection("giohang")
                         .document(cart.getId())
                         .delete()
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
-                                Toast.makeText(HomeActivity.this, "Xoá thành công",
+                                Toast.makeText(HomeActivity.this, "Xoá thành công "+cart.getId(),
                                         Toast.LENGTH_LONG).show();
                                 loadDataCart();
                             }

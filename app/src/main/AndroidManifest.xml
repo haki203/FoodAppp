@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,44 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp"
         tools:targetApi="31">
-
         <activity
-
-<<<<<<< HEAD
-            android:name=".AddSanPhamActivity"
-=======
-            android:name=".views.AddSanPhamActivity"
->>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-<<<<<<< HEAD
-            android:name=".VerifyOtpActivity"
+            android:name=".ThanhToanActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-=======
+        </activity>
+        <activity
             android:name=".views.VerifyOtpActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
->>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
         </activity>
         <activity
             android:name=".views.CartActivity"
@@ -72,6 +52,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -87,10 +68,10 @@
         </activity>
         <activity
             android:name=".SplashActivity.SplashActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Category.CategoryActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".views.WelcomeActivity"
             android:exported="true">
@@ -110,7 +91,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".views.MainActivity"
@@ -125,19 +105,10 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-<<<<<<< HEAD
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-=======
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
->>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
         </activity>
     </application>
 

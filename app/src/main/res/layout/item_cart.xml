@@ -68,7 +68,7 @@
                     android:layout_height="30dp"
                     android:gravity="center"
                     android:text=""
-                    android:background="@drawable/icon_star"
+                    android:background="@drawable/ic_add_1"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -89,7 +89,7 @@
                     android:layout_height="30dp"
                     android:gravity="center"
                     android:text=""
-                    android:background="@drawable/icon_star"
+                    android:background="@drawable/ic_minus_1"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="20sp" />

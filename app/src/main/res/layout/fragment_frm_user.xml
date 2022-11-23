@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.Frm.FrmUser"
+    tools:context=".fragment.FrmUser"
     android:orientation="vertical"
     android:background="#F4F5F9">
 
@@ -30,15 +30,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.611" />
 
-        <EditText
+        <TextView
+            android:id="@+id/tvNameUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="Olivia Austin"
             android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_avt_13"
             app:layout_constraintVertical_bias="1.0"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -48,16 +50,17 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_marginTop="10dp"
             android:layout_width="320dp"
+            android:layout_marginBottom="20dp"
             android:layout_height="33dp"
             android:background="#FFFFFF"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.084">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -82,16 +85,16 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout8"
             android:layout_width="320dp"
+            android:layout_marginTop="10dp"
             android:layout_height="33dp"
             android:background="#FFFFFF"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.173">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
             <ImageView
                 android:layout_width="40dp"
@@ -102,9 +105,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
                 android:text="My Orders"
                 android:textSize="12dp"
-                android:layout_marginTop="9dp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -116,16 +119,16 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearLayout6"
             android:layout_width="320dp"
             android:layout_height="33dp"
             android:background="#FFFFFF"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.26">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
             <ImageView
                 android:layout_width="40dp"
@@ -136,9 +139,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
                 android:text="My Address"
                 android:textSize="12dp"
-                android:layout_marginTop="9dp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -153,81 +156,13 @@
             android:layout_width="320dp"
             android:layout_height="33dp"
             android:background="#FFFFFF"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.34">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_location" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My Favorites"
-                android:textSize="12dp"
-                android:layout_marginTop="9dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="180dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="320dp"
-            android:layout_height="33dp"
-            android:background="#FFFFFF"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.423">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/icon_bell" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Notifications"
-                android:textSize="12dp"
-                android:layout_marginTop="9dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="177dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="320dp"
-            android:layout_height="33dp"
-            android:background="#FFFFFF"
             android:onClick="LoginoutClick"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
             <ImageView
                 android:id="@+id/logout"

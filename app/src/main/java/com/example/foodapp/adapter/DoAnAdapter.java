@@ -12,12 +12,17 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.foodapp.R;
 import com.example.foodapp.dao.SanPhamDAO;
 import com.example.foodapp.dao.changeIMG;
+import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
+import com.example.foodapp.views.HomeActivity;
 
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DoAnAdapter extends RecyclerView.Adapter<DoAnAdapter.ViewHolder> {
     //Dữ liệu hiện thị là danh sách sinh viên
@@ -52,8 +57,7 @@ public class DoAnAdapter extends RecyclerView.Adapter<DoAnAdapter.ViewHolder> {
         holder.name.setText(sp.getName());
         holder.gia.setText(sp.getGia()+"");
         changeIMG change = new changeIMG();
-        holder.hinh.setImageBitmap(change.convertStringToBitmap(sp.getHinh()));
-
+        loadImageURL(sp.getHinh(),holder.hinh);
         holder.itemview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +74,13 @@ public class DoAnAdapter extends RecyclerView.Adapter<DoAnAdapter.ViewHolder> {
 //                String id = list.get(position).getId();
 //                Toast.makeText(v.getContext(),  " | " + " Added "+id, Toast.LENGTH_SHORT).show();
                 SanPhamDAO dao = new SanPhamDAO(mContext.getApplicationContext());
-                dao.addGioHang(list.get(position));
+                Cart cart = new Cart(
+                        list.get(position).getHinh(),
+                        list.get(position).getName(),
+                        Double.parseDouble(list.get(position).getGia()),
+                        1,
+                        sp.getIdDB());
+                dao.addGioHang(cart);
             }
         });
 
@@ -110,6 +120,8 @@ public class DoAnAdapter extends RecyclerView.Adapter<DoAnAdapter.ViewHolder> {
 //            });
         }
     }
-
+    public void loadImageURL(String url, ImageView circleImageView) {
+        Glide.with(mContext.getApplicationContext()).load(url).into(circleImageView);
+    }
 
 }

@@ -13,6 +13,14 @@ public class Cart {
         this.price = price;
         this.amount = amount;
     }
+    public Cart(String photo, String nameProduct, Double price, int amount,String id) {
+        this.photo = photo;
+        this.nameProduct = nameProduct;
+        this.price = price;
+        this.amount = amount;
+        this.id=id;
+    }
+
 
     public String getPhoto() {
         return photo;

@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.foodapp.R;
 import com.example.foodapp.dao.SanPhamDAO;
+import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -28,9 +29,10 @@ public class FrmHome extends Fragment {
     ArrayList<SanPham> list;
     BottomNavigationView navigationView ;
     // TODO: Rename and change types and number of parameters
-    public static FrmHome newInstance(String param1, String param2) {
+    public static FrmHome newInstance(ArrayList<SanPham> list) {
         FrmHome fragment = new FrmHome();
         Bundle args = new Bundle();
+        args.putSerializable("list",list);
         fragment.setArguments(args);
         return fragment;
     }
@@ -38,13 +40,18 @@ public class FrmHome extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-            SanPhamDAO dao = new SanPhamDAO(getContext());
-            list = new ArrayList<SanPham>();
-            try {
-                list=dao.getData();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        if (getArguments() != null) {
+            list = (ArrayList<SanPham>) getArguments().getSerializable("list");
+            Log.d("list size home:",""+list.size());
+            ArrayList<SanPham> listSPA = new ArrayList<>();
+            for(int i=0;i<=list.size()-1;i++){
+                if(list.get(i).getLoai().equalsIgnoreCase("Ăn vặt")){
+                    listSPA.add(list.get(i));
+                    Log.d("listSPA size home:",""+listSPA.size());
+                }
             }
+            ReplaceFrm(DoAnFragment.newInstance(listSPA));
+        }
 
 
     }
