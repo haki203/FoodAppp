@@ -8,12 +8,10 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
 
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
@@ -29,7 +27,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.FoodApp" >
         <activity
-            android:name="com.example.foodapp.AddSanPhamActivity"
+            android:name="com.example.foodapp.views.AddSanPhamActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -42,7 +40,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.foodapp.EnterVerifyOtpActivity"
+<<<<<<< HEAD
+            android:name="com.example.foodapp.VerifyOtpActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -50,33 +49,49 @@
         </activity>
         <activity
             android:name="com.example.foodapp.CartActivity"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="com.example.foodapp.RecoveryPassword"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="com.example.foodapp.OTPActivity"
+=======
+            android:name="com.example.foodapp.views.VerifyOtpActivity"
             android:exported="true" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.CartActivity"
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.foodapp.LoginActivity"
+            android:name="com.example.foodapp.views.RecoveryPassword"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.OTPActivity"
+            android:exported="true" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.LoginActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -89,18 +104,25 @@
             android:name="com.example.foodapp.Category.CategoryActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.foodapp.WelcomeActivity"
+            android:name="com.example.foodapp.views.WelcomeActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+<<<<<<< HEAD
             android:name="com.example.foodapp.RegisterActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.foodapp.MainActivity"
@@ -111,6 +133,29 @@
         </activity>
         <activity
             android:name="com.example.foodapp.Home.HomeActivity"
+=======
+            android:name="com.example.foodapp.views.RegisterActivity"
+>>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
+            android:exported="true" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.MainActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.HomeActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -151,7 +196,7 @@
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
@@ -207,6 +252,20 @@
             </intent-filter>
         </activity>
 
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.example.foodapp.firebaseinitprovider"
@@ -214,15 +273,19 @@
             android:exported="false"
             android:initOrder="100" />
 
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
             android:enabled="true"
             android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
         </receiver>
 
         <service

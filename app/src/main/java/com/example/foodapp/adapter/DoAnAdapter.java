@@ -1,5 +1,6 @@
 package com.example.foodapp.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,15 +12,21 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.foodapp.R;
+import com.example.foodapp.dao.SanPhamDAO;
 import com.example.foodapp.dao.changeIMG;
+import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
+import com.example.foodapp.views.HomeActivity;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DoAnAdapter extends RecyclerView.Adapter<DoAnAdapter.ViewHolder> {
     //Dữ liệu hiện thị là danh sách sinh viên
+
     private ArrayList<SanPham> list;
     // Lưu Context để dễ dàng truy cập
     private Context mContext;
@@ -44,13 +51,38 @@ public class DoAnAdapter extends RecyclerView.Adapter<DoAnAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         SanPham sp = (SanPham) list.get(position);
 
         holder.name.setText(sp.getName());
         holder.gia.setText(sp.getGia()+"");
         changeIMG change = new changeIMG();
-        holder.hinh.setImageBitmap(change.convertStringToBitmap(sp.getHinh()));
+        loadImageURL(sp.getHinh(),holder.hinh);
+        holder.itemview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // get ID sp
+                String name = list.get(position).getName();
+                Toast.makeText(v.getContext(),  " | " + " Name "+name, Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        holder.btnAddCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                // get ID sp
+//                String id = list.get(position).getId();
+//                Toast.makeText(v.getContext(),  " | " + " Added "+id, Toast.LENGTH_SHORT).show();
+                SanPhamDAO dao = new SanPhamDAO(mContext.getApplicationContext());
+                Cart cart = new Cart(
+                        list.get(position).getHinh(),
+                        list.get(position).getName(),
+                        Double.parseDouble(list.get(position).getGia()),
+                        1,
+                        sp.getIdDB());
+                dao.addGioHang(cart);
+            }
+        });
 
 
     }
@@ -78,18 +110,18 @@ public class DoAnAdapter extends RecyclerView.Adapter<DoAnAdapter.ViewHolder> {
             btnAddCart = itemView.findViewById(R.id.btnAddCart);
             hinh=itemView.findViewById(R.id.ivHinh);
 
-            //Xử lý khi nút Chi tiết được bấm
-            btnAddCart.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Toast.makeText(view.getContext(),
-                                    name.getText() +" | "
-                                            + " Demo function", Toast.LENGTH_SHORT)
-                            .show();
-                }
-            });
+//            //Xử lý khi nút add gio hang được bấm
+//            btnAddCart.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//
+//                    Toast.makeText(view.getContext(),name.getText() +" | " + " Demo function", Toast.LENGTH_SHORT).show();
+//                }
+//            });
         }
     }
-
+    public void loadImageURL(String url, ImageView circleImageView) {
+        Glide.with(mContext.getApplicationContext()).load(url).into(circleImageView);
+    }
 
 }

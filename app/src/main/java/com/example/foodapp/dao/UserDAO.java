@@ -1,18 +1,15 @@
 package com.example.foodapp.dao;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.example.foodapp.CartActivity;
-import com.example.foodapp.Home.HomeActivity;
 import com.example.foodapp.models.User;
+import com.example.foodapp.views.CartActivity;
+import com.example.foodapp.views.HomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -22,8 +19,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -153,7 +148,7 @@ public class UserDAO {
                                 String password = map.get("password").toString();
 
                                 if(username.equalsIgnoreCase(taikhoan)&& password.equalsIgnoreCase(matkhau) ){
-                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    Intent i = new Intent(c.getApplicationContext(), HomeActivity.class);
                                     c.startActivity(i);
                                     break;
                                 }
