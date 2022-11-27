@@ -92,6 +92,7 @@ public class UserDAO {
     }
 
     public boolean login(String taikhoan){
+        // dang nhap bang google
         // getData from firebase
         db.collection("users")
                 .get()
@@ -104,12 +105,10 @@ public class UserDAO {
                                 String username = map.get("username").toString();
                                 Log.d("Tagggggggggggg"," Email userDAO"+username);
                                 if(username.equalsIgnoreCase(taikhoan)){
-                                    Log.d("Tag"," Email da ton tai, dang nhap thanh cong");
                                     Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
                                     c.startActivity(i);
                                 }
                                 else{
-                                    Log.d("Tag"," dang ky email thanh cong");
                                     loginGoogle(taikhoan);
                                     Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
                                     c.startActivity(i);

@@ -78,7 +78,7 @@ public class FrmCart extends Fragment {
                 Double tien = Double.parseDouble(tvTongGia.getText().toString());
                 Intent i = new Intent(getContext(), ThanhToanActivity.class);
                 i.putExtra("tien",tien);
-
+                i.putExtra("listCart",listCart);
                 getActivity().startActivity(i);
                 getActivity().finish();
             }

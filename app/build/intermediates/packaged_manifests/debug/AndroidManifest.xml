@@ -29,7 +29,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.FoodApp" >
         <activity
-            android:name="com.example.foodapp.ThanhToanActivity"
+            android:name="com.example.foodapp.views.ThanhToanActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
