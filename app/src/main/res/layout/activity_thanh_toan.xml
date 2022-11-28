@@ -4,6 +4,152 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E3E1E1"
     tools:context=".views.ThanhToanActivity">
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="Địa chỉ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/edtDiachi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="Mã giảm giá"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDiachi" />
+    <EditText
+        android:id="@+id/edtCodeSale"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="Phương thức thanh toán"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCodeSale" />
+
+    <RadioGroup
+        android:id="@+id/rdPay"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" >
+
+        <RadioButton
+            android:id="@+id/rbCod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:checked="true"
+            android:text="Thanh toán khi nhận hàng" />
+
+        <RadioButton
+            android:id="@+id/rbBank"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Thanh toán qua thẻ Visa (Đang bảo trì)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textSize="17sp"
+        android:text="Đơn hàng của bạn"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdPay" />
+
+    <ListView
+        android:id="@+id/lvDonHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/edtMess"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Bạn muốn nhắn gì tới nhà hàng không?"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTien"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDatHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt hàng"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/custom_button_login"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:text="Tổng tiền: "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDatHang"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="999000"
+        app:layout_constraintBottom_toTopOf="@+id/btnDatHang"
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" VND"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTien"
+        app:layout_constraintStart_toEndOf="@+id/tvTien" />
 </androidx.constraintlayout.widget.ConstraintLayout>

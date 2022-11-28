@@ -3,12 +3,15 @@
         {
 <<<<<<< HEAD
             "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-v26/values-v26.xml",
-=======
-            "outputFile": "com.example.foodapp-mergeDebugResources-36:/values-v26/values-v26.xml",
->>>>>>> 87cd14c5bdc016f451b508d2006bd7041cfdd9d9
             "map": [
                 {
-                    "source": "C:\\Users\\Acer nitro\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
+=======
+            "outputFile": "com.example.foodapp-mergeDebugResources-36:/values-v26/values-v26.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
+>>>>>>> 534c74d37c12234844c9b63e009275fba6b786a9
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

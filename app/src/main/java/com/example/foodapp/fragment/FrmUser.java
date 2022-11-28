@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +18,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.foodapp.R;
 import com.example.foodapp.views.RegisterActivity;
+import com.example.foodapp.views.WelcomeActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -50,7 +52,7 @@ public class FrmUser extends Fragment{
 
         return view;
 
-    } 
+    }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -75,20 +77,21 @@ public class FrmUser extends Fragment{
                                     new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
-                                            Intent homeIntent = new Intent(getActivity().getApplicationContext(), RegisterActivity.class);
+                                            Intent homeIntent = new Intent(getActivity().getApplicationContext(), WelcomeActivity.class);
+                                            Toast.makeText(getActivity().getApplicationContext(), "Đăng xuất thành công", Toast.LENGTH_SHORT).show();
                                             startActivity(homeIntent);
 
                                         }
                                     });
                 }else{
-                    Intent homeIntent = new Intent(getActivity().getApplicationContext(), RegisterActivity.class);
+                    Intent homeIntent = new Intent(getActivity().getApplicationContext(), WelcomeActivity.class);
+                    Toast.makeText(getActivity().getApplicationContext(), "Đăng xuất thành công", Toast.LENGTH_SHORT).show();
                     startActivity(homeIntent);
                     getActivity().finish();
                 }
             }
         });
     }
-
 
 
 }
