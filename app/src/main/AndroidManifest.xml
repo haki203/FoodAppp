@@ -103,6 +103,10 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".views.AboutMeActivity"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

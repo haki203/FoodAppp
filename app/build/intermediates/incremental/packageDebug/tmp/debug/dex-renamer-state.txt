@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Sun Nov 27 22:35:32 ICT 2022
-=======
-#Sun Nov 27 21:59:25 ICT 2022
->>>>>>> 534c74d37c12234844c9b63e009275fba6b786a9
+#Wed Nov 30 09:02:11 ICT 2022
 path.4=15/classes.dex
 path.3=14/classes.dex
 path.2=11/classes.dex
@@ -15,25 +11,16 @@ path.6=5/classes.dex
 path.5=2/classes.dex
 renamed.10=classes11.dex
 path.0=classes.dex
-<<<<<<< HEAD
 base.4=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
 base.3=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 base.2=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
 base.1=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.0=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-=======
-base.4=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.3=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.2=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.1=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
->>>>>>> 534c74d37c12234844c9b63e009275fba6b786a9
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 path.10=classes3.dex
 renamed.0=classes.dex
-<<<<<<< HEAD
 base.9=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.9=classes2.dex
 renamed.7=classes8.dex
@@ -45,16 +32,3 @@ base.6=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debu
 renamed.4=classes5.dex
 base.5=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
 base.10=C\:\\Users\\Buiva\\GitHub\\FoodAppp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-=======
-base.9=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-path.9=classes2.dex
-renamed.7=classes8.dex
-base.8=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
-renamed.6=classes7.dex
-base.7=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-renamed.5=classes6.dex
-base.6=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-renamed.4=classes5.dex
-base.5=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.10=C\:\\Users\\tho38\\AndroidStudioProjects\\FoodApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
->>>>>>> 534c74d37c12234844c9b63e009275fba6b786a9

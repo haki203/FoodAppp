@@ -63,9 +63,11 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
+                android:id="@+id/me"
                 android:layout_width="wrap_content"
-                android:layout_height="24dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:onClick="meclick"
                 android:src="@drawable/icon_user" />
 
             <TextView

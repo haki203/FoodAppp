@@ -17,6 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.foodapp.R;
+import com.example.foodapp.views.AboutMeActivity;
 import com.example.foodapp.views.RegisterActivity;
 import com.example.foodapp.views.WelcomeActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -31,6 +32,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class FrmUser extends Fragment{
+    ImageView me;
     ImageView logout;
     GoogleSignInClient gsc;
     GoogleSignInAccount account;
@@ -44,6 +46,8 @@ public class FrmUser extends Fragment{
         gsc = GoogleSignIn.getClient(getActivity().getApplicationContext(), gso);
         account = GoogleSignIn.getLastSignedInAccount(getActivity().getApplicationContext());
     }
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -54,9 +58,19 @@ public class FrmUser extends Fragment{
 
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        me = view.findViewById(R.id.me);
+        me.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity().getApplicationContext(), AboutMeActivity.class);
+                getActivity().startActivity(in);
+                getActivity().finish();
+            }
+        });
         logout = view.findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

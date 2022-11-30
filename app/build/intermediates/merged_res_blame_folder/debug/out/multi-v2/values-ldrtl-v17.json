@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
-=======
-            "outputFile": "com.example.foodapp-mergeDebugResources-36:/values-ldrtl-v17/values-ldrtl-v17.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
->>>>>>> 534c74d37c12234844c9b63e009275fba6b786a9
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.example.foodapp-mergeDebugResources-4:/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\102215101d21fdb02f0f27bbfd4ebd5d\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
-=======
-            "outputFile": "com.example.foodapp-mergeDebugResources-36:/values-v16/values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\102215101d21fdb02f0f27bbfd4ebd5d\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
->>>>>>> 534c74d37c12234844c9b63e009275fba6b786a9
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,11 +14,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "C:\\Users\\Buiva\\gradle-7.2-bin\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
-=======
-                    "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
->>>>>>> 534c74d37c12234844c9b63e009275fba6b786a9
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

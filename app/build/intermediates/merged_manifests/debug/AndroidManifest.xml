@@ -37,16 +37,10 @@
         </activity>
         <activity
             android:name="com.example.foodapp.views.VerifyOtpActivity"
-            android:exported="true" >
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.foodapp.views.CartActivity"
@@ -64,16 +58,10 @@
         </activity>
         <activity
             android:name="com.example.foodapp.views.OTPActivity"
-            android:exported="true" >
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.foodapp.views.LoginActivity"
@@ -94,6 +82,12 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.foodapp.views.RegisterActivity"
@@ -125,6 +119,10 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.AboutMeActivity"
+            android:exported="true" >
         </activity>
 
         <service
