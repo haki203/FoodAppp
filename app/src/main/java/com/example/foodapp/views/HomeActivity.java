@@ -3,6 +3,8 @@ package com.example.foodapp.views;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,15 +15,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 
 import com.bumptech.glide.Glide;
 import com.example.foodapp.R;
+import com.example.foodapp.adapter.BannerAdapter;
 import com.example.foodapp.fragment.FrmCart;
 import com.example.foodapp.fragment.FrmHome;
 import com.example.foodapp.fragment.FrmNotification;
 import com.example.foodapp.fragment.FrmUser;
 import com.example.foodapp.fragment.FrmWallet;
+import com.example.foodapp.models.Banner;
 import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -35,11 +40,17 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import me.relex.circleindicator.CircleIndicator;
 
 public class HomeActivity extends AppCompatActivity  {
+
+
     private BottomNavigationView botNav;
     private ArrayList<Cart> listCart;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -51,6 +62,19 @@ public class HomeActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+//        viewPager = findViewById(R.id.viewBaner);
+//        circleIndicator = findViewById(R.id.circle_indicator_banner);
+//        mListBanner = getListBanner();
+//
+//        bannerAdapter = new BannerAdapter(this, getListBanner());
+//        viewPager.setAdapter(bannerAdapter);
+//        circleIndicator.setViewPager(viewPager);
+//
+//        bannerAdapter.registerDataSetObserver(circleIndicator.getDataSetObserver());
+//        autoBannerSlideShow();
+
+
         botNav = findViewById(R.id.bottom_nav);
         loadData();
         FloatingActionButton fl = findViewById(R.id.fl_btn);
@@ -193,10 +217,58 @@ public class HomeActivity extends AppCompatActivity  {
         alertDialog.show();
     }
 
-
-
-
     public void loadImageURL(String url, CircleImageView circleImageView) {
         Glide.with(this).load(url).into(circleImageView);
     }
+
+    //code xu ly Banner
+//    private List<Banner> getListBanner(){
+//        List<Banner> list = new ArrayList<>();
+//        // muốn thay đổi phần add ảnh, xem https://www.youtube.com/watch?v=J1zCHTXjegI phút 14:20
+//
+//        list.add(new Banner(R.drawable.foodbannerhome1));
+//        list.add(new Banner(R.drawable.foodbannerhome2));
+//        list.add(new Banner(R.drawable.foodbannerhome3));
+//        list.add(new Banner(R.drawable.foodbannerhome4));
+//
+//        return list;
+//    }
+//    private void autoBannerSlideShow(){
+//        if (mListBanner == null || mListBanner.isEmpty() || viewPager == null){
+//
+//            return;
+//        }
+//        //Init timer
+//        if (mTimer == null){
+//            mTimer = new Timer();
+//        }
+//        mTimer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                new Handler(Looper.getMainLooper()).post(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        int currentItem = viewPager.getCurrentItem();
+//                        int totalItem = mListBanner.size()-1;
+//                        if (currentItem < totalItem){
+//                            currentItem ++;
+//                            viewPager.setCurrentItem(currentItem);
+//                        } else {
+//                            viewPager.setCurrentItem(0);
+//                        }
+//                    }
+//                });
+//            }
+//        }, 500, 3000); // 3000 == 3 giay se chuyen qua banner tiep theo
+//
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        if (mTimer != null){
+//            mTimer.cancel();
+//            mTimer = null;
+//        }
+//    }
 }

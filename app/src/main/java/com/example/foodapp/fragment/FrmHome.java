@@ -2,29 +2,45 @@ package com.example.foodapp.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.foodapp.R;
+import com.example.foodapp.adapter.BannerAdapter;
 import com.example.foodapp.dao.SanPhamDAO;
+import com.example.foodapp.models.Banner;
 import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import me.relex.circleindicator.CircleIndicator;
 
 
 public class FrmHome extends Fragment {
+    private ViewPager viewPager;
+    private CircleIndicator circleIndicator;
+    private BannerAdapter bannerAdapter;
+    private List<Banner> mListBanner;
+    private Timer mTimer;
 
     ArrayList<SanPham> list;
     BottomNavigationView navigationView ;
@@ -56,9 +72,26 @@ public class FrmHome extends Fragment {
 
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+//        viewPager = findViewById(R.id.viewBaner);
+        ViewPager viewPager = view.findViewById(R.id.viewBanner);
+
+//        circleIndicator = findViewById(R.id.circle_indicator_banner);
+        CircleIndicator circleIndicator = getView().findViewById(R.id.circle_indicator_banner);
+        mListBanner = getListBanner();
+
+        bannerAdapter = new BannerAdapter(getActivity().getApplicationContext(), getListBanner());
+        viewPager.setAdapter(bannerAdapter);
+        circleIndicator.setViewPager(viewPager);
+
+        bannerAdapter.registerDataSetObserver(circleIndicator.getDataSetObserver());
+        autoBannerSlideShow();
+
+
 
         navigationView.setSelectedItemId(R.id.do_an_vat);
         navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -124,5 +157,58 @@ public class FrmHome extends Fragment {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_container_home, fragment);
         fragmentTransaction.commit();
+    }
+
+//code xu ly Banner
+    private List<Banner> getListBanner(){
+        List<Banner> list = new ArrayList<>();
+        // muốn thay đổi phần add ảnh, xem https://www.youtube.com/watch?v=J1zCHTXjegI phút 14:20
+
+        list.add(new Banner(R.drawable.foodbannerhome1));
+        list.add(new Banner(R.drawable.foodbannerhome2));
+        list.add(new Banner(R.drawable.foodbannerhome3));
+        list.add(new Banner(R.drawable.foodbannerhome4));
+
+        return list;
+    }
+    private void autoBannerSlideShow(){
+        if (mListBanner == null || mListBanner.isEmpty() || viewPager == null){
+
+            return;
+        }
+        //Init timer
+        if (mTimer == null){
+            mTimer = new Timer();
+        }
+        mTimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        int currentItem = viewPager.getCurrentItem();
+                        int totalItem = mListBanner.size()-1;
+                        if (currentItem < totalItem){
+                            currentItem ++;
+                            viewPager.setCurrentItem(currentItem);
+                        } else {
+                            viewPager.setCurrentItem(0);
+                        }
+                    }
+                });
+            }
+        }, 500, 3000); // 3000 == 3 giay se chuyen qua banner tiep theo
+
+    }
+
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mTimer != null){
+            mTimer.cancel();
+            mTimer = null;
+        }
     }
 }
