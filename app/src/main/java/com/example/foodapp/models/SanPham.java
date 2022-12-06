@@ -1,6 +1,8 @@
 package com.example.foodapp.models;
 
-public class SanPham {
+import java.io.Serializable;
+
+public class SanPham implements Serializable {
     private  String name,loai,moTa,tinhTrang,hinh,id,idDB;
     private String gia;
 

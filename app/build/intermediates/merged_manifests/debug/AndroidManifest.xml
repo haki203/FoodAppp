@@ -29,14 +29,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.FoodApp" >
         <activity
-            android:name="com.example.foodapp.views.ThanhToanActivity"
+            android:name="com.example.foodapp.views.HoaDonActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.foodapp.views.VerifyOtpActivity"
+            android:name="com.example.foodapp.views.OpenningAppAnimation"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -47,6 +47,27 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.SanPhamActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.ThanhToanActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.VerifyOtpActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
             android:name="com.example.foodapp.views.CartActivity"
@@ -64,16 +85,10 @@
         </activity>
         <activity
             android:name="com.example.foodapp.views.OTPActivity"
-            android:exported="true" >
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.foodapp.views.LoginActivity"
@@ -90,23 +105,24 @@
             android:exported="true" />
         <activity
             android:name="com.example.foodapp.views.WelcomeActivity"
-            android:exported="true" >
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.foodapp.views.AboutMeActivity"
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name="com.example.foodapp.views.RegisterActivity"
-            android:exported="true" >
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.foodapp.views.MainActivity"
@@ -117,14 +133,10 @@
         </activity>
         <activity
             android:name="com.example.foodapp.views.HomeActivity"
-            android:exported="true" >
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
         </activity>
 
         <service

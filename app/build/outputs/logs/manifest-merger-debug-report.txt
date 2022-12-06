@@ -1,11 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tho38\.gradle\caches\transforms-3\44c24a0ba9562c7bda90cd6278db8032\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\tho38\.gradle\caches\transforms-3\210eef34aa1f44f8860efba2005c19a0\transformed\lottie-3.7.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\tho38\.gradle\caches\transforms-3\f50893122efcee79e80072a2d630c9f0\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\tho38\.gradle\caches\transforms-3\3884b320dccfe5fe24360e981acf9b57\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:2:1-25:12
@@ -79,31 +80,33 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\tho38\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\tho38\.gradle\caches\transforms-3\ebc5cdc968831466331bfc76f957101c\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\tho38\.gradle\caches\transforms-3\7b8f64ad99e6fd8a0144fbb3475e1dd6\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\tho38\.gradle\caches\transforms-3\76208013712f6b8c8279458429d4f3ba\transformed\grpc-android-1.48.1\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
-INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
 	package
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-115:12
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:1-128:12
 		INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:5:5-113:19
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:5:5-126:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tho38\.gradle\caches\transforms-3\44c24a0ba9562c7bda90cd6278db8032\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tho38\.gradle\caches\transforms-3\44c24a0ba9562c7bda90cd6278db8032\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\tho38\.gradle\caches\transforms-3\210eef34aa1f44f8860efba2005c19a0\transformed\lottie-3.7.0\AndroidManifest.xml:9:5-20
+MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\tho38\.gradle\caches\transforms-3\210eef34aa1f44f8860efba2005c19a0\transformed\lottie-3.7.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\tho38\.gradle\caches\transforms-3\675431c9d1f34c1177b8e7e8cd5f3386\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\tho38\.gradle\caches\transforms-3\da8e84889b4ea778fd7875b4ebfbbd77\transformed\play-services-auth-20.3.0\AndroidManifest.xml:22:5-38:19
@@ -184,96 +187,118 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\th
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:13:9-45
 	android:dataExtractionRules
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.foodapp.views.ThanhToanActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:15:9-21:20
+activity#com.example.foodapp.views.HoaDonActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:15:9-22:20
 	android:exported
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:16:13-52
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:16:13-49
 meta-data#android.app.lib_name
 ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:18:13-20:36
 	android:value
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:20:17-33
 	android:name
 		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:19:17-52
-activity#com.example.foodapp.views.VerifyOtpActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:22:9-34:20
+activity#com.example.foodapp.views.OpenningAppAnimation
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:23:9-35:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:24:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:23:13-52
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:24:13-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:33:27-74
+activity#com.example.foodapp.views.SanPhamActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:36:9-42:20
+	android:exported
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:37:13-50
+activity#com.example.foodapp.views.ThanhToanActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:43:9-49:20
+	android:exported
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:45:13-37
+	android:name
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:44:13-52
+activity#com.example.foodapp.views.VerifyOtpActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:50:9-56:20
+	android:exported
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:52:13-37
+	android:name
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:51:13-52
 activity#com.example.foodapp.views.CartActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:35:9-41:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:57:9-63:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:59:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:36:13-47
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:58:13-47
 activity#com.example.foodapp.views.RecoveryPassword
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:42:9-48:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:64:9-70:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:44:13-37
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:66:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:43:13-51
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:65:13-51
 activity#com.example.foodapp.views.OTPActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:49:9-61:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:71:9-77:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:51:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:50:13-46
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:72:13-46
 activity#com.example.foodapp.views.LoginActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:62:9-68:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:78:9-84:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:64:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:80:13-36
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:63:13-48
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:79:13-48
 activity#com.example.foodapp.SplashActivity.SplashActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:69:9-71:39
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:85:9-87:39
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:71:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:87:13-36
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:70:13-58
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:86:13-58
 activity#com.example.foodapp.Category.CategoryActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:72:9-74:39
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:88:9-90:39
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:74:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:90:13-36
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:73:13-54
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:89:13-54
 activity#com.example.foodapp.views.WelcomeActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:75:9-81:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:91:9-97:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:77:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:93:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:76:13-50
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:92:13-50
+activity#com.example.foodapp.views.AboutMeActivity
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:98:9-104:20
+	android:exported
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:100:13-37
+	android:name
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:99:13-50
 activity#com.example.foodapp.views.RegisterActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:82:9-94:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:105:9-111:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:84:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:107:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:83:13-51
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:106:13-51
 activity#com.example.foodapp.views.MainActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:95:9-101:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:112:9-118:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:97:13-37
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:114:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:96:13-47
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:113:13-47
 activity#com.example.foodapp.views.HomeActivity
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:102:9-112:20
+ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:119:9-125:20
 	android:exported
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:104:13-36
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:121:13-37
 	android:name
-		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:103:13-47
-intent-filter#action:name:android.intent.action.MAIN
-ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:109:13-111:29
+		ADDED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml:120:13-47
 uses-sdk
 INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tho38\AndroidStudioProjects\FoodApp\app\src\main\AndroidManifest.xml
@@ -282,6 +307,8 @@ MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\tho38\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tho38\.gradle\caches\transforms-3\44c24a0ba9562c7bda90cd6278db8032\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tho38\.gradle\caches\transforms-3\44c24a0ba9562c7bda90cd6278db8032\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\tho38\.gradle\caches\transforms-3\210eef34aa1f44f8860efba2005c19a0\transformed\lottie-3.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\tho38\.gradle\caches\transforms-3\210eef34aa1f44f8860efba2005c19a0\transformed\lottie-3.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\tho38\.gradle\caches\transforms-3\f50893122efcee79e80072a2d630c9f0\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\tho38\.gradle\caches\transforms-3\f50893122efcee79e80072a2d630c9f0\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\tho38\.gradle\caches\transforms-3\3884b320dccfe5fe24360e981acf9b57\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44

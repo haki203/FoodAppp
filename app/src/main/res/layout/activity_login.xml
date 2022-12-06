@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F5F9"
-    tools:context=".LoginActivity">
+    tools:context=".views.LoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout2"
@@ -68,6 +68,7 @@
         android:drawableLeft="@drawable/ic_lock"
         android:drawablePadding="18dp"
         android:hint="Password"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
@@ -75,6 +76,19 @@
         app:layout_constraintTop_toTopOf="@+id/edtNumberLogin"
         app:layout_constraintVertical_bias="0.393" />
 
+    <ImageView
+        android:id="@+id/show_pass_btnn"
+        android:layout_width="46dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:alpha=".5"
+        android:onClick="ShowHidePasss"
+        android:padding="10dp"
+        android:src="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPasswordLogin"
+        app:layout_constraintEnd_toEndOf="@+id/edtPasswordLogin"
+        app:layout_constraintTop_toTopOf="@+id/edtPasswordLogin" />
     <TextView
         android:id="@+id/tvError"
         android:layout_width="wrap_content"

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="LoginActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+  <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
     <module name="FoodApp.app.main" />
     <option name="DEPLOY" value="true" />
     <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -51,7 +51,7 @@
       <option name="PROFILING_MODE" value="NOT_SET" />
     </Profilers>
     <option name="DEEP_LINK" value="" />
-    <option name="ACTIVITY_CLASS" value="com.example.foodapp.LoginActivity" />
+    <option name="ACTIVITY_CLASS" value="com.example.foodapp.views.OpenningAppAnimation" />
     <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
     <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
     <method v="2">

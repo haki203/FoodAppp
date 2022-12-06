@@ -20,7 +20,7 @@
     <EditText
         android:id="@+id/edtDiachi"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:padding="10dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,6 +114,7 @@
 
     <Button
         android:id="@+id/btnDatHang"
+        android:onClick="onClickThanhToan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đặt hàng"

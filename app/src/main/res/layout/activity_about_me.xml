@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutMeActivity"
+    tools:context=".views.AboutMeActivity"
     android:paddingLeft="17dp"
     android:paddingRight="17dp">
 <!--hehe-->
@@ -19,7 +19,9 @@
         app:layout_constraintVertical_bias="0.024"
         tools:layout_editor_absoluteX="10dp">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:background="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -31,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="90dp"
-            android:text="Abou Me      "
+            android:text="About Me      "
             android:textColor="#000000"
             android:textSize="28dp"
             android:textStyle="bold" />
@@ -49,7 +51,7 @@
         tools:layout_editor_absoluteX="10dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -66,7 +68,7 @@
         tools:layout_editor_absoluteX="10dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edtSDT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -79,26 +81,44 @@
         android:paddingLeft="15dp"
 
         android:textColorHint="#868889"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
         tools:layout_editor_absoluteX="10dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtGmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_email_aboutme"
         android:drawablePadding="10dp"
         android:drawableTint="#868889"
+        android:layout_marginTop="8dp"
+
         android:hint="nguenvana123@gmail.com"
         android:inputType="textEmailAddress"
 
         android:paddingLeft="15dp"
         android:textColorHint="#868889"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/edtDiaChi"
         tools:layout_editor_absoluteX="10dp" />
 
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="8dp"
+        android:drawableTint="#868889"
+        android:hint="Dia chi"
+        android:inputType="textEmailAddress"
+
+        android:paddingLeft="15dp"
+        android:textColorHint="#868889"
+
+        app:layout_constraintTop_toBottomOf="@+id/edtSDT"
+        tools:layout_editor_absoluteX="10dp" />
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
@@ -108,7 +128,7 @@
         android:textColor="#322F2F"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/edtGmail"
         tools:layout_editor_absoluteX="10dp" />
 
     <EditText
@@ -128,6 +148,7 @@
         tools:layout_editor_absoluteX="10dp" />
 
     <EditText
+        android:id="@+id/edtCFPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -142,6 +163,47 @@
         app:layout_constraintTop_toBottomOf="@+id/et_matKhauMoi"
         tools:layout_editor_absoluteX="16dp" />
 
+    <ImageView
+        android:id="@+id/show_pass_btn"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:alpha=".5"
+        android:onClick="ShowHide"
+        android:padding="10dp"
+        android:src="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/et_matKhauHienTai"
+        app:layout_constraintEnd_toEndOf="@+id/et_matKhauHienTai"
+        app:layout_constraintTop_toTopOf="@+id/et_matKhauHienTai" />
+
+    <ImageView
+        android:id="@+id/show_pass_btn1"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:alpha=".5"
+        android:onClick="ShowHide1"
+        android:padding="10dp"
+        android:src="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/edtCFPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtCFPassword"
+        app:layout_constraintTop_toTopOf="@+id/edtCFPassword" />
+
+    <ImageView
+        android:id="@+id/show_pass_btn2"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:alpha=".5"
+        android:onClick="ShowHide2"
+        android:padding="10dp"
+        android:src="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/et_matKhauMoi"
+        app:layout_constraintEnd_toEndOf="@+id/et_matKhauMoi"
+        app:layout_constraintTop_toBottomOf="@+id/et_matKhauHienTai" />
     <EditText
         android:id="@+id/et_matKhauMoi"
         android:layout_width="match_parent"
@@ -166,7 +228,7 @@
         android:textColor="#FFFFFF"
         android:textSize="15dp"
         android:textAllCaps="false"
-
+        android:onClick="onClickSave"
         android:background="@drawable/custom_button_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

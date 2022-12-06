@@ -1,5 +1,6 @@
 package com.example.foodapp.fragment;
 
+import static com.example.foodapp.views.HomeActivity.user;
 import static java.lang.String.format;
 
 import android.content.Intent;
@@ -21,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.foodapp.R;
 import com.example.foodapp.adapter.CartAdapter;
 import com.example.foodapp.models.Cart;
+import com.example.foodapp.models.User;
 import com.example.foodapp.views.HomeActivity;
 import com.example.foodapp.views.ThanhToanActivity;
 
@@ -37,8 +39,16 @@ public class FrmCart extends Fragment {
 
     }
 
-    public static FrmCart newInstance(ArrayList<Cart> listCart) {
-
+    public static FrmCart newInstance(ArrayList<Cart> list) {
+        ArrayList<Cart> listCart = new ArrayList<>();
+        for (Cart cart:list) {
+            Log.d("TAG",""+cart.getIdUser());
+        }
+        for (int i=0;i<list.size();i++){
+            if (list.get(i).getIdUser().equals(user.getId())){
+                listCart.add(list.get(i));
+            }
+        }
         FrmCart fragment = new FrmCart();
         Bundle args = new Bundle();
         args.putSerializable("list_cart", listCart);

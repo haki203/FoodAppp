@@ -3,6 +3,7 @@ package com.example.foodapp.views;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import static com.example.foodapp.views.LoginActivity.list;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,11 +20,11 @@ import com.bumptech.glide.Glide;
 import com.example.foodapp.R;
 import com.example.foodapp.fragment.FrmCart;
 import com.example.foodapp.fragment.FrmHome;
-import com.example.foodapp.fragment.FrmNotification;
+import com.example.foodapp.fragment.FrmSearch;
 import com.example.foodapp.fragment.FrmUser;
-import com.example.foodapp.fragment.FrmWallet;
 import com.example.foodapp.models.Cart;
 import com.example.foodapp.models.SanPham;
+import com.example.foodapp.models.User;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -43,18 +44,23 @@ public class HomeActivity extends AppCompatActivity  {
     private BottomNavigationView botNav;
     private ArrayList<Cart> listCart;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+    public static User user;
     FloatingActionButton btnCart;
-
-    public static final int SCROLL_DELTA = 15; // Pixel.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         botNav = findViewById(R.id.bottom_nav);
-        loadData();
         FloatingActionButton fl = findViewById(R.id.fl_btn);
-
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            user= (User) extras.getSerializable("user");
+        }
+        getSupportFragmentManager()
+                .beginTransaction()
+                .setReorderingAllowed(true)
+                .replace(R.id.frLayout, FrmHome.newInstance(list))
+                .commit();
         btnCart = findViewById(R.id.fl_btn);
         btnCart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,13 +74,14 @@ public class HomeActivity extends AppCompatActivity  {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_home:
-                        ReplaceFrm(new FrmHome());
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .setReorderingAllowed(true)
+                                .replace(R.id.frLayout, FrmHome.newInstance(list))
+                                .commit();
                         break;
-                    case R.id.action_wallet:
-                        ReplaceFrm(new FrmWallet());
-                        break;
-                    case R.id.action_bell:
-                        ReplaceFrm(new FrmNotification());
+                    case R.id.action_search:
+                        ReplaceFrm(new FrmSearch());
                         break;
                     case R.id.action_user:
                         ReplaceFrm(new FrmUser());
@@ -91,38 +98,7 @@ public class HomeActivity extends AppCompatActivity  {
         fragmentTransaction.replace(R.id.frLayout, fragment);
         fragmentTransaction.commit();
     }
-    public void loadData() {
 
-        ArrayList<SanPham> list = new ArrayList<SanPham>();
-        // getData from firebase
-        db.collection("products")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                Map<String, Object> map = document.getData();
-                                String id = document.getId();
-                                Log.d("id product:",""+id);
-                                String name = map.get("name").toString();
-                                String loai = map.get("loai").toString();
-                                String mota = map.get("mota").toString();
-                                String tinhtrang = map.get("tinhtrang").toString();
-                                String hinh = map.get("hinh").toString();
-                                String gia = map.get("gia").toString();
-                                list.add(new SanPham(name,loai,mota,tinhtrang,hinh,gia,id));
-                            }
-                        }
-                        Log.d("Size",""+list.size());
-                        getSupportFragmentManager()
-                                .beginTransaction()
-                                .setReorderingAllowed(true)
-                                .replace(R.id.frLayout, FrmHome.newInstance(list))
-                                .commit();
-                    }
-                });
-    }
     public void loadDataCart() {
 
         db.collection("giohang")
@@ -138,7 +114,9 @@ public class HomeActivity extends AppCompatActivity  {
                                 String amount =  map.get("amount").toString();
                                 String price =  map.get("price").toString();
                                 String photo =  map.get("photo").toString();
-                                Cart cart = new Cart(photo, nameProduct, Double.valueOf(price), Integer.valueOf(amount));
+                                String id = map.get("id").toString();
+                                String idUser = map.get("idUser").toString();
+                                Cart cart = new Cart(photo, nameProduct, Double.valueOf(price), Integer.valueOf(amount),id,idUser);
                                 cart.setId(document.getId());
                                 listCart.add(cart);
                                 Log.e(">>>>>>>>>.TAG", "onComplete: "+listCart+"");

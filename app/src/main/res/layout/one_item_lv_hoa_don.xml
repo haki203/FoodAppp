@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:background="#ECF6E7"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Hóa đơn:"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="235245345346"
+            android:layout_margin="10dp"
+            android:id="@+id/itIDHoaDon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Tên người dùng:"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyen Van A"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/itNameUser"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm:"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyen Van A x1, Nguyen Van A x2, Nguyen Van A x3, Nguyen Van A x4, Nguyen Van A x5"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/itNameSP"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Thời gian:"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asd 34234 sd"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/itTime"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ:"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyen asdasdasdasd Van A"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/itDiaChi"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Tổng giá:"
+            android:textColor="#F000"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20000 VND"
+            android:textColor="#F000"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/itGiaTien"/>
+    </LinearLayout>
+</LinearLayout>

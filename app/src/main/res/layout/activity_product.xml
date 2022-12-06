@@ -24,6 +24,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/ivHinhSP"
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
                     android:background="@drawable/img_lemon"
@@ -45,9 +46,19 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/txtGia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$2.22"
+                    android:text="222"
+                    android:textColor="@color/primary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" VND"
                     android:textColor="@color/primary"
                     android:textSize="25sp"
                     android:textStyle="bold"
@@ -110,6 +121,7 @@
 
 
             <TextView
+                android:id="@+id/txtTenSP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Organic Lemons"
@@ -120,6 +132,7 @@
                 ></TextView>
 
             <TextView
+                android:id="@+id/txtMota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Organic Mountain works as a seller for many organic growers of organic lemons. Organic lemons are easy to spot in your produce aisle. They are just like regular lemons, but they will usually have a few more scars on the outside of the lemon skin. Organic lemons are considered to be the world's finest lemon for juicing"

@@ -1,5 +1,7 @@
 package com.example.foodapp.dao;
 
+import static com.example.foodapp.views.HomeActivity.user;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -31,7 +33,7 @@ public class SanPhamDAO {
         this.c=c;
     }
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    User user = null;
+
 
     public ArrayList<SanPham> getData() throws InterruptedException {
         ArrayList<SanPham> list = new ArrayList<SanPham>();
@@ -45,7 +47,6 @@ public class SanPhamDAO {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Map<String, Object> map = document.getData();
                                 String id = document.getId();
-                                Log.d("id product:",""+id);
                                 String name = map.get("name").toString();
                                 String loai = map.get("loai").toString();
                                 String mota = map.get("mota").toString();
@@ -123,6 +124,7 @@ public class SanPhamDAO {
         product.put("nameProduct",cart.getNameProduct() );
         product.put("price",cart.getPrice() );
         product.put("id",cart.getId() );
+        product.put("idUser",user.getId());
         product.put("photo",cart.getPhoto() );
         product.put("amount",1 );
 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.foodapp-mergeDebugResources-36:/values-es-rUS/values-es-rUS.xml",
+            "outputFile": "com.example.foodapp-mergeDebugResources-37:/values-es-rUS/values-es-rUS.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tho38\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-es-rUS\\values-es-rUS.xml",

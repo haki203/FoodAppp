@@ -1,15 +1,20 @@
 package com.example.foodapp.dao;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 
+import com.example.foodapp.models.SanPham;
 import com.example.foodapp.models.User;
+import com.example.foodapp.views.AboutMeActivity;
 import com.example.foodapp.views.CartActivity;
 import com.example.foodapp.views.HomeActivity;
+import com.example.foodapp.views.LoginActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -19,6 +24,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import org.checkerframework.checker.units.qual.A;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,9 +36,38 @@ public class UserDAO {
         this.c=c;
     }
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    User user = null;
-    public void checkRegister(String username,String password){
+
+    public void upFirebase(User user) {
+        // Create a new user with a first and last name
+        Map<String, Object> item = new HashMap<>();
+        item.put("sdt", user.getSdt());
+        item.put("password", user.getPassword());
+        item.put("name",user.getName() );
+        item.put("gmail",user.getGmail() );
+        item.put("diachi",user.getDiaChi() );
+            // Add a new document with a generated ID
+            db.collection("users")
+                    .add(item)
+                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
+                            Log.d("Tag","Up firebase thanh cong");
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.d("Tag","Up firebase ko thanh cong");
+
+                        }
+                    });
+
+    }
+
+    public User login(String sdtt,String passwordd ){
+        // dang nhap bang google
         // getData from firebase
+        User user = new User();
         db.collection("users")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -39,17 +76,15 @@ public class UserDAO {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Map<String, Object> map = document.getData();
-                                String username = map.get("username").toString();
-                                if(username.equalsIgnoreCase(username)){
-                                    Toast.makeText(c.getApplicationContext(), "Tai khoan nay da ton tai, dang nhap thanh cong",Toast.LENGTH_SHORT).show();
-                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                String sdt = map.get("sdt").toString();
+                                String pass = map.get("password").toString();
+                                if(sdt.equalsIgnoreCase(sdtt) && pass.equalsIgnoreCase(passwordd)){
+                                    Intent i = new Intent(c.getApplicationContext(), HomeActivity.class);
+                                    i.putExtra("user",getUser(sdtt,passwordd));
                                     c.startActivity(i);
                                 }
                                 else{
-                                    Log.d("Tag"," dang ky thanh cong");
-                                    register(username,password);
-                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
-                                    c.startActivity(i);
+                                    showDiaLog("Đăng nhập thất bại, tài khoản hoặc mật khẩu không đúng");
                                 }
                             }
                         } else {
@@ -57,41 +92,64 @@ public class UserDAO {
                         }
                     }
                 });
-
+        return user;
     }
-    public Boolean register(String username, String password) {
-
-        // Create a new user with a first and last name
-        Map<String, Object> item = new HashMap<>();
-        item.put("username", username);
-        item.put("password", password);
-
-        item.put("name","null" );
-        item.put("ngaysinh","null" );
-        item.put("diachi","null" );
-        item.put("id",username);
-        if (user == null) {
-            // Add a new document with a generated ID
-            db.collection("users")
-                    .add(item)
-                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                        @Override
-                        public void onSuccess(DocumentReference documentReference) {
-                            Toast.makeText(c.getApplicationContext(), "Dang ky thanh cong", Toast.LENGTH_SHORT).show();
+    public User getUser(String sdtt,String passwordd){
+        ArrayList<User> listUser = new ArrayList<User>();
+        User user = new User();
+        db.collection("users")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Map<String, Object> map = document.getData();
+                                String id = document.getId();
+                                String name = map.get("name").toString();
+                                Log.d("name :",""+name);
+                                String sdt = map.get("sdt").toString();
+                                String gmail = map.get("gmail").toString();
+                                String diachi = map.get("diachi").toString();
+                                String password = map.get("password").toString();
+                                listUser.add(new User(id,name,sdt,diachi,password,gmail));
+                                Log.d("ListUser :",listUser.size()+"");
+                            }
+                        } else {
+                            Log.w("TAG", "Error getting documents.", task.getException());
                         }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-
-                        }
-                    });
+                    }
+                });
+//        db.collection("users")
+//                .get()
+//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//                        if (task.isSuccessful()) {
+//                            for (QueryDocumentSnapshot document : task.getResult()) {
+//                                Map<String, Object> map = document.getData();
+//                                String id = document.getId();
+//                                String name = map.get("name").toString();
+//                                Log.d("name :",""+name);
+//                                String sdt = map.get("sdt").toString();
+//                                String gmail = map.get("gmail").toString();
+//                                String diachi = map.get("diachi").toString();
+//                                String password = map.get("password").toString();
+//                                listUser.add(new User(id,name,sdt,diachi,password,gmail));
+//                                Log.d("ListUser :",listUser.size()+"");
+//                            }
+//                        }
+//                    }
+//                });
+        for (int i=0;i<=listUser.size();i++){
+            if (sdtt.equalsIgnoreCase(listUser.get(i).getSdt()) && passwordd.equalsIgnoreCase(listUser.get(i).getPassword())){
+                user = listUser.get(i);
+            }
         }
-
-        return true;
+        Log.d("Login success ",":"+user.getSdt());
+        return user;
     }
-
-    public boolean login(String taikhoan){
+    public void register(User user){
         // dang nhap bang google
         // getData from firebase
         db.collection("users")
@@ -102,25 +160,27 @@ public class UserDAO {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Map<String, Object> map = document.getData();
-                                String username = map.get("username").toString();
-                                Log.d("Tagggggggggggg"," Email userDAO"+username);
-                                if(username.equalsIgnoreCase(taikhoan)){
-                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                String sdt = map.get("sdt").toString();
+                                String name = map.get("name").toString();
+                                String password = map.get("password").toString();
+
+                                if(name.equalsIgnoreCase(user.getName()) ||sdt.equals(user.getSdt()) ){
+                                    showDiaLog("Tài khoản này đã tồn tại,Đăng nhập ngay");
+                                    Intent i = new Intent(c.getApplicationContext(),LoginActivity.class);
+                                    i.putExtra("user",user);
                                     c.startActivity(i);
+
                                 }
                                 else{
-                                    loginGoogle(taikhoan);
-                                    Intent i = new Intent(c.getApplicationContext(), CartActivity.class);
+                                    upFirebase(user);
+                                    Intent i = new Intent(c.getApplicationContext(), LoginActivity.class);
+                                    i.putExtra("user",user);
                                     c.startActivity(i);
                                 }
                             }
-                        } else {
-
                         }
                     }
                 });
-        return true;
-
     }
     public String findNumber(String sample) {
             char[] chars = sample.toCharArray();
@@ -133,62 +193,21 @@ public class UserDAO {
             return sb.toString();
 
     }
-    public void loginEmail(String taikhoan,String matkhau){
-        // getData from firebase
-        db.collection("users")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                Map<String, Object> map = document.getData();
-                                String username = map.get("username").toString();
-                                String password = map.get("password").toString();
 
-                                if(username.equalsIgnoreCase(taikhoan)&& password.equalsIgnoreCase(matkhau) ){
-                                    Intent i = new Intent(c.getApplicationContext(), HomeActivity.class);
-                                    c.startActivity(i);
-                                    break;
-                                }
-                                else{
-                                    Toast.makeText(c.getApplicationContext(),"Sai ten dang nhap hoac mat khau",Toast.LENGTH_LONG).show();
-                                }
-                            }
-                        }
-                    }
-                });
-    }
+    public void showDiaLog(String mess){
+        new AlertDialog.Builder(c)
+                .setTitle("Thông báo!")
+                .setMessage(mess)
 
-    public boolean loginGoogle(String taikhoan){
-// Create a new user with a first and last name
-        Map<String, Object> user = new HashMap<>();
-
-        user.put("username",taikhoan );
-        user.put("password","null" );
-        user.put("name","null" );
-        user.put("ngaysinh","null" );
-        user.put("diachi","null" );
-        String s1=taikhoan.substring(0,4);
-        String s2=findNumber(taikhoan);
-        user.put("id",s1+s2);
-
-// Add a new document with a generated ID
-        db.collection("users")
-                .add(user)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                        Log.d("TAG", "DocumentSnapshot added with ID: " + documentReference.getId());
+                // Specifying a listener allows you to take an action before dismissing the dialog.
+                // The dialog is automatically dismissed when a dialog button is clicked.
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Continue with delete operation
                     }
                 })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.w("TAG", "Error adding document", e);
-                    }
-                });
-        return true;
-    }
 
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
 }

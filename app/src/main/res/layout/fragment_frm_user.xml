@@ -36,7 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Olivia Austin"
-            android:textSize="10dp"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +63,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/btnAboutme"
+                android:background="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
@@ -94,12 +97,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/btnMyOders"
                 android:layout_width="40dp"
-                android:layout_height="24dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:background="@color/white"
                 android:src="@drawable/ic_baseline_airplay_24" />
 
             <TextView
@@ -115,40 +120,6 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="192dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:id="@+id/linearLayout6"
-            android:layout_width="320dp"
-            android:layout_height="33dp"
-            android:background="#FFFFFF"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/icon_heart" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="9dp"
-                android:text="My Address"
-                android:textSize="12dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="185dp"
                 android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
         </LinearLayout>
 

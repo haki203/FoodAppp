@@ -74,7 +74,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
                     item.put("nameProduct", cart.getNameProduct());
                     item.put("price", String.valueOf(cart.getPrice()));
                     item.put("photo", String.valueOf(cart.getPhoto()));
-
+                    item.put("id",cart.getId());
+                    item.put("idUser",cart.getIdUser());
 
                     db.collection("giohang").document(cart.getId())
                             .set(item)
@@ -102,7 +103,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewholder
                     item.put("nameProduct", cart.getNameProduct());
                     item.put("price", String.valueOf(cart.getPrice()));
                     item.put("photo", String.valueOf(cart.getPhoto()));
-
+                    item.put("id",cart.getId());
+                    item.put("idUser",cart.getIdUser());
 
                     db.collection("giohang").document(cart.getId())
                             .set(item)

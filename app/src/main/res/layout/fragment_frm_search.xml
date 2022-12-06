@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FrmSearch">
+
+    <ListView
+        android:id="@+id/lvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ />
+    <EditText
+        android:paddingLeft="18dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_home"
+        android:drawableRight="@drawable/ic_baseline_search_24"
+        android:hint="Nhập từ khóa tìm kiếm "
+        android:textSize="17sp"
+ />
+
+</FrameLayout>

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -25,7 +26,7 @@ import com.google.android.gms.tasks.Task;
 public class WelcomeActivity extends AppCompatActivity {
     //login gg
 
-    GoogleSignInClient gsc;
+    GoogleSignInClient gsc=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,15 +40,6 @@ public class WelcomeActivity extends AppCompatActivity {
         gsc = GoogleSignIn.getClient(WelcomeActivity.this,gso);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         SignInButton sib = findViewById(R.id.login_google_button);
-
-////ktra co login hay chua
-//        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(WelcomeActivity.this);
-//        if(account!= null){
-//            // go home
-//            Intent i = new Intent(WelcomeActivity.this,HomeActivity.class);
-//            startActivity(i);
-//            finish();
-//        }
 
         sib.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,12 +78,19 @@ public class WelcomeActivity extends AppCompatActivity {
                     }
 
                     String email = account.getEmail();
+                    String name =account.getDisplayName();
+
                     Log.d("Tag"," Emaill: "+email);
 
                     // ktra email neu co r thi thoi , neu ch co thi tao moi email do
-                    UserDAO userDAO = new UserDAO(WelcomeActivity.this);
-                    userDAO.login(email);
-
+//                    UserDAO userDAO = new UserDAO(WelcomeActivity.this);
+//                    userDAO.login(email);
+                    if(email.isEmpty()==false){
+                        Intent i = new Intent(WelcomeActivity.this,RegisterActivity.class);
+                        i.putExtra("email",email);
+                        i.putExtra("name",name);
+                        startActivity(i);
+                    }
                 }
             }
     );
