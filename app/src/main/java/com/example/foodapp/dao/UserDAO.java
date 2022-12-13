@@ -94,6 +94,7 @@ public class UserDAO {
                 });
         return user;
     }
+
     public User getUser(String sdtt,String passwordd){
         ArrayList<User> listUser = new ArrayList<User>();
         User user = new User();
@@ -120,27 +121,7 @@ public class UserDAO {
                         }
                     }
                 });
-//        db.collection("users")
-//                .get()
-//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-//                        if (task.isSuccessful()) {
-//                            for (QueryDocumentSnapshot document : task.getResult()) {
-//                                Map<String, Object> map = document.getData();
-//                                String id = document.getId();
-//                                String name = map.get("name").toString();
-//                                Log.d("name :",""+name);
-//                                String sdt = map.get("sdt").toString();
-//                                String gmail = map.get("gmail").toString();
-//                                String diachi = map.get("diachi").toString();
-//                                String password = map.get("password").toString();
-//                                listUser.add(new User(id,name,sdt,diachi,password,gmail));
-//                                Log.d("ListUser :",listUser.size()+"");
-//                            }
-//                        }
-//                    }
-//                });
+
         for (int i=0;i<=listUser.size();i++){
             if (sdtt.equalsIgnoreCase(listUser.get(i).getSdt()) && passwordd.equalsIgnoreCase(listUser.get(i).getPassword())){
                 user = listUser.get(i);
@@ -149,8 +130,9 @@ public class UserDAO {
         Log.d("Login success ",":"+user.getSdt());
         return user;
     }
+
     public void register(User user){
-        // dang nhap bang google
+
         // getData from firebase
         db.collection("users")
                 .get()
@@ -182,17 +164,7 @@ public class UserDAO {
                     }
                 });
     }
-    public String findNumber(String sample) {
-            char[] chars = sample.toCharArray();
-            StringBuilder sb = new StringBuilder();
-            for(char c : chars){
-                if(Character.isDigit(c)){
-                    sb.append(c);
-                }
-            }
-            return sb.toString();
 
-    }
 
     public void showDiaLog(String mess){
         new AlertDialog.Builder(c)

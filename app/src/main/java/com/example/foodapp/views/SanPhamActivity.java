@@ -64,6 +64,7 @@ public class SanPhamActivity extends AppCompatActivity {
         btnAddCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                amount=Integer.parseInt(txtAmount.getText().toString());
                 Cart cart = new Cart(hinh,name,gia,amount,id,user.getId());
                 SanPhamDAO dao = new SanPhamDAO(SanPhamActivity.this);
                 dao.addGioHang(cart);
@@ -76,14 +77,14 @@ public class SanPhamActivity extends AppCompatActivity {
         btnTang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                txtAmount.setText(Integer.parseInt(txtAmount.getText().toString())+1);
+                txtAmount.setText(Integer.parseInt(txtAmount.getText().toString())+1+"");
             }
         });
         btnGiam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(Integer.parseInt(txtAmount.getText().toString())>0){
-                    txtAmount.setText(Integer.parseInt(txtAmount.getText().toString())-1);
+                    txtAmount.setText(Integer.parseInt(txtAmount.getText().toString())-1+"");
                 }
             }
         });

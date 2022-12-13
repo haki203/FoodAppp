@@ -9,6 +9,7 @@ import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +34,7 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
     EditText edtUsername,edtPassword;
+    ImageButton btnBack;
     public  static  ArrayList<SanPham> list = new ArrayList<SanPham>();
     TextView tvError;
     ArrayList<User> listUser = new ArrayList<>();
@@ -46,7 +48,15 @@ public class LoginActivity extends AppCompatActivity {
         loadData();
         edtUsername=findViewById(R.id.edtNumberLogin);
         edtPassword=findViewById(R.id.edtPasswordLogin);
+        btnBack=findViewById(R.id.back);
         tvError=findViewById(R.id.tvError);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this,WelcomeActivity.class);
+                startActivity(i);
+            }
+        });
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             user= (User) extras.getSerializable("user");
@@ -74,7 +84,6 @@ public class LoginActivity extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Map<String, Object> map = document.getData();
                                 String id = document.getId();
-                                Log.d("id product:",""+id);
                                 String name = map.get("name").toString();
                                 String loai = map.get("loai").toString();
                                 String mota = map.get("mota").toString();

@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <LinearLayout
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="413dp"
@@ -17,8 +18,20 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-                    <TextView
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="32dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -130,93 +143,6 @@
                         android:textAllCaps="false"
                         android:textSize="18dp" />
 
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="#F4F5F9"-->
-<!--            tools:context=".views.RegisterActivity">-->
-
-
-
-<!--            <TextView-->
-<!--                android:id="@+id/textView"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:fontFamily="sans-serif-black"-->
-<!--                android:text="Tạo tài khoản mới"-->
-<!--                android:textSize="27sp"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.075"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />-->
-
-<!--            <EditText-->
-<!--                android:layout_width="376dp"-->
-<!--                android:layout_height="61dp"-->
-<!--                android:background="@drawable/custom_radius"-->
-<!--                android:drawableLeft="@drawable/ic_call"-->
-<!--                android:drawablePadding="18dp"-->
-<!--                android:id="@+id/edtNumber"-->
-<!--                android:inputType="number"-->
-<!--                android:hint="Số điện thoại"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.485"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="@+id/textView"-->
-<!--                app:layout_constraintVertical_bias="0.227" />-->
-
-<!--            <EditText-->
-<!--                android:id="@+id/edtPassword"-->
-<!--                android:layout_width="376dp"-->
-<!--                android:layout_height="61dp"-->
-<!--                android:inputType="textPassword"-->
-<!--                android:background="@drawable/custom_radius"-->
-<!--                android:drawableLeft="@drawable/ic_lock"-->
-<!--                android:drawablePadding="18dp"-->
-<!--                android:hint="Mật khẩu"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.457"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="@+id/edtNumber"-->
-<!--                app:layout_constraintVertical_bias="0.393" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/show_pass_btn"-->
-<!--                android:layout_width="46dp"-->
-<!--                android:layout_height="60dp"-->
-<!--                android:layout_alignParentRight="true"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:alpha=".5"-->
-<!--                android:onClick="ShowHidePass"-->
-<!--                android:padding="10dp"-->
-<!--                android:src="@drawable/ic_eye"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.953"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="@+id/edtPassword"-->
-<!--                app:layout_constraintVertical_bias="0.008" />-->
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btnDN"-->
-<!--                android:layout_width="376dp"-->
-<!--                android:layout_height="53dp"-->
-<!--                android:background="@drawable/custom_button_login"-->
-<!--                android:onClick="onRegister"-->
-<!--                android:text="Đăng ký"-->
-<!--                android:textAllCaps="false"-->
-<!--                android:textSize="16dp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-
-<!--                app:layout_constraintTop_toBottomOf="@+id/edtPassword"-->
-<!--                app:layout_constraintVertical_bias="0.724" />-->
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
     </LinearLayout>
 
 </ScrollView>

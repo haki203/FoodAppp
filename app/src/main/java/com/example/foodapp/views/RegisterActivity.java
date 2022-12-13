@@ -35,6 +35,14 @@ public class RegisterActivity extends AppCompatActivity {
         edtGmail=findViewById(R.id.edtGmail);
         pass=findViewById(R.id.edtPassword);
         cfPass=findViewById(R.id.edtCFPassword);
+        btnBack=findViewById(R.id.back);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(RegisterActivity.this,WelcomeActivity.class);
+                startActivity(i);
+            }
+        });
         edtDiachi=findViewById(R.id.edtDiachi);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {

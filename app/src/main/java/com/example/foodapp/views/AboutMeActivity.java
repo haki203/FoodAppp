@@ -16,18 +16,25 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodapp.R;
 import com.example.foodapp.dao.UserDAO;
 import com.example.foodapp.models.Cart;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class AboutMeActivity extends AppCompatActivity {
     EditText edtName,edtSDT,edtDiaChi,edtGmail,edtPass,edtNewPass,edtCFNewPass;
     ImageButton btnBack;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +52,7 @@ public class AboutMeActivity extends AppCompatActivity {
         edtSDT.setText(user.getSdt());
         edtDiaChi.setText(user.getDiaChi());
         edtPass.setText(user.getPassword());
-        edtGmail.setText(user.getDiaChi());
+        edtGmail.setText(user.getGmail());
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,7 +106,33 @@ public class AboutMeActivity extends AppCompatActivity {
             }
         }
         else {
-            showDiaLog("Lưu cài đặt thành công");
+            Map<String, Object> item = new HashMap<>();
+            item.put("name", name);
+            item.put("sdt", sdt);
+            if(Npassword.length()==0){
+                item.put("password",password);
+            }
+            else {
+                item.put("password",Npassword);
+            }
+            item.put("gmail", gmail);
+            item.put("diachi",diachi);
+
+
+            db.collection("users").document(user.getId())
+                    .set(item)
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            showDiaLog("Lưu cài đặt thành công");
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+
+                        }
+                    });
 
         }
 
