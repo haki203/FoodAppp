@@ -102,7 +102,7 @@ public class LoginActivity extends AppCompatActivity {
         String password=edtPassword.getText().toString();
 
         UserDAO dao = new UserDAO(LoginActivity.this);
-        Toast.makeText(LoginActivity.this,"Đang đăng nhập ...",Toast.LENGTH_LONG).show();
+        Toast.makeText(LoginActivity.this,"Đang đăng nhập ...",Toast.LENGTH_SHORT).show();
         getListUser(username,password);
 
     }
@@ -131,9 +131,19 @@ public class LoginActivity extends AppCompatActivity {
                                 if(sdt.equalsIgnoreCase(listUser.get(i).getSdt()) && pass.equalsIgnoreCase(listUser.get(i).getPassword())){
                                     Intent in = new Intent(LoginActivity.this,HomeActivity.class);
                                     in.putExtra("user",listUser.get(i));
+                                    Toast.makeText(LoginActivity.this,"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
                                     startActivity(in);
                                     finish();
                                 }
+
+
+                            }
+                            for(int i=0;i<listUser.size();i++){
+                                if(sdt.equalsIgnoreCase(listUser.get(i).getSdt())==false && pass.equalsIgnoreCase(listUser.get(i).getPassword())==false){
+                                    showDiaLog("Tài khoản hoặc mật khẩu không đúng ");
+                                    break;
+                                }
+
 
                             }
                         } else {
